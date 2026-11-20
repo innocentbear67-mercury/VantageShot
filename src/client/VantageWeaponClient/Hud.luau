@@ -94,6 +94,9 @@ end
 local CROSS = { Len = 10, Thick = 2, Gap = 6, Dot = 2 } -- Hypershot proportions at 1080p (2026-11-17)
 local MODE_NAMES = { TDM = "Team Deathmatch", RTDM = "Ranked Deathmatch", CTF = "Capture the Flag", DUEL = "Duel", TAC = "Tactical", FFA = "Free for All" }
 
+-- B1: reusable pair table for the Step score-bar loop — side refs bound once at build, scores refilled per frame
+local SIDE_PAIRS: { { any } } = { { nil, 0, 0 }, { nil, 0, 0 } }
+
 local Hud = {}
 Hud.__index = Hud
 
@@ -390,6 +393,7 @@ function Hud.new()
 	end
 	self.SideBlue = side(-1, "Blue")
 	self.SideRed = side(1, "Red")
+	SIDE_PAIRS[1][1], SIDE_PAIRS[2][1] = self.SideBlue, self.SideRed
 	self.BlueScore, self.RedScore = self.SideBlue.Num, self.SideRed.Num
 	self.TargetLabel = text(top, { AnchorPoint = V2(1, 0.5), Position = UDim2.new(0.5, -350, 0, BH / 2), Size = O(220, 34), Text = "First to 50!", TextSize = 28, X = Enum.TextXAlignment.Right, Transparency = 0.3, Stroke = 3, StrokeT = 0.35 })
 	self.ModeLabel = text(top, { AnchorPoint = V2(0, 0.5), Position = UDim2.new(0.5, 350, 0, BH / 2), Size = O(260, 34), Text = "", TextSize = 28, X = Enum.TextXAlignment.Left, Transparency = 0.3, Stroke = 3, StrokeT = 0.35 })
@@ -411,6 +415,8 @@ function Hud.new()
 	end
 	self.ThumbCache = {}
 	self.RowNext = 0
+	-- B1: cached once — the server creates Match at startup (DamageService.MatchFolder) and never destroys it
+	self.Match = ReplicatedStorage.Vantage:WaitForChild("Match")
 
 	local perf = new("Frame", { Name = "Perf", AnchorPoint = V2(1, 0), Position = UDim2.new(1, -16, 0, 6), Size = O(220, 20), BackgroundTransparency = 1 }, root)
 	self.PerfLabel = text(perf, { Text = "", TextSize = 15, X = Enum.TextXAlignment.Right, Transparency = 0.45, Stroke = 1.5, StrokeT = 0.5 })
@@ -1300,6 +1306,8 @@ end
 function Hud:_stepVitals(dt: number, now: number, humanoid: Humanoid?)
 	local char = humanoid and humanoid.Parent
 	local maxSh = char and char:GetAttribute("MaxShield") or 0
+	-- B5: parked Vitals cluster skips its UI writes; the shield-break trigger + damage/low-health vignette below stay live
+	local showVit = self.HealthFrame:IsVisible()
 	self.ShieldRow.Visible = maxSh > 0
 	if maxSh > 0 then
 		local sh = math.max(0, char:GetAttribute("Shield") or 0)
@@ -1314,21 +1322,23 @@ function Hud:_stepVitals(dt: number, now: number, humanoid: Humanoid?)
 			self.ShieldTrail = math.max(self.ShieldTrail or 0, self.LastShield)
 		end
 		self.LastShield = sh
-		self.ShieldShown += (sh - self.ShieldShown) * expAlpha(20, dt)
-		if (self.ShieldTrail or 0) > sh and now >= (self.ShieldTrailHold or 0) then
-			self.ShieldTrail += (sh - self.ShieldTrail) * expAlpha(5, dt)
-		elseif (self.ShieldTrail or 0) < sh then
-			self.ShieldTrail = sh
+		if showVit then
+			self.ShieldShown += (sh - self.ShieldShown) * expAlpha(20, dt)
+			if (self.ShieldTrail or 0) > sh and now >= (self.ShieldTrailHold or 0) then
+				self.ShieldTrail += (sh - self.ShieldTrail) * expAlpha(5, dt)
+			elseif (self.ShieldTrail or 0) < sh then
+				self.ShieldTrail = sh
+			end
+			setPill(self.ShieldBar, self.ShieldShown / maxSh, (self.ShieldTrail or sh) / maxSh)
+			local down = sh <= 0 and humanoid ~= nil and humanoid.Health > 0
+			local recharging = now < (self.ChargeUntil or 0)
+			local pulse = if down then math.sin(now * 7) * 0.5 + 0.5 else 0
+			self.ShieldNum.Text = tostring(math.ceil(sh))
+			self.ShieldNum.TextColor3 = if down then AMBER else CYAN_HI
+			self.ShieldState.Text = if down then "Shield Down!" elseif recharging then "Recharging" else ""
+			self.ShieldState.TextColor3 = if down then AMBER else CYAN_HI
+			self.ShieldState.TextTransparency = if down then 0.35 * (1 - pulse) else 0.1
 		end
-		setPill(self.ShieldBar, self.ShieldShown / maxSh, (self.ShieldTrail or sh) / maxSh)
-		local down = sh <= 0 and humanoid ~= nil and humanoid.Health > 0
-		local recharging = now < (self.ChargeUntil or 0)
-		local pulse = if down then math.sin(now * 7) * 0.5 + 0.5 else 0
-		self.ShieldNum.Text = tostring(math.ceil(sh))
-		self.ShieldNum.TextColor3 = if down then AMBER else CYAN_HI
-		self.ShieldState.Text = if down then "Shield Down!" elseif recharging then "Recharging" else ""
-		self.ShieldState.TextColor3 = if down then AMBER else CYAN_HI
-		self.ShieldState.TextTransparency = if down then 0.35 * (1 - pulse) else 0.1
 	end
 	local lowPulse = 0
 	if humanoid then
@@ -1340,36 +1350,42 @@ function Hud:_stepVitals(dt: number, now: number, humanoid: Humanoid?)
 			self.HealthPunch = 1
 		end
 		self.LastHP = hp
-		self.HealthShown += (hp - self.HealthShown) * expAlpha(20, dt)
-		if hp < self.TrailShown then
-			if now >= self.TrailHoldUntil then
-				self.TrailShown += (hp - self.TrailShown) * expAlpha(5, dt)
-			end
-		else
-			self.TrailShown = hp
-		end
-		setPill(self.HealthBar, self.HealthShown / maxHp, self.TrailShown / maxHp)
-		local frac = hp / maxHp
 		local low = hp <= H.LowHealth
-		local hi, lo = GREEN_T, GREEN_B
-		if low then
-			hi, lo = C(255, 130, 140), C(225, 40, 60)
-		elseif frac <= 0.5 then
-			hi, lo = C(255, 228, 120), C(240, 160, 30)
+		if showVit then
+			self.HealthShown += (hp - self.HealthShown) * expAlpha(20, dt)
+			if hp < self.TrailShown then
+				if now >= self.TrailHoldUntil then
+					self.TrailShown += (hp - self.TrailShown) * expAlpha(5, dt)
+				end
+			else
+				self.TrailShown = hp
+			end
+			setPill(self.HealthBar, self.HealthShown / maxHp, self.TrailShown / maxHp)
+			local frac = hp / maxHp
+			local hi, lo = GREEN_T, GREEN_B
+			if low then
+				hi, lo = C(255, 130, 140), C(225, 40, 60)
+			elseif frac <= 0.5 then
+				hi, lo = C(255, 228, 120), C(240, 160, 30)
+			end
+			if self._hpTone ~= hi then
+				self._hpTone = hi
+				self.HealthBar.Grad.Color = ColorSequence.new(hi, lo)
+			end
+			self.HealthLabel.Text = tostring(math.ceil(hp))
 		end
-		if self._hpTone ~= hi then
-			self._hpTone = hi
-			self.HealthBar.Grad.Color = ColorSequence.new(hi, lo)
-		end
-		self.HealthLabel.Text = tostring(math.ceil(hp))
 		if low and hp > 0 then
 			lowPulse = math.sin(now * 6) * 0.5 + 0.5
-			self.HealthLabel.TextColor3 = GREY:Lerp(RED, 0.4 + 0.6 * lowPulse)
-		else
+			if showVit then
+				self.HealthLabel.TextColor3 = GREY:Lerp(RED, 0.4 + 0.6 * lowPulse)
+			end
+		elseif showVit then
 			self.HealthLabel.TextColor3 = GREY
 		end
-		self.HealthPunch = math.max(0, (self.HealthPunch or 0) - dt * 6)
-		self.HealthScale.Scale = 1 + 0.12 * (self.HealthPunch ^ 2)
+		if showVit then
+			self.HealthPunch = math.max(0, (self.HealthPunch or 0) - dt * 6)
+			self.HealthScale.Scale = 1 + 0.12 * (self.HealthPunch ^ 2)
+		end
 	end
 	self.Flash = math.max(0, self.Flash - dt * 1.6)
 	local vig = math.max(self.Flash, lowPulse * 0.35)
@@ -1539,11 +1555,14 @@ function Hud:_stepAbilities(now: number)
 end
 
 function Hud:_stepPlayers(now: number)
+	if not self.ScoreFrame:IsVisible() then
+		return -- B5: the avatar row sits inside the (parkable) Score cluster
+	end
 	if now < self.RowNext then
 		return
 	end
 	self.RowNext = now + 0.25
-	local match = ReplicatedStorage.Vantage:FindFirstChild("Match")
+	local match = self.Match
 	local id = match and match:GetAttribute("MatchId")
 	local list = {}
 	for _, p in Players:GetPlayers() do
@@ -1675,11 +1694,13 @@ function Hud:Step(dt: number, spreadDeg: number, humanoid: Humanoid?)
 
 	self:_stepStreak(dt, now, humanoid)
 
-	local match = ReplicatedStorage.Vantage:FindFirstChild("Match")
-	if match then
+	local match = self.Match
+	if match and self.ScoreFrame:IsVisible() then -- B5: score boxes live in the (parkable) Score cluster
 		local bs, rs = match:GetAttribute("BlueScore") or 0, match:GetAttribute("RedScore") or 0
 		local limit = math.max(1, match:GetAttribute("ScoreLimit") or H.ScoreLimit or 50)
-		for _, pair in { { self.SideBlue, bs, rs }, { self.SideRed, rs, bs } } do
+		SIDE_PAIRS[1][2], SIDE_PAIRS[1][3] = bs, rs
+		SIDE_PAIRS[2][2], SIDE_PAIRS[2][3] = rs, bs
+		for _, pair in SIDE_PAIRS do
 			local sd, v, other = pair[1], pair[2], pair[3]
 			-- leader underline (fades in / out, breathes slowly)
 			local goalLead = if v > other then 1 else 0
