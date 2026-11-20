@@ -1,0 +1,3 @@
+-- VANTAGE: intentionally empty.
+-- Placing a script named 'Animate' here stops Roblox inserting its default Animate script,
+-- which would fight the movement AnimationController (StarterPlayerScripts.VantageMovementClient).
