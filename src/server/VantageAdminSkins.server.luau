@@ -13,6 +13,7 @@
 ]]
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
+local GroupService = game:GetService("GroupService")
 local TextChatService = game:GetService("TextChatService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Weapons = ReplicatedStorage.Vantage.Weapons
@@ -30,8 +31,8 @@ local function isAdmin(p: Player): boolean
 	if game.CreatorType == Enum.CreatorType.User then
 		return p.UserId == game.CreatorId
 	end
-	local ok, rank = pcall(p.GetRankInGroup, p, game.CreatorId)
-	return ok and rank >= 254
+	local ok, roles = pcall(GroupService.GetRolesInGroupAsync, GroupService, p.UserId, game.CreatorId)
+	return ok and (roles and roles[1] and roles[1].rank or 0) >= 254
 end
 
 local function norm(s: string): string

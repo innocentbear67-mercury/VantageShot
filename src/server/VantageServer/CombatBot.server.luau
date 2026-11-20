@@ -33,7 +33,7 @@ local EliminationService = require(WeaponServer.EliminationService)
 local Weapons = ReplicatedStorage.Vantage.Weapons
 local Config = require(Weapons.WeaponConfig)
 local WeaponMath = require(Weapons.WeaponMath)
-local EventRemote = ReplicatedStorage.Vantage.Remotes.WeaponEvent :: RemoteEvent
+local EventRemote = ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("WeaponEvent") :: RemoteEvent
 local ShieldService = require(WeaponServer.ShieldService)
 local DamageService = require(WeaponServer.DamageService)
 

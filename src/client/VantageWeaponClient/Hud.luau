@@ -35,7 +35,7 @@ local HitFeedback = require(script.Parent:WaitForChild("HitFeedback"))
 local AbilityConfig, GrappleFeed, GrenadeFeed, GrenadeConfig, EquipCatalog, KillFeedRemote, UltRemote, UltConfig
 pcall(function()
 	UltConfig = require(ReplicatedStorage.Vantage:WaitForChild("Ult", 10):WaitForChild("UltConfig", 10))
-	UltRemote = ReplicatedStorage.Vantage.Remotes:WaitForChild("Ult", 10)
+	UltRemote = ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("Ult", 10)
 end)
 pcall(function()
 	AbilityConfig = require(ReplicatedStorage.Vantage.Abilities.AbilityConfig)
@@ -55,7 +55,7 @@ pcall(function()
 	SignatureCatalog = require(ReplicatedStorage.Vantage.Signatures.SignatureCatalog)
 end)
 pcall(function()
-	KillFeedRemote = ReplicatedStorage.Vantage.Remotes:WaitForChild("KillFeed", 10)
+	KillFeedRemote = ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("KillFeed", 10)
 end)
 
 local C = Color3.fromRGB

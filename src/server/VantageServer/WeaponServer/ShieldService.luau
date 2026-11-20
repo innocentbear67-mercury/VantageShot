@@ -25,7 +25,7 @@ local Workspace = game:GetService("Workspace")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Cfg = require(ReplicatedStorage.Vantage.Shield.ShieldConfig)
-local EventRemote = ReplicatedStorage.Vantage.Remotes:WaitForChild("WeaponEvent") :: RemoteEvent
+local EventRemote = ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("WeaponEvent") :: RemoteEvent
 
 local ShieldService = {}
 local tracked: { [Model]: { LastHit: number, Charging: boolean } } = {}

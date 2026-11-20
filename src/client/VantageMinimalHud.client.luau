@@ -1,10 +1,10 @@
 --[[
 	VANTAGE — minimal HUD (user decision 2026-11-14: no visor HUD).
-	The exosuit visor (VantageVisorClient) is disabled. What stays on screen: the crosshair, the
+	The exosuit visor (VantageVisorClient) is live and H-toggleable; this script never touches it. What stays on screen: the crosshair, the
 	ammo count and the hit markers / damage numbers (all drawn by VantageWeaponClient.Hud).
 	Parked here, still updated, never shown: Vitals, Score, Radar and the settings hint.
 	VantageAbilities is left alone: disabling that ScreenGui also kills the grapple (E) input.
-	To bring the visor back: enable VantageVisorClient and delete this script.
+	To bring the parked HUD panels back: delete this script.
 ]]
 local Players = game:GetService("Players")
 local playerGui = Players.LocalPlayer:WaitForChild("PlayerGui")

@@ -35,7 +35,7 @@ local Workspace = game:GetService("Workspace")
 local Folder = ReplicatedStorage.Vantage.Aircraft
 local Config = require(Folder.AircraftConfig)
 local Path = require(Folder.AircraftPath)
-local remote = ReplicatedStorage.Vantage.Remotes.Ability :: RemoteEvent
+local remote = ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("Ability") :: RemoteEvent
 
 local AircraftService = {}
 

@@ -40,7 +40,7 @@ function F.Backdrop(st, slotZ, slotY, color, label, sub)
 		local f = Instance.new("Frame"); local s = 1.15 - i*0.062
 		f.AnchorPoint = Vector2.new(.5,.5); f.Position = UDim2.fromScale(.5,.47)
 		f.Size = UDim2.fromScale(s*0.95, s*1.22); f.BackgroundColor3 = color; f.BackgroundTransparency = 0.935; f.BorderSizePixel=0
-		Instance.new("UICorner", f).CornerRadius = UDim.new(.5,0); f.Parent = sg
+		local fc = Instance.new("UICorner"); fc.CornerRadius = UDim.new(.5,0); fc.Parent = f; f.Parent = sg
 	end
 	if label then
 		local t = Instance.new("TextLabel"); t.BackgroundTransparency=1; t.Size=UDim2.fromScale(.9,.07); t.Position=UDim2.fromScale(.05,.80)

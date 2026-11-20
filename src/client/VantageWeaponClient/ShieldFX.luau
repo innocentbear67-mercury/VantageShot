@@ -1253,7 +1253,7 @@ function ShieldFX.Start()
 			watch(m)
 		end
 	end
-	local events = ReplicatedStorage.Vantage.Remotes:WaitForChild("WeaponEvent") :: RemoteEvent
+	local events = ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("WeaponEvent") :: RemoteEvent
 	events.OnClientEvent:Connect(function(kind, a, b, c, d, e, f)
 		if kind == "ShieldHit" and typeof(a) == "Instance" and a:IsA("Model") and typeof(b) == "Vector3" and typeof(c) == "Vector3" then
 			onHit(a, b, c, tonumber(d) or 0, tonumber(e) or 0, f == true)

@@ -27,8 +27,8 @@ local Vantage = ReplicatedStorage:WaitForChild("Vantage")
 local Folder = Vantage:WaitForChild("Grenade")
 local Config = require(Folder:WaitForChild("GrenadeConfig"))
 local Template = Folder:WaitForChild("FragModel") :: Model
-local Remote = Vantage.Remotes:WaitForChild("Grenade") :: RemoteEvent
-local WeaponEvent = Vantage.Remotes:WaitForChild("WeaponEvent") :: RemoteEvent
+local Remote = Vantage:WaitForChild("Remotes"):WaitForChild("Grenade") :: RemoteEvent
+local WeaponEvent = Vantage:WaitForChild("Remotes"):WaitForChild("WeaponEvent") :: RemoteEvent
 
 local VantageServer = script.Parent
 local WeaponServer = VantageServer:WaitForChild("WeaponServer")

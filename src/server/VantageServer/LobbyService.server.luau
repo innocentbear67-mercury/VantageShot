@@ -3,7 +3,7 @@
 	There is no main menu any more: players spawn walking around Workspace.HyperLobby (the
 	Hypershot-style hall built in the map chat) and queue from the lobby HUD or the JOIN pads.
 
-	Lobby = no team. MatchService assigns a team at MATCH FOUND and does LoadCharacter at Deploy;
+	Lobby = no team. MatchService assigns a team at MATCH FOUND and does LoadCharacterAsync at Deploy;
 	its cleanup() at match end clears the team and destroys the character, and this loop puts the
 	player back in the hall. Lobby characters get attribute Lobby = true; players get InLobby.
 	Spawn points: every BasePart named "LobbySpawn" under Workspace.HyperLobby (falls back to the
@@ -75,7 +75,7 @@ local function spawnInLobby(p: Player)
 		exempt:Fire(p, 2)
 	end
 	local ok, err = pcall(function()
-		p:LoadCharacter()
+		p:LoadCharacterAsync()
 	end)
 	if not ok then
 		warn("[VANTAGE] Lobby spawn failed for " .. p.Name .. ": " .. tostring(err))

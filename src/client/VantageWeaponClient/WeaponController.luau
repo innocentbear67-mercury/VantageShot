@@ -21,7 +21,7 @@ local AimAssist = require(script.Parent:WaitForChild("AimAssist"))
 local WeaponClips = require(Vantage.Weapons.WeaponClips)
 local SkinInspects = require(Vantage.Weapons.SkinInspects) -- per-skin inspects (2026-11-15)
 local MoveConfig = require(Vantage.Movement.MovementConfig)
-local Remotes = Vantage.Remotes
+local Remotes = Vantage:WaitForChild("Remotes")
 
 local Viewmodel = require(script.Parent.Viewmodel)
 -- weapon HUD pieces (reticle, holo frame, scope lens, heat gauge) live in HudOptics so HUD

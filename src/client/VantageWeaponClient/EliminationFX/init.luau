@@ -275,7 +275,7 @@ function EliminationFX.Start(effects, hud)
 	hud.SuppressKillBanner = true -- the confirmation replaces the old text banner
 	gui = new("ScreenGui", { Name = "VantageElimination", ResetOnSpawn = false, IgnoreGuiInset = true, DisplayOrder = 6 }, Players.LocalPlayer:WaitForChild("PlayerGui"))
 	layer = new("Frame", { Name = "Burst", Size = UDim2.fromScale(1, 1), BackgroundTransparency = 1, ZIndex = 0 }, gui)
-	ReplicatedStorage.Vantage.Remotes:WaitForChild("Elimination").OnClientEvent:Connect(onElimination)
+	ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("Elimination").OnClientEvent:Connect(onElimination)
 	-- load the emblem art up front so the first kill never shows an empty frame
 	task.spawn(function()
 		local images = {}

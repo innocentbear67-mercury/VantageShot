@@ -1,5 +1,5 @@
 --[[
-	VANTAGE — SquadBots (Studio only, never runs in a live server)
+	VANTAGE — SquadBots (bots run live when MatchConfig.BotFill.Enabled — true today: every live match tops each team up; Studio keeps the /squad playtest commands)
 	A full 5v5 for feel-testing: 4 AI teammates on your team and 5 AI enemies. They leave spawn, path
 	through the map, call out contacts to each other, strafe, retreat on a broken shield, reload, and
 	fight each other as well as you.
@@ -58,8 +58,8 @@ local DamageService = require(WeaponServer.DamageService)
 local Weapons = ReplicatedStorage.Vantage.Weapons
 local Config = require(Weapons.WeaponConfig)
 local WeaponMath = require(Weapons.WeaponMath)
-local Remotes = ReplicatedStorage.Vantage.Remotes
-local EventRemote = Remotes.WeaponEvent :: RemoteEvent
+local Remotes = ReplicatedStorage.Vantage:WaitForChild("Remotes")
+local EventRemote = Remotes:WaitForChild("WeaponEvent") :: RemoteEvent
 local Match = DamageService.MatchFolder()
 local VehicleService = require(script.Parent:WaitForChild("VehicleService"))
 local VehicleConfig = require(ReplicatedStorage.Vantage.Vehicles.VehicleConfig)

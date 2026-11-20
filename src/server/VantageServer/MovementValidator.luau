@@ -28,7 +28,7 @@ local Workspace = game:GetService("Workspace")
 
 local Config = require(ReplicatedStorage.Vantage.Movement.MovementConfig)
 local S = Config.Server
-local remote = ReplicatedStorage.Vantage.Remotes.MovementState :: RemoteEvent
+local remote = ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("MovementState") :: RemoteEvent
 
 local VALID_STANCES = { Stand = true, Crouch = true }
 

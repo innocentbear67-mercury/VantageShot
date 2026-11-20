@@ -14,7 +14,7 @@ local Players = game:GetService("Players")
 local Teams = game:GetService("Teams")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local chooseTeam = ReplicatedStorage.Vantage.Remotes.ChooseTeam :: RemoteFunction
+local chooseTeam = ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("ChooseTeam") :: RemoteFunction
 local EliminationService = require(script.Parent.WeaponServer.EliminationService)
 
 local TEAM_NAMES = { Blue = true, Red = true }
@@ -31,7 +31,7 @@ end
 
 local function spawnPlayer(player: Player)
 	if player.Parent and player.Team then
-		player:LoadCharacter()
+		player:LoadCharacterAsync()
 	end
 end
 

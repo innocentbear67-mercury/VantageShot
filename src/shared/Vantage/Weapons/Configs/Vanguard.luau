@@ -107,7 +107,6 @@ return {
 	-- Sounds. Every id was measured with the Audio API (onset / envelope); StartAt skips
 	-- silent lead-ins so nothing plays late. ProSoundEffects = Roblox-licensed library.
 	Sounds = { -- 2026-11-17 handling identity: reload / equip pitched per weapon
-		MagOut = { Speed = 1.0 }, MagIn = { Speed = 1.0, Volume = 0.85 }, Equip = { Speed = 1.05 },
 		
 		Fire = { -- 2026-11-17 layered fire (crack / body / mechanism), tails trimmed on fast guns
 			Region = NumberRange.new(0, 0.55), Layers = { { Id = "rbxassetid://9116361236", Region = NumberRange.new(0, 0.085), Volume = 0.32, Speed = 0.95 }, }, 
@@ -123,11 +122,11 @@ return {
 			Ids = { "rbxassetid://9118173739", "rbxassetid://9118173988", "rbxassetid://9118173992", "rbxassetid://9118174539" },
 			Volume = 0.9, RollOff = 300, MaxVoices = 2, CutFade = 0.08,
 		},
-		MagOut = { Id = "rbxassetid://9113104337", Volume = 0.6 },   -- PSE Ammo Magazine 3
-		MagIn = { Id = "rbxassetid://9113104208", Volume = 0.75 },   -- PSE Ammo Magazine 2
+		MagOut = { Id = "rbxassetid://9113104337", Volume = 0.6, Speed = 1.0 },   -- PSE Ammo Magazine 3
+		MagIn = { Id = "rbxassetid://9113104208", Volume = 0.85, Speed = 1.0 },   -- PSE Ammo Magazine 2
 		Bolt = { Id = "rbxassetid://9116357355", Volume = 0.55 },    -- PSE Machine Gun Bolt 2
 		Empty = { Id = "rbxassetid://72166668675269", Volume = 0.7 },
-		Equip = { Id = "rbxassetid://9116357621", Volume = 0.35, StartAt = 0.03 }, -- PSE Machine Gun Bolt 4
+		Equip = { Id = "rbxassetid://9116357621", Volume = 0.35, StartAt = 0.03, Speed = 1.05 }, -- PSE Machine Gun Bolt 4
 		Impact = {
 			Concrete = { Ids = { "rbxassetid://131554175554758", "rbxassetid://85805517776968" }, Volume = 0.25 },
 			Metal = { Ids = { "rbxassetid://98609496290942", "rbxassetid://110295421669790" }, Volume = 0.25, StartAt = 0.03 },

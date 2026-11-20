@@ -1209,7 +1209,7 @@ function Lobby.Start(context)
 			NAV.Loadout()
 		end
 	end
-	do -- Hypershot-style Loadout (presets: 3 guns + knife, used on deploy); the old screen stays as a fallback
+	do -- Hypershot-style Loadout (presets: 3 guns + knife, used on deploy)
 		local okH, LH = pcall(require, script:WaitForChild("LoadoutHS"))
 		if okH then
 			local okN, lh = pcall(LH.new, {

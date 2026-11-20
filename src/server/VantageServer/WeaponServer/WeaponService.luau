@@ -43,10 +43,10 @@ local EliminationService = require(script.Parent.EliminationService)
 local ShieldService = require(script.Parent.ShieldService)
 local S = Config.Server
 
-local Remotes = Vantage.Remotes
-local FireRemote = Remotes.WeaponFire :: RemoteEvent
-local ActionRemote = Remotes.WeaponAction :: RemoteEvent
-local EventRemote = Remotes.WeaponEvent :: RemoteEvent
+local Remotes = Vantage:WaitForChild("Remotes")
+local FireRemote = Remotes:WaitForChild("WeaponFire") :: RemoteEvent
+local ActionRemote = Remotes:WaitForChild("WeaponAction") :: RemoteEvent
+local EventRemote = Remotes:WaitForChild("WeaponEvent") :: RemoteEvent
 local AimRemote = Remotes:WaitForChild("WeaponAim")
 
 local WeaponService = {}

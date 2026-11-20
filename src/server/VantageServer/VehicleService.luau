@@ -43,7 +43,7 @@ local MovementValidator = require(VantageServer:WaitForChild("MovementValidator"
 
 local InputRemote = VFolder:WaitForChild("VehicleInput") :: RemoteEvent
 local EventRemote = VFolder:WaitForChild("VehicleEvent") :: RemoteEvent
-local WeaponEvent = Vantage.Remotes:WaitForChild("WeaponEvent") :: RemoteEvent
+local WeaponEvent = Vantage:WaitForChild("Remotes"):WaitForChild("WeaponEvent") :: RemoteEvent
 
 local Service = {}
 Service.Vehicles = {} -- [Model] = state

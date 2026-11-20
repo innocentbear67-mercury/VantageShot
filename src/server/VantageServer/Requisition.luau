@@ -13,7 +13,7 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
-local Remote = ReplicatedStorage.Vantage.Remotes:WaitForChild("ReqAward") :: RemoteEvent
+local Remote = ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("ReqAward") :: RemoteEvent
 
 local Requisition = {}
 local Ledger = require(script.Parent:WaitForChild("MatchLedger")) -- per-match earnings (results screen)

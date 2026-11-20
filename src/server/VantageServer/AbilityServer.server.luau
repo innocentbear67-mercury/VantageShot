@@ -45,7 +45,7 @@ local G = Config.Abilities.Grapple
 -- and its model is the launcher (EquipmentBuild; LoadoutService dresses each spawn)
 local EquipCatalog = require(ReplicatedStorage.Vantage:WaitForChild("Equipment"):WaitForChild("EquipmentCatalog"))
 local EquipBuild = require(ReplicatedStorage.Vantage.Equipment:WaitForChild("EquipmentBuild"))
-local remote = ReplicatedStorage.Vantage.Remotes.Ability :: RemoteEvent
+local remote = ReplicatedStorage.Vantage:WaitForChild("Remotes"):WaitForChild("Ability") :: RemoteEvent
 local exempt = script.Parent:WaitForChild("ExemptMovement") :: BindableEvent
 local momentumEv = script.Parent:WaitForChild("MomentumMovement", 10) :: BindableEvent?
 local AircraftService = require(script.Parent:WaitForChild("AircraftService"))

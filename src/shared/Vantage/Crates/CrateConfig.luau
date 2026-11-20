@@ -123,24 +123,6 @@ end
 
 -- the pool: every Rare+ skin of every gun, grouped by rarity ({ Weapon, Skin, Rarity, Name, Key })
 local pool = nil
-function C.Pool()
-	if pool then return pool end
-	pool = { All = {}, ByTier = {} }
-	for _, t in C.Tiers do pool.ByTier[t] = {} end
-	for _, w in Skins.Weapons do
-		for _, s in Skins.List(w) do
-			if C.TierIndex[s.Rarity] then
-				local e = { Weapon = w, Skin = s.Id, Rarity = s.Rarity, Name = s.Name, Key = w .. "/" .. s.Id }
-				table.insert(pool.All, e)
-				table.insert(pool.ByTier[s.Rarity], e)
-			end
-		end
-	end
-	return pool
-end
-function C.Count(tier)
-	return #C.Pool().ByTier[tier]
-end
 
 -- 2026-11-16: Gemini crate renders (cut out) replace the crate art everywhere Art.Full is used
 local ArtV2 = { Field = "rbxassetid://121393172224433", Strike = "rbxassetid://122054061901913", Prestige = "rbxassetid://71665155085423", Apex = "rbxassetid://99928873799837" }
@@ -182,7 +164,6 @@ for id, full in { Equipment = "rbxassetid://84822399344478", EliteEquipment = "r
 	end
 end
 
-local skinPool = C.Pool
 local equipPool = nil
 function C.EquipmentPool()
 	if equipPool then return equipPool end
@@ -198,12 +179,6 @@ function C.EquipmentPool()
 	return equipPool
 end
 -- C.Pool() / C.Count(tier) are the skin pool as before; pass the crate to get its own pool
-function C.Pool(crate)
-	if type(crate) == "table" and crate.Pool == "Equipment" then
-		return C.EquipmentPool()
-	end
-	return skinPool()
-end
 function C.Count(tier, crate)
 	return #(C.Pool(crate).ByTier[tier] or {})
 end
@@ -263,12 +238,26 @@ end
 function C.Currency(crate)
 	return if type(crate) == "table" and crate.Currency then crate.Currency else "REQ"
 end
-local poolBeforeWeapons = C.Pool
 function C.Pool(crate)
 	if type(crate) == "table" and crate.Pool == "Weapon" then
 		return C.WeaponPool()
 	end
-	return poolBeforeWeapons(crate)
+	if type(crate) == "table" and crate.Pool == "Equipment" then
+		return C.EquipmentPool()
+	end
+	if pool then return pool end
+	pool = { All = {}, ByTier = {} }
+	for _, t in C.Tiers do pool.ByTier[t] = {} end
+	for _, w in Skins.Weapons do
+		for _, s in Skins.List(w) do
+			if C.TierIndex[s.Rarity] then
+				local e = { Weapon = w, Skin = s.Id, Rarity = s.Rarity, Name = s.Name, Key = w .. "/" .. s.Id }
+				table.insert(pool.All, e)
+				table.insert(pool.ByTier[s.Rarity], e)
+			end
+		end
+	end
+	return pool
 end
 
 return C

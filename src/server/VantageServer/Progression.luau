@@ -31,8 +31,8 @@ local function ord()
 	return OrdMod or nil
 end
 local Ledger = require(script.Parent:WaitForChild("MatchLedger")) -- per-match earnings (2026-11-18)
-local getRemote = Vantage.Remotes:WaitForChild("ProgressionGet") :: RemoteFunction
-local updRemote = Vantage.Remotes:WaitForChild("ProgressionUpdate") :: RemoteEvent
+local getRemote = Vantage:WaitForChild("Remotes"):WaitForChild("ProgressionGet") :: RemoteFunction
+local updRemote = Vantage:WaitForChild("Remotes"):WaitForChild("ProgressionUpdate") :: RemoteEvent
 
 local Progression = {}
 local STORE = "VantageProgression_v1"

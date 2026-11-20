@@ -20,7 +20,7 @@ local Vantage = ReplicatedStorage.Vantage
 local Config = require(Vantage.Weapons.WeaponConfig)
 local LoadoutPresets = require(game:GetService("ReplicatedStorage").Vantage.Weapons:WaitForChild("LoadoutPresets")) -- per-player loadout (2026-11-17)
 local MoveConfig = require(Vantage.Movement.MovementConfig)
-local Remotes = Vantage.Remotes
+local Remotes = Vantage:WaitForChild("Remotes")
 
 local MovementState = require(script.Parent.MovementState)
 local Recoil = require(script.Parent.Recoil)

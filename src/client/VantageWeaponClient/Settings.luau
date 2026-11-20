@@ -13,7 +13,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
 local SettingsConfig = require(ReplicatedStorage.Vantage.SettingsConfig)
-local Remotes = ReplicatedStorage.Vantage.Remotes
+local Remotes = ReplicatedStorage.Vantage:WaitForChild("Remotes")
 
 local SAVE_DELAY = 1.5
 

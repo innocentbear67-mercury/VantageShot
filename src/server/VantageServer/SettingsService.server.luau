@@ -13,7 +13,7 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local SettingsConfig = require(ReplicatedStorage.Vantage.SettingsConfig)
-local Remotes = ReplicatedStorage.Vantage.Remotes
+local Remotes = ReplicatedStorage.Vantage:WaitForChild("Remotes")
 local GetFn = Remotes:WaitForChild("SettingsGet") :: RemoteFunction
 local SaveEv = Remotes:WaitForChild("SettingsSave") :: RemoteEvent
 local SavedEv = Remotes:WaitForChild("SettingsSaved") :: RemoteEvent

@@ -273,7 +273,7 @@ local function respawn(p: Player)
 		exempt:Fire(p, 3)
 	end
 	local ok, err = pcall(function()
-		p:LoadCharacter()
+		p:LoadCharacterAsync()
 	end)
 	if not ok then
 		warn("[VANTAGE] Tutorial spawn failed:", err)
@@ -421,7 +421,7 @@ local function finish(p: Player, completed: boolean, level: number?)
 			exempt:Fire(p, 3)
 		end
 		pcall(function()
-			p:LoadCharacter() -- LobbyService puts the new character in the hall
+			p:LoadCharacterAsync() -- LobbyService puts the new character in the hall
 		end)
 	end
 end

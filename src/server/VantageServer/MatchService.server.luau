@@ -37,7 +37,7 @@ local Workspace = game:GetService("Workspace")
 local Vantage = ReplicatedStorage:WaitForChild("Vantage")
 local Config = require(Vantage:WaitForChild("MatchConfig"))
 local Remotes = require(Vantage:WaitForChild("RemotesLib"))
-local request = Vantage.Remotes:WaitForChild("MatchRequest") :: RemoteFunction
+local request = Vantage:WaitForChild("Remotes"):WaitForChild("MatchRequest") :: RemoteFunction
 local DamageService = require(script.Parent:WaitForChild("WeaponServer"):WaitForChild("DamageService"))
 local exempt = script.Parent:WaitForChild("ExemptMovement", 10) :: BindableEvent?
 local IntroService = require(script.Parent:WaitForChild("IntroService")) -- operative introductions (phase "Intro")
@@ -431,7 +431,7 @@ local function spawnBackfill(m, p: Player)
 		if exempt then
 			exempt:Fire(p, 2)
 		end
-		p:LoadCharacter()
+		p:LoadCharacterAsync()
 	end
 end
 
@@ -579,7 +579,7 @@ local function runMatch(modeId: string, picked: { Player })
 				if exempt then
 					exempt:Fire(p, 2)
 				end
-				p:LoadCharacter()
+				p:LoadCharacterAsync()
 			end)
 		end
 	end

@@ -12,7 +12,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
 
 local Vantage = ReplicatedStorage.Vantage
-local Remotes = Vantage.Remotes
+local Remotes = Vantage:WaitForChild("Remotes")
 
 local KnifeViewmodel = require(script.Parent.KnifeViewmodel)
 local ViewmodelAnimator = require(script.Parent.ViewmodelAnimator)
