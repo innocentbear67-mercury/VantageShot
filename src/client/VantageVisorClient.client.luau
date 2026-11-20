@@ -745,14 +745,9 @@ local function layout()
 		return
 	end
 	K = math.clamp(vp.Y / 1080, 0.5, 2)
-	-- narrower than ~16:10: the lower side clusters would collide with the ammo block, so they ride up
-	local narrow = vp.X / vp.Y < 1.62
 	for name, h in holders do
 		h.Scale.Scale = K * (h.Base or 1)
 		local y = h.Y
-		if narrow and false then
-			y -= 150
-		end
 		if h.Ax == "C" then
 			h.Frame.Position = UDim2.new(0.5, (h.X - 960) * K, 0, y * K)
 		elseif h.Ax == "L" then

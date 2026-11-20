@@ -4,8 +4,7 @@ src/client/VantageAdminSkinsClient.client.luau:3: client-reaches-into-server: Ho
 src/client/VantageWeaponClient/Armory/ArmourBay.luau:1: client-reaches-into-server: -- armour customisation retired 2026-11-17 (real module: ServerStorage._ArmourArchive_2026
 src/client/VantageWeaponClient/HitFeedback.luau:15: client-reaches-into-server: Previous version: ServerStorage._CombatFeedbackBackup_20261116.HitFeedback
 src/client/VantageWeaponClient/Hud.luau:23: client-reaches-into-server: Previous: ServerStorage._HudBackup_20261117.Hud (v3) and .HudV4
-src/client/VantageWeaponClient/Lobby/init.luau:1213: client-reaches-into-server: -- old effects shop retired (module kept in Lobby.ShopScreen + ServerStorage._CratesBackup
-src/client/VantageWeaponClient/Lobby/init.luau:33: client-reaches-into-server: -- CustomiseScreen / OperatorsScreen / ShopScreen (armour-era) retired 2026-11-17 -> Serve
+src/client/VantageWeaponClient/Lobby/init.luau:32: client-reaches-into-server: -- CustomiseScreen / OperatorsScreen / ShopScreen (armour-era) retired 2026-11-17 -> Serve
 src/client/VantageWeaponClient/Lobby/init.luau:4: client-reaches-into-server: Replaces the old MainMenu (backup: ServerStorage._MainMenuRemoved_20261115). Players walk 
 src/client/VantageWeaponClient/ViewmodelArms.luau:4: client-reaches-into-server: archived (ServerStorage._ArmourArchive_20261117), so the avatar-arm path below is the one 
 src/server/VantageAdminPanel.server.luau:4: server-uses-client-state: Owner-only panel. Client: StarterPlayerScripts.VantageAdminPanelClient (F2 or the ADMIN bu

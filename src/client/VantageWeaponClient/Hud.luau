@@ -340,10 +340,6 @@ function Hud.new()
 	new("UICorner", { CornerRadius = UDim.new(1, 0) }, self.KnifeRing)
 	new("UIStroke", { Color = WHITE, Thickness = 1.5, Transparency = 0.25 }, self.KnifeRing)
 
-	self.Hit = new("Frame", { Name = "HitMarkerLegacy", Visible = false, Size = O(0, 0), BackgroundTransparency = 1 }, gui)
-	self.HitTicks, self.HitUntil, self.HitStart, self.HitKind = {}, 0, 0, "Hit"
-	self.KillRing = new("Frame", { Visible = false, Size = O(0, 0), BackgroundTransparency = 1 }, self.Hit)
-	self.KillRingStroke = new("UIStroke", {}, self.KillRing)
 	self.Feedback = HitFeedback.new(self, gui)
 
 	self.Arcs = {}
@@ -422,7 +418,6 @@ function Hud.new()
 
 	self.RadarFrame = new("Frame", { Name = "Radar", Visible = false, Size = O(0, 0), BackgroundTransparency = 1 }, root)
 	self.ZoneLabel = text(self.RadarFrame, { Text = "", Size = O(0, 0), Stroke = 0 })
-	self.ShotSeen = {}
 	self.Feed = new("Frame", { Name = "LegacyFeed", Visible = false, Size = O(0, 0), BackgroundTransparency = 1 }, root)
 	self.FeedItems, self.FeedOrder = {}, 0
 
@@ -1748,18 +1743,6 @@ function Hud:Step(dt: number, spreadDeg: number, humanoid: Humanoid?)
 	local tpa = now - (self.TimerPopAt or -10)
 	self.TimerScale.Scale = if tpa < 0.25 then 1 + 0.12 * (1 - tpa / 0.25) else 1
 end
-
-function Hud:NoteShot(character: Model?)
-	if character then
-		self.ShotSeen[character] = os.clock()
-	end
-end
-
-function Hud:_stepRadar(_now: number) end
-
-function Hud:AddFeed(_killer, _killerTeam, _weaponId, _victim, _victimTeam, _headshot) end
-
-function Hud:_stepFeed(_now: number) end
 
 function Hud:Destroy()
 	self.Gui:Destroy()

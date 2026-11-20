@@ -24,7 +24,6 @@ local ElimConfig = require(Vantage.Elimination.EliminationConfig)
 local KillRemote = Vantage.Remotes.Elimination :: RemoteEvent
 local ReplayRemote = Vantage.Remotes.DeathReplay :: RemoteEvent
 local FeedRemote = Vantage.Remotes:WaitForChild("KillFeed") :: RemoteEvent
-local WeaponEvent = Vantage.Remotes:WaitForChild("WeaponEvent") :: RemoteEvent
 local FeedConfig = require(Vantage.Elimination.KillFeedConfig)
 local VehicleConfig = require(Vantage.Vehicles.VehicleConfig)
 local DamageService = require(script.Parent.DamageService)
@@ -234,10 +233,6 @@ local function sendFeed(character: Model, victim: Player?, killerPlayer: Player?
 		end
 	end
 	FeedRemote:FireAllClients(e)
-	-- the visor's one-line "last kill" readout reads the HUD's small feed: keep it fed (credited kills)
-	if e.Killer then
-		WeaponEvent:FireAllClients("Feed", e.Killer.Name, e.Killer.Team, e.Weapon, e.Victim and e.Victim.Name, e.Victim and e.Victim.Team, e.Type == "Headshot")
-	end
 end
 
 --[[ Returns what the victim is told: { KillerName, KillerModel?, KillerPosition?, Weapon?,

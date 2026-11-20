@@ -229,7 +229,6 @@ EventRemote.OnClientEvent:Connect(function(kind: string, a, b, c, d, e, f)
 		local character: Model? = a
 		local endPos: Vector3 = b
 		DeathReplay.RecordShot(character, endPos, c, d, e)
-		hud:NoteShot(character)
 		local world = character and character:FindFirstChild("VantageWorldWeapon")
 		local muzzle = world and world.PrimaryPart and world.PrimaryPart:FindFirstChild("Muzzle")
 		local wid = world and world:GetAttribute("WeaponId")
@@ -271,9 +270,6 @@ EventRemote.OnClientEvent:Connect(function(kind: string, a, b, c, d, e, f)
 		if typeof(b) == "Vector3" then
 			effects:MeleeImpact(b, Vector3.new(0, 1, 0), c == true)
 		end
-	elseif kind == "Feed" then
-		-- someone was eliminated: a = killer, b = killer team, c = weapon id, d = victim, e = victim team, f = headshot
-		hud:AddFeed(a, b, c, d, e, f)
 	elseif kind == "Damaged" then
 		-- we were hit: a = source position, b = amount
 		if typeof(a) == "Vector3" then

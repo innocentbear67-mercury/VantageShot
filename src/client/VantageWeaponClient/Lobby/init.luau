@@ -29,13 +29,9 @@ local G = require(script:WaitForChild("Gloss"))
 local HS = require(script:WaitForChild("HS"))
 local CasesHS = require(script:WaitForChild("CasesHS"))
 local Pages = require(script:WaitForChild("Pages"))
-local SuitUp = require(script.Parent:WaitForChild("SuitUp"))
 -- CustomiseScreen / OperatorsScreen / ShopScreen (armour-era) retired 2026-11-17 -> ServerStorage._ArmourArchive_20261117
-local ShopScreen = nil
 local CratesScreen = require(script:WaitForChild("CratesScreen"))
 local CrateOpening = require(script:WaitForChild("CrateOpening"))
-local LobbySkin = require(script:WaitForChild("LobbySkin"))
-local LoadoutScreen = require(script:WaitForChild("LoadoutScreen"))
 local CoinBurst = require(script:WaitForChild("CoinBurst")) -- 2026-11-18: claim VFX (coins fly into the REQ / ORD pills)
 
 local Vantage = ReplicatedStorage:WaitForChild("Vantage")
@@ -269,7 +265,7 @@ local NAV = {
 		end
 	end,
 	Operators = function() if ui.Equipment then showScreen(ui.Equipment) end end, -- armour screens retired; the Equipment screen plugs in as ui.Equipment
-	Shop = function() showScreen(ui.Crates or ui.Shop) end,
+	Shop = function() showScreen(ui.Crates) end,
 	Inventory = function() openModal("Inventory") end,
 	Challenges = function() openModal("Challenges") end,
 	Trading = function() openModal("Trading") end,
@@ -457,14 +453,6 @@ local function runDeploy()
 	hudRoot.Visible = false
 	closeModal(true)
 	hideScreen()
-	-- suit-up shot (third person, the player's avatar taking the armour); starts and ends on black
-	local ok, err = pcall(SuitUp.Play, {
-		Hide = function() gui.Enabled = false end,
-		Show = function() gui.Enabled = true end,
-	})
-	if not ok then
-		warn("[VANTAGE] SuitUp: " .. tostring(err))
-	end
 	gui.Enabled = true
 	if myStatus() ~= "Match" then
 		tween(fader, 0.4, { BackgroundTransparency = 1 })
@@ -1198,20 +1186,6 @@ function Lobby.Start(context)
 		G.sound("Close")
 		hideScreen()
 	end
-	local function snd(n)
-		G.sound(if n == "Hover" then "Hover" else "Click")
-	end
-	local okS, shop = false, "replaced by the crate store (CratesScreen)"
-	local _oldShop = false and ShopScreen and pcall(ShopScreen.new, {
-		Tabs = { "LOBBY", "SHOP" }, OnTab = back, Sound = snd,
-		IsActive = function() return state.Screen ~= nil and state.Screen == ui.Shop end,
-	})
-	if okS then
-		ui.Shop = shop
-		pcall(LobbySkin.apply, shop.Gui, { Title = "SHOP", OnBack = back })
-	else
-		-- old effects shop retired (module kept in Lobby.ShopScreen + ServerStorage._CratesBackup_20261116)
-	end
 	-- gloss Loadout + Operators (3D showcase stage); the old Armory / Customise stay as fallbacks
 	local function tabTo(n)
 		if n == "Operators" then
@@ -1219,19 +1193,6 @@ function Lobby.Start(context)
 		elseif n == "Loadout" then
 			NAV.Loadout()
 		end
-	end
-	local function toStore()
-		back()
-		NAV.Store()
-	end
-	local okL, lo = pcall(LoadoutScreen.new, {
-		G = G, OnBack = back, OnTab = tabTo, OnStore = toStore,
-		IsActive = function() return state.Screen ~= nil and state.Screen == ui.Loadout end,
-	})
-	if okL then
-		ui.Loadout = lo
-	else
-		warn("[VANTAGE] Loadout screen: " .. tostring(lo))
 	end
 	do -- Hypershot-style Loadout (presets: 3 guns + knife, used on deploy); the old screen stays as a fallback
 		local okH, LH = pcall(require, script:WaitForChild("LoadoutHS"))
@@ -1261,7 +1222,7 @@ function Lobby.Start(context)
 		warn("[VANTAGE] Crates screen: " .. tostring(crates))
 	end
 
-	-- Hypershot Cases modal (BUY / OPEN); opening uses the CrateOpening sequence for now
+	-- Hypershot Cases modal (BUY / OPEN); opening uses the UnboxHS sequence
 	do
 		local okU, U = pcall(require, script:WaitForChild("UnboxHS"))
 		if okU then
@@ -1312,7 +1273,7 @@ function Lobby.Start(context)
 	end
 
 	do -- Season Pass modal (Hypershot battlepass layout; SeasonPassService)
-		local okP, SPHS = pcall(require, script:WaitForChild("SeasonPassHS2")) -- v2 (2026-11-17); v1 SeasonPassHS kept as fallback
+		local okP, SPHS = pcall(require, script:WaitForChild("SeasonPassHS2")) -- v2 (2026-11-17)
 		if okP then
 			local okM, passModal = pcall(SPHS.Mount, modalLayer, {
 				HS = HS,
@@ -1325,7 +1286,7 @@ function Lobby.Start(context)
 			})
 			if okM then ui.Modals.Battlepass = passModal else warn("[VANTAGE] Season Pass modal: " .. tostring(passModal)) end
 		else
-			warn("[VANTAGE] SeasonPassHS: " .. tostring(SPHS))
+			warn("[VANTAGE] SeasonPassHS2: " .. tostring(SPHS))
 		end
 	end
 
