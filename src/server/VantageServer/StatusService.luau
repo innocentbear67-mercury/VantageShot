@@ -10,9 +10,8 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
-local Remotes = ReplicatedStorage:WaitForChild("Vantage"):WaitForChild("Remotes")
-local Remote = Remotes:FindFirstChild("Status")
-if not Remote then Remote = Instance.new("RemoteEvent"); Remote.Name = "Status"; Remote.Parent = Remotes end
+local Remotes = require(ReplicatedStorage:WaitForChild("Vantage"):WaitForChild("RemotesLib"))
+local Remote = Remotes.get("Status") :: RemoteEvent
 
 local Status = {}
 local function now() return Workspace:GetServerTimeNow() end

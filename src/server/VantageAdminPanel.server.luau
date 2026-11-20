@@ -37,12 +37,9 @@ local function hook(name: string)
 	return VS:FindFirstChild(name) or VS:WaitForChild(name, 10)
 end
 
-local Fn = ReplicatedStorage:FindFirstChild("VantageAdminPanel") or Instance.new("RemoteFunction")
-Fn.Name = "VantageAdminPanel"
-Fn.Parent = ReplicatedStorage
-local Announce = ReplicatedStorage:FindFirstChild("VantageAdminAnnounce") or Instance.new("RemoteEvent")
-Announce.Name = "VantageAdminAnnounce"
-Announce.Parent = ReplicatedStorage
+local Remotes = require(Vantage:WaitForChild("RemotesLib"))
+local Fn = Remotes.get("VantageAdminPanel", "RemoteFunction", ReplicatedStorage) :: RemoteFunction
+local Announce = Remotes.get("VantageAdminAnnounce", "RemoteEvent", ReplicatedStorage) :: RemoteEvent
 
 -- static catalog for the client lists
 local catalogCache

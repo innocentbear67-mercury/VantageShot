@@ -20,13 +20,8 @@ local Requisition = require(script.Parent:WaitForChild("Requisition"))
 local Ordnance = require(script.Parent:WaitForChild("Ordnance")) -- 2026-11-17: ORD packs
 local CrateGrant = script.Parent:WaitForChild("CrateGrant", 60)
 
-local remotes = Vantage:WaitForChild("Remotes")
-local Notify = remotes:FindFirstChild("ShopNotify")
-if not Notify then
-	Notify = Instance.new("RemoteEvent")
-	Notify.Name = "ShopNotify"
-	Notify.Parent = remotes
-end
+local remotes = require(Vantage:WaitForChild("RemotesLib"))
+local Notify = remotes.get("ShopNotify") :: RemoteEvent
 
 local store: DataStore? = nil
 pcall(function()

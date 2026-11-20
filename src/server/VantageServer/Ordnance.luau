@@ -14,13 +14,8 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
-local Remotes = ReplicatedStorage.Vantage.Remotes
-local Remote = Remotes:FindFirstChild("OrdAward")
-if not Remote then
-	Remote = Instance.new("RemoteEvent")
-	Remote.Name = "OrdAward"
-	Remote.Parent = Remotes
-end
+local Remotes = require(ReplicatedStorage.Vantage.RemotesLib)
+local Remote = Remotes.get("OrdAward") :: RemoteEvent
 
 local Ordnance = {}
 local STORE = "VantageOrdnance_v1"

@@ -47,13 +47,8 @@ local Ordnance = nil
 pcall(function()
 	Ordnance = require(script.Parent.Parent:WaitForChild("Ordnance", 5))
 end)
-local SurgeRemote = Vantage.Remotes:FindFirstChild("SupplySurge") :: RemoteEvent?
-if not SurgeRemote then
-	local r = Instance.new("RemoteEvent")
-	r.Name = "SupplySurge"
-	r.Parent = Vantage.Remotes
-	SurgeRemote = r
-end
+local Remotes = require(Vantage.RemotesLib)
+local SurgeRemote = Remotes.get("SupplySurge") :: RemoteEvent
 local function rollSurge(p: Player, position: Vector3?, force: boolean?)
 	local S = ReqConfig.Surge
 	if not (S and S.Enabled ~= false and p and p.Parent) then

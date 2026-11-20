@@ -67,13 +67,8 @@ local AbilityConfig = require(ReplicatedStorage.Vantage.Abilities.AbilityConfig)
 local G = AbilityConfig.Abilities.Grapple
 local AbilityRemote = Remotes:FindFirstChild("Ability") :: RemoteEvent?
 
-local MsgRemote = Remotes:FindFirstChild("SquadBotsMsg") :: RemoteEvent?
-if not MsgRemote then
-	local r = Instance.new("RemoteEvent")
-	r.Name = "SquadBotsMsg"
-	r.Parent = Remotes
-	MsgRemote = r
-end
+local RemotesFactory = require(ReplicatedStorage.Vantage.RemotesLib)
+local MsgRemote = RemotesFactory.get("SquadBotsMsg") :: RemoteEvent
 
 -- ─── tuning ─────────────────────────────────────────────────────────────────
 local TICK = 0.1

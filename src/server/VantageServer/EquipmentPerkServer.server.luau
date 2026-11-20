@@ -33,10 +33,8 @@ local folder = Workspace:FindFirstChild("VantagePerkFX") or Instance.new("Folder
 folder.Name = "VantagePerkFX"
 folder.Parent = Workspace
 
-local Remotes = ReplicatedStorage.Vantage:WaitForChild("Remotes")
-local PerkState = Remotes:FindFirstChild("PerkState") or Instance.new("RemoteEvent")
-PerkState.Name = "PerkState"
-PerkState.Parent = Remotes
+local Remotes = require(ReplicatedStorage.Vantage:WaitForChild("RemotesLib"))
+local PerkState = Remotes.get("PerkState") :: RemoteEvent
 
 local function rootOf(m: Model): BasePart?
 	return m:FindFirstChild("HumanoidRootPart") :: BasePart?

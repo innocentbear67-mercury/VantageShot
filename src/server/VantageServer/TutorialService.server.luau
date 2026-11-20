@@ -29,10 +29,8 @@ local CollectionService = game:GetService("CollectionService")
 local Vantage = RS:WaitForChild("Vantage")
 local T = require(Vantage:WaitForChild("Tutorial"):WaitForChild("TutorialConfig"))
 local L = T.L
-local Remotes = Vantage:WaitForChild("Remotes")
-local Remote = Remotes:FindFirstChild("Tutorial") or Instance.new("RemoteEvent")
-Remote.Name = "Tutorial"
-Remote.Parent = Remotes
+local Remotes = require(Vantage:WaitForChild("RemotesLib"))
+local Remote = Remotes.get("Tutorial") :: RemoteEvent
 
 local server = script.Parent
 local WS = server:WaitForChild("WeaponServer")

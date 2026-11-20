@@ -36,6 +36,7 @@ local Workspace = game:GetService("Workspace")
 
 local Vantage = ReplicatedStorage:WaitForChild("Vantage")
 local Config = require(Vantage:WaitForChild("MatchConfig"))
+local Remotes = require(Vantage:WaitForChild("RemotesLib"))
 local request = Vantage.Remotes:WaitForChild("MatchRequest") :: RemoteFunction
 local DamageService = require(script.Parent:WaitForChild("WeaponServer"):WaitForChild("DamageService"))
 local exempt = script.Parent:WaitForChild("ExemptMovement", 10) :: BindableEvent?
@@ -722,6 +723,9 @@ end
 
 -- ─── requests ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 request.OnServerInvoke = function(p: Player, action: any, arg: any)
+	if not Remotes.rate(p, "MatchRequest", 0.15) then
+		return false, "SLOW DOWN"
+	end
 	if action == "Queue" then
 		local mode = type(arg) == "string" and Config.Modes[arg]
 		if not mode then

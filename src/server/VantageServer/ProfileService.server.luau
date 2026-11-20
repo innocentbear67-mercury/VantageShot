@@ -23,7 +23,7 @@ local HttpService = game:GetService("HttpService")
 local Vantage = ReplicatedStorage:WaitForChild("Vantage")
 local R = require(Vantage:WaitForChild("Ranked"):WaitForChild("RankedConfig"))
 local MatchConfig = require(Vantage:WaitForChild("MatchConfig"))
-local remotes = Vantage:WaitForChild("Remotes")
+local remotes = require(Vantage:WaitForChild("RemotesLib"))
 
 local SAVE = not RunService:IsStudio()
 local store, ordered
@@ -185,10 +185,9 @@ TutFn.OnInvoke = function(action, p, level)
 	return tonumber(d.Tut) or 0
 end
 
-local Banner = remotes:FindFirstChild("ProfileBanner") or Instance.new("RemoteEvent")
-Banner.Name = "ProfileBanner"
-Banner.Parent = remotes
+local Banner = remotes.get("ProfileBanner") :: RemoteEvent
 Banner.OnServerEvent:Connect(function(p, bid)
+	if not remotes.rate(p, "ProfileBanner", 0.15) then return end
 	local d = data[p]
 	if d and type(bid) == "string" and R.BannerById[bid] and d.Banner ~= bid then
 		d.Banner = bid

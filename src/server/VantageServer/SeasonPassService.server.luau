@@ -21,7 +21,7 @@ local Pass = require(Vantage:WaitForChild("SeasonPass"):WaitForChild("PassConfig
 local CrateConfig = require(Vantage:WaitForChild("Crates"):WaitForChild("CrateConfig"))
 local Requisition = require(script.Parent:WaitForChild("Requisition"))
 local CrateGrant = script.Parent:WaitForChild("CrateGrant", 60)
-local remotes = Vantage:WaitForChild("Remotes")
+local remotes = require(Vantage:WaitForChild("RemotesLib"))
 
 local SAVE = not RunService:IsStudio()
 local store
@@ -165,9 +165,7 @@ local function claim(p, list)
 	return { Ok = true, Granted = acc.Labels, Note = note, Count = #marks }
 end
 
-local Claim = remotes:FindFirstChild("PassClaim") or Instance.new("RemoteFunction")
-Claim.Name = "PassClaim"
-Claim.Parent = remotes
+local Claim = remotes.get("PassClaim", "RemoteFunction") :: RemoteFunction
 Claim.OnServerInvoke = function(p, track, tier)
 	if busy[p] then return { Ok = false, Error = "Busy" } end
 	busy[p] = true

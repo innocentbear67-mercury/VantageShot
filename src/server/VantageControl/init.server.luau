@@ -30,17 +30,11 @@ local Workspace = game:GetService("Workspace")
 
 -- ─── install ─────────────────────────────────────────────────────────────────
 local Vantage = ReplicatedStorage:WaitForChild("Vantage")
-local Remotes = Vantage:WaitForChild("Remotes")
+local Remotes = require(Vantage:WaitForChild("RemotesLib"))
 local Cfg = require(Vantage:WaitForChild("VantageControlConfig"))
 local LINES = Cfg.Lines
 
-local remote = Remotes:FindFirstChild("VantageControl") :: RemoteEvent?
-if not remote then
-	local r = Instance.new("RemoteEvent")
-	r.Name = "VantageControl"
-	r.Parent = Remotes
-	remote = r
-end
+local remote = Remotes.get("VantageControl") :: RemoteEvent
 
 local M = Vantage:WaitForChild("Match") -- created by DamageService / MatchService
 

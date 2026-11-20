@@ -18,9 +18,8 @@ local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 
 local Vantage = ReplicatedStorage:WaitForChild("Vantage")
-local Remotes = Vantage:WaitForChild("Remotes")
-local Remote = Remotes:FindFirstChild("Signature")
-if not Remote then Remote = Instance.new("RemoteEvent"); Remote.Name = "Signature"; Remote.Parent = Remotes end
+local Remotes = require(Vantage:WaitForChild("RemotesLib"))
+local Remote = Remotes.get("Signature") :: RemoteEvent
 local Catalog = require(Vantage:WaitForChild("Signatures"):WaitForChild("SignatureCatalog"))
 local Cfg = require(Vantage.Signatures:WaitForChild("SignatureConfig"))
 local DamageService = require(script.Parent:WaitForChild("WeaponServer"):WaitForChild("DamageService"))

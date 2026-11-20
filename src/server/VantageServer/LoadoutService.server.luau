@@ -30,16 +30,10 @@ local EquipCatalog = require(Vantage:WaitForChild("Equipment"):WaitForChild("Equ
 local Presets = require(Vantage.Weapons:WaitForChild("LoadoutPresets")) -- loadout presets (2026-11-17)
 local EquipBuild = require(Vantage.Equipment:WaitForChild("EquipmentBuild"))
 local EffectCatalog = require(Vantage:WaitForChild("Elimination"):WaitForChild("EffectCatalog"))
-local Remotes = Vantage:WaitForChild("Remotes")
+local Remotes = require(Vantage:WaitForChild("RemotesLib"))
 
 local function remote(name: string): RemoteEvent
-	local r = Remotes:FindFirstChild(name)
-	if not r then
-		r = Instance.new("RemoteEvent")
-		r.Name = name
-		r.Parent = Remotes
-	end
-	return r :: RemoteEvent
+	return Remotes.get(name) :: RemoteEvent
 end
 local SkinEquip = remote("SkinEquip")
 local PresetEvent = remote("LoadoutPreset") -- client -> server: ("Select", index) / ("Set", index, slot, gunId)

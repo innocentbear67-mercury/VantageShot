@@ -29,20 +29,9 @@ local SHARDS = EquipCatalog.Shards or 3 -- 2026-11-17: equipment drops as shards
 local Ordnance = require(script.Parent:WaitForChild("Ordnance"))
 local Unlocks = require(Vantage:WaitForChild("Weapons"):WaitForChild("WeaponUnlocks"))
 
-local remotes = Vantage:WaitForChild("Remotes")
-local Open = remotes:FindFirstChild("CrateOpen")
-if not Open then
-	Open = Instance.new("RemoteFunction")
-	Open.Name = "CrateOpen"
-	Open.Parent = remotes
-end
-
-local Buy = remotes:FindFirstChild("CrateBuy")
-if not Buy then
-	Buy = Instance.new("RemoteFunction")
-	Buy.Name = "CrateBuy"
-	Buy.Parent = remotes
-end
+local remotes = require(Vantage:WaitForChild("RemotesLib"))
+local Open = remotes.get("CrateOpen", "RemoteFunction") :: RemoteFunction
+local Buy = remotes.get("CrateBuy", "RemoteFunction") :: RemoteFunction
 local HttpService = game:GetService("HttpService")
 local MAX_BUY = 99
 

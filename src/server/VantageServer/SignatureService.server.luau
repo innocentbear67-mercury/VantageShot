@@ -17,19 +17,16 @@ local ServerStorage = game:GetService("ServerStorage")
 
 local Vantage = ReplicatedStorage:WaitForChild("Vantage")
 local Catalog = require(Vantage:WaitForChild("Signatures"):WaitForChild("SignatureCatalog"))
-local Remotes = Vantage:WaitForChild("Remotes")
-local function remote(name)
-	local r = Remotes:FindFirstChild(name)
-	if not r then r = Instance.new("RemoteEvent"); r.Name = name; r.Parent = Remotes end
-	return r
+local Remotes = require(Vantage:WaitForChild("RemotesLib"))
+local function remote(name: string): RemoteEvent
+	return Remotes.get(name) :: RemoteEvent
 end
 local EquipEv, BuyEv, Result = remote("SignatureEquip"), remote("SignatureBuy"), remote("SignatureResult")
 -- 2026-11-19: ICHOR FARM (the Well). Remotes.IchorFarm:InvokeServer(action) with action "Claim" | "Upgrade" | "Seen".
 local IchorCfg = require(Vantage:WaitForChild("Ichor"):WaitForChild("IchorConfig"))
 local WELL = IchorCfg.Well
 local Requisition = require(script.Parent:WaitForChild("Requisition"))
-local FarmFn = Remotes:FindFirstChild("IchorFarm")
-if not FarmFn then FarmFn = Instance.new("RemoteFunction"); FarmFn.Name = "IchorFarm"; FarmFn.Parent = Remotes end
+local FarmFn = Remotes.get("IchorFarm", "RemoteFunction") :: RemoteFunction
 
 local store
 do
@@ -39,7 +36,7 @@ end
 local STUDIO = RunService:IsStudio()
 local DEV_LOCKED = {} -- Studio owns every Signature for testing; put ids back here (e.g. Midgard = true) to test the Ichor crate
 
-local data, dirty, loaded, last = {}, {}, {}, {}
+local data, dirty, loaded = {}, {}, {}
 
 local function publish(p)
 	local d = data[p]
@@ -112,9 +109,7 @@ local function owns(p, id)
 end
 
 EquipEv.OnServerEvent:Connect(function(p, id)
-	local now = os.clock()
-	if now - (last[p] or 0) < 0.15 then return end
-	last[p] = now
+	if not Remotes.rate(p, "SigEquip", 0.15) then return end
 	if not Catalog.Valid(id) then return end
 	local d = data[p]
 	if not d then Result:FireClient(p, false, id, "Loading", "Equip") return end
@@ -126,9 +121,7 @@ EquipEv.OnServerEvent:Connect(function(p, id)
 end)
 
 BuyEv.OnServerEvent:Connect(function(p, id)
-	local now = os.clock()
-	if now - (last[p] or 0) < 0.3 then return end
-	last[p] = now
+	if not Remotes.rate(p, "SigBuy", 0.3) then return end
 	if not Catalog.Valid(id) then return end
 	local d = data[p]
 	if not d then Result:FireClient(p, false, id, "Loading", "Buy") return end
@@ -148,13 +141,10 @@ end)
 
 -- 2026-11-20: ICHOR CRATE. Remotes.IchorCrate:InvokeServer() -> { Ok, Id, Left, Ichor } | { Ok = false, Error }
 -- Rolls only Signatures the player doesn't own (never a duplicate), weighted per Signature by tier (Catalog.Crate.Weights).
-local CrateFn = Remotes:FindFirstChild("IchorCrate")
-if not CrateFn then CrateFn = Instance.new("RemoteFunction"); CrateFn.Name = "IchorCrate"; CrateFn.Parent = Remotes end
+local CrateFn = Remotes.get("IchorCrate", "RemoteFunction") :: RemoteFunction
 local crateRng = Random.new()
 CrateFn.OnServerInvoke = function(p)
-	local now0 = os.clock()
-	if now0 - (last[p] or 0) < 0.4 then return { Ok = false, Error = "Slow down" } end
-	last[p] = now0
+	if not Remotes.rate(p, "IchorCrate", 0.4) then return { Ok = false, Error = "Slow down" } end
 	local d = data[p]
 	if not d then return { Ok = false, Error = "Loading" } end
 	local ownedSet = {}
@@ -179,9 +169,7 @@ end
 
 -- ICHOR FARM
 FarmFn.OnServerInvoke = function(p, action)
-	local now0 = os.clock()
-	if now0 - (last[p] or 0) < 0.25 then return { Ok = false, Error = "Slow down" } end
-	last[p] = now0
+	if not Remotes.rate(p, "IchorFarm", 0.25) then return { Ok = false, Error = "Slow down" } end
 	local d = data[p]
 	if not d then return { Ok = false, Error = "Loading" } end
 	local w, now = d.Well, os.time()
@@ -270,7 +258,7 @@ Players.PlayerRemoving:Connect(function(p)
 	local av = AvatarFolder:FindFirstChild("u_" .. p.UserId)
 	if av then av:Destroy() end
 	save(p)
-	data[p], dirty[p], loaded[p], last[p] = nil, nil, nil, nil
+	data[p], dirty[p], loaded[p] = nil, nil, nil
 end)
 task.spawn(function()
 	while true do

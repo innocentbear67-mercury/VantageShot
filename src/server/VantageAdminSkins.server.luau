@@ -20,9 +20,8 @@ local Skins = require(Weapons.Skins)
 local Config = require(Weapons.WeaponConfig)
 local SkinInspects = require(Weapons.SkinInspects)
 
-local remote = ReplicatedStorage:FindFirstChild("VantageAdminSkin") or Instance.new("RemoteEvent")
-remote.Name = "VantageAdminSkin"
-remote.Parent = ReplicatedStorage
+local Remotes = require(ReplicatedStorage.Vantage.RemotesLib)
+local remote = Remotes.get("VantageAdminSkin", "RemoteEvent", ReplicatedStorage) :: RemoteEvent
 
 local function isAdmin(p: Player): boolean
 	if RunService:IsStudio() then

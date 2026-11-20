@@ -10,6 +10,9 @@
 --      runtime server code (src/server, Workspace) referencing
 --      StarterPlayerScripts / Players.LocalPlayer — both are nil/absent on the
 --      server, so any such reference is dead or broken.
+--   R5 inline-remote-factory
+--      src/server code creating RemoteEvent / RemoteFunction instances directly instead of
+--      going through the shared factory (src/shared/Vantage/RemotesLib.luau — Remotes.get)
 -- Today's violations are grandfathered in audit/boundary_violations.txt; only
 -- NEW violations fail the build. String matching is deliberately coarse — it
 -- errs toward flagging; the allowlist keeps the current state honest.
@@ -129,6 +132,18 @@ for _, path in all do
 		scanContent(path, { "ServerScriptService", "ServerStorage" }, "client-reaches-into-server")
 	elseif under(path, RUNTIME_SERVER_ROOTS) and not clientContext[path] then
 		scanContent(path, { "StarterPlayerScripts", ".LocalPlayer" }, "server-uses-client-state")
+	end
+end
+
+-- R5: the factory itself (src/shared/Vantage/RemotesLib.luau), tests/ and audit/ are exempt.
+local function inlineRemoteFactoryExempt(path: string): boolean
+	return path == "src/shared/Vantage/RemotesLib.luau"
+		or startsWith(path, "tests/")
+		or startsWith(path, "audit/")
+end
+for _, path in all do
+	if under(path, { "src/server" }) and not inlineRemoteFactoryExempt(path) then
+		scanContent(path, { 'Instance.new("RemoteEvent")', 'Instance.new("RemoteFunction")' }, "inline-remote-factory")
 	end
 end
 
