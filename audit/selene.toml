@@ -1,0 +1,2 @@
+# Lune-hosted audit scripts (boundary scanner, future checks).
+std = "lune"

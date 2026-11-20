@@ -1,0 +1,33 @@
+{
+  "name": "VantageShot",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedFirst": {
+      "$path": "ReplicatedFirst"
+    },
+    "ReplicatedStorage": {
+      "$path": "src/shared"
+    },
+    "ServerScriptService": {
+      "$path": "src/server"
+    },
+    "ServerStorage": {
+      "$path": "ServerStorage"
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterCharacterScripts": {
+        "$path": "StarterPlayer/StarterCharacterScripts"
+      },
+      "StarterPlayerScripts": {
+        "$path": "src/client"
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "Map_LiveFire": {
+        "$path": "Workspace/Map_LiveFire"
+      }
+    }
+  }
+}

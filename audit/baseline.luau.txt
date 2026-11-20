@@ -1,0 +1,1228 @@
+ServerStorage/CompoundTools/Angular.luau:28:113: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Angular.luau:86:31: TypeError: Key 'variant' not found in table 'A'
+ServerStorage/CompoundTools/Angular.luau:89:13: LocalUnused: Variable 'cap' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Angular.luau:9:81: TypeError: Key 'variant' not found in table 'A'
+ServerStorage/CompoundTools/Arch.luau:10:139: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Base.luau:196:27: TypeError: Argument count mismatch. Function 'C.label' expects 0 arguments, but 8 are specified
+ServerStorage/CompoundTools/Base.luau:235:61: MisleadingAndOr: The and-or expression always evaluates to the second alternative because the first alternative is nil; consider using if-then-else expression instead
+ServerStorage/CompoundTools/Base.luau:265:106: TypeError: Argument count mismatch. Function 'C.label' expects 0 arguments, but 8 are specified
+ServerStorage/CompoundTools/Base.luau:265:31: TypeError: Argument count mismatch. Function 'C.label' expects 0 arguments, but 8 are specified
+ServerStorage/CompoundTools/Base.luau:266:35: TypeError: Argument count mismatch. Function 'C.label' expects 0 arguments, but 8 are specified
+ServerStorage/CompoundTools/Base.luau:266:93: TypeError: Argument count mismatch. Function 'C.label' expects 0 arguments, but 8 are specified
+ServerStorage/CompoundTools/Base.luau:306:27: TypeError: Argument count mismatch. Function 'C.label' expects 0 arguments, but 8 are specified
+ServerStorage/CompoundTools/Base.luau:352:27: TypeError: Argument count mismatch. Function 'C.label' expects 0 arguments, but 8 are specified
+ServerStorage/CompoundTools/Base.luau:371:13: LocalUnused: Variable 'cz' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Base.luau:388:27: TypeError: Argument count mismatch. Function 'C.label' expects 0 arguments, but 8 are specified
+ServerStorage/CompoundTools/Base.luau:426:27: TypeError: Argument count mismatch. Function 'C.label' expects 0 arguments, but 8 are specified
+ServerStorage/CompoundTools/Base.luau:55:88: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:10:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:11:48: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:15:19: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:16:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:18:55: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:19:93: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:24:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:26:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:28:65: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:29:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:31:26: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:33:65: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:34:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:42:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:45:96: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:47:98: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:50:46: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:56:8: LocalUnused: Variable 'm' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Build.luau:58:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:58:92: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:59:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:5:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:60:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:63:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:72:100: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Build.luau:9:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Constructs.luau:10:147: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Constructs.luau:11:109: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Constructs.luau:12:150: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:108:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:112:97: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:119:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:123:8: LocalUnused: Variable 'led' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Dress.luau:129:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:12:56: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:134:24: LocalUnused: Variable 'f' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Dress.luau:135:123: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:13:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:145:121: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:152:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:154:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:155:74: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:157:64: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:160:72: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:161:62: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:166:95: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:170:10: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:176:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:179:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:17:50: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:185:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:187:53: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:28:56: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:34:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:35:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:39:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:40:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:71:11: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:72:116: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:74:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:77:68: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:79:65: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:7:53: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:86:63: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:87:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:92:72: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:93:64: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:94:59: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:95:64: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Dress.luau:99:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Hall.luau:106:17: LocalUnused: Variable 'p' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Hall.luau:10:157: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Hall.luau:11:101: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Hall.luau:145:9: LocalUnused: Variable 'd' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Hall.luau:146:9: LocalUnused: Variable 'ed' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Hall.luau:46:138: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Hall.luau:79:18: FunctionUnused: Function 'inner' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Hall.luau:9:125: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit.luau:56:3: ImplicitReturn: Function 'slab' can implicitly return no values even though there's an explicit return at line 51; add explicit return to silence
+ServerStorage/CompoundTools/Kit2.luau:10:15: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:15:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:16:16: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:17:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:18:15: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:25:26: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:29:104: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:31:80: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:33:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:34:69: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:36:83: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:37:70: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:45:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:4:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:7:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:8:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Kit2.luau:9:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Mass.luau:10:53: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Mass.luau:11:8: LocalUnused: Variable 'cap' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Mass.luau:14:67: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Mass.luau:15:70: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Mass.luau:16:71: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Mass.luau:17:70: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Mass.luau:1:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Mass.luau:32:79: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Mass.luau:33:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Mass.luau:36:78: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Mega.luau:54:11: LocalUnused: Variable 'parts' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Plot.luau:102:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:106:70: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:109:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:10:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:110:81: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:119:19: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:11:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:120:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:123:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:12:49: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:131:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:132:47: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:135:10: LocalUnused: Variable 'sk' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Plot.luau:13:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:142:49: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:144:48: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:147:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:148:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:14:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:150:9: LocalUnused: Variable 'p' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Plot.luau:158:56: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:15:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:160:87: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:161:77: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:167:102: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:16:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:17:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:183:62: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:184:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:188:61: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:18:46: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:191:10: DuplicateFunction: Duplicate function definition: 'M.rail' also defined on line 87
+ServerStorage/CompoundTools/Plot.luau:193:56: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:194:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:197:50: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:19:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:20:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:21:53: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:25:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:29:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:2:11: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:30:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:31:22: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:34:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:35:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:36:22: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:42:70: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:52:81: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:88:52: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:91:98: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:92:88: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:94:8: LocalUnused: Variable 'top' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Plot.luau:95:48: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:97:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:98:73: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Plot.luau:9:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Types.luau:174:11: LocalUnused: Variable 'c' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Types.luau:193:9: LocalUnused: Variable 'tower' is never used; prefix with '_' to silence
+ServerStorage/CompoundTools/Types.luau:24:101: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Types.luau:25:120: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/CompoundTools/Types.luau:38:119: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:103:9: LocalUnused: Variable 'cw' is never used; prefix with '_' to silence
+ServerStorage/Detail.luau:104:83: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:11:66: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:17:82: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:29:17: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:34:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:49:148: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:50:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:54:125: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:55:60: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:59:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:60:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:61:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:65:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:66:120: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:66:126: LocalUnused: Variable 'b' is never used; prefix with '_' to silence
+ServerStorage/Detail.luau:66:47: LocalUnused: Variable 'a' is never used; prefix with '_' to silence
+ServerStorage/Detail.luau:67:106: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:68:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:6:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:6:37: LocalUnused: Variable 'COR' is never used; prefix with '_' to silence
+ServerStorage/Detail.luau:70:48: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:71:8: LocalUnused: Variable 's' is never used; prefix with '_' to silence
+ServerStorage/Detail.luau:75:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:84:9: LocalUnused: Variable 'f1' is never used; prefix with '_' to silence
+ServerStorage/Detail.luau:85:9: LocalUnused: Variable 'f2' is never used; prefix with '_' to silence
+ServerStorage/Detail.luau:86:103: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:87:55: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:8:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Detail.luau:92:114: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/EclipseTools/Greybox.luau:408:8: LocalUnused: Variable 'core' is never used; prefix with '_' to silence
+ServerStorage/EclipseTools/Heightfield.luau:275:10: LocalUnused: Variable 'wx' is never used; prefix with '_' to silence
+ServerStorage/EclipseTools/Heightfield.luau:280:11: LocalUnused: Variable 'wz' is never used; prefix with '_' to silence
+ServerStorage/ExosuitFitW2.luau:97:15: TypeError: Key 'HumanoidRootPart' not found in external type 'Model'
+ServerStorage/ExpansionTools/ArenaKit.luau:158:105: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/ExpansionTools/ArenaKit.luau:217:100: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/ExpansionTools/TerrainGen.luau:11:46: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/ExpansionTools/TerrainGen.luau:128:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/ExpansionTools/TerrainGen.luau:186:11: LocalUnused: Variable 'open' is never used; prefix with '_' to silence
+ServerStorage/ForgeTools/FB.luau:180:10: LocalUnused: Variable 'g' is never used; prefix with '_' to silence
+ServerStorage/ForgeTools/FK.luau:135:8: LocalUnused: Variable 'c' is never used; prefix with '_' to silence
+ServerStorage/ForgeTools/FK.luau:198:10: LocalUnused: Variable 'c' is never used; prefix with '_' to silence
+ServerStorage/ForgeTools/FK.luau:264:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/ForgeTools/FK.luau:66:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Gungnir.luau:13:13: TypeError: Unknown require: game/SignatureVFX
+ServerStorage/IntB.luau:10:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:11:52: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:16:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:17:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:18:52: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:19:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:21:53: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:29:24: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:30:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:31:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:32:30: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:33:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:3:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:41:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:44:98: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:45:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:50:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:52:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:54:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:60:24: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:61:24: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:68:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:6:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:70:110: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:71:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:75:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:76:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:7:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:80:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:80:8: LocalUnused: Variable 'cf' is never used; prefix with '_' to silence
+ServerStorage/IntB.luau:82:66: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntB.luau:8:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntRooms.luau:15:15: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntRooms.luau:17:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntRooms.luau:18:76: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntRooms.luau:19:26: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntRooms.luau:20:76: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntRooms.luau:4:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/IntRooms.luau:9:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:10:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:13:14: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:14:25: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:15:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:23:14: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:24:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:26:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:31:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:35:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:36:50: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:37:76: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:38:6: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:3:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:6:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:6:75: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:8:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/KitPlace.luau:9:83: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:102:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:104:110: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:105:55: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:111:106: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:113:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:114:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:115:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:120:8: LocalUnused: Variable 'fr' is never used; prefix with '_' to silence
+ServerStorage/LFB.luau:121:20: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:122:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:128:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:131:53: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:134:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:136:25: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:13:8: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:141:89: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:144:15: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:148:87: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:152:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:153:24: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:155:54: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:156:48: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:157:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:160:47: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:165:70: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:166:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:18:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:20:53: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:21:124: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:23:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:24:46: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:26:90: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:31:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:33:24: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:35:131: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:40:11: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:43:93: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:44:87: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:47:93: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:48:87: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:4:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:59:87: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:5:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:60:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:63:61: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:67:11: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:71:15: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:73:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:75:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:76:12: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:79:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:83:14: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:89:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:90:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:93:119: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:98:83: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFB.luau:9:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFTerrain.luau:17:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFTerrain.luau:20:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFTerrain.luau:25:49: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFTerrain.luau:28:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFTerrain.luau:32:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFTerrain.luau:35:67: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFTerrain.luau:46:8: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFTerrain.luau:5:62: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LFTerrain.luau:9:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:10:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:11:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:12:17: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:14:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:15:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:16:55: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:19:11: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:24:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:25:74: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:31:11: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:36:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:37:74: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:44:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:46:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:47:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:48:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:53:72: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:54:62: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:58:2: UnreachableCode: Unreachable code (previous statement always returns)
+ServerStorage/LF_LayoutTools/ArenaKit.luau:58:8: LocalUnused: Variable 'n' is never used; prefix with '_' to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:59:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:60:30: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:61:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:65:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/ArenaKit.luau:9:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:10:55: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:11:59: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:12:46: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:13:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:15:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:16:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:17:59: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:18:95: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:19:90: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:21:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:22:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:24:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:25:46: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:27:87: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:28:87: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:32:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:34:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:35:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:37:19: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:39:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:41:66: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:42:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:46:62: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:47:62: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:48:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:4:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:51:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:52:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:53:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:55:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:58:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:61:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:63:30: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:65:56: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:67:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:68:53: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:69:78: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:71:47: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:72:55: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:74:50: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:76:15: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:77:66: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:79:68: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:7:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:80:81: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:86:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:87:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:88:52: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:89:70: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:90:102: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:91:104: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:94:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:96:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:98:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:99:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/BlackoutKit.luau:9:59: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:10:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:12:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:14:59: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:15:73: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:16:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:20:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:22:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:25:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:28:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:29:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:3:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:7:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:8:116: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/CanyonTerrain.luau:8:12: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:12:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:13:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:15:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:18:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:19:22: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:20:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:21:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:22:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:25:22: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:30:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:32:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/FRKit.luau:33:75: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/SightlineCheck.luau:14:114: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/SightlineCheck.luau:16:24: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/SightlineCheck.luau:27:16: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/SightlineCheck.luau:29:15: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/SightlineCheck.luau:7:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/LF_LayoutTools/TerrainFromHeightmap.luau:13:22: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:10:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:11:25: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:13:24: TypeError: Key 'bounds' not found in table 'M'
+ServerStorage/Mass3.luau:13:44: TypeError: Key 'bounds' not found in table 'M'
+ServerStorage/Mass3.luau:13:5: TypeError: Key 'bounds' not found in table 'M'
+ServerStorage/Mass3.luau:13:64: TypeError: Key 'bounds' not found in table 'M'
+ServerStorage/Mass3.luau:13:84: TypeError: Key 'bounds' not found in table 'M'
+ServerStorage/Mass3.luau:23:72: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:25:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:26:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:30:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:32:25: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:33:20: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:35:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:37:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:39:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:39:80: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:40:19: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:41:19: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:43:46: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:44:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:45:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:50:62: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:51:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:53:46: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:55:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:56:47: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:57:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:59:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:5:24: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:60:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:64:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:65:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:76:63: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:77:96: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:80:67: LocalUnused: Variable 'm' is never used; prefix with '_' to silence
+ServerStorage/Mass3.luau:89:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:8:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/Mass3.luau:9:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/SolsticeTools/GoldKit.luau:10:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/SolsticeTools/GoldKit.luau:60:94: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/SolsticeTools/Kit.luau:121:16: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/SolsticeTools/Kit.luau:141:8: LocalUnused: Variable 'so' is never used; prefix with '_' to silence
+ServerStorage/SolsticeTools/Kit.luau:161:3: ImplicitReturn: Function 'stairs' can implicitly return no values even though there's an explicit return at line 143; add explicit return to silence
+ServerStorage/SolsticeTools/Kit.luau:230:20: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/SolsticeTools/Kit.luau:262:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/SolsticeTools/Kit.luau:51:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/SolsticeTools/Kit.luau:58:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/SolsticeTools/Kit.luau:86:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/SolsticeTools/Kit.luau:91:54: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:11:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:12:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:14:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:15:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:16:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:18:67: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:19:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:3:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:5:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:6:20: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:8:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/StairCheek.luau:9:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/HyperKit.luau:102:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/HyperKit.luau:40:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/HyperKit.luau:45:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/HyperKit.luau:46:61: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/HyperKit.luau:54:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/HyperKit.luau:77:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/HyperKit.luau:78:8: LocalUnused: Variable 'tm' is never used; prefix with '_' to silence
+ServerStorage/VantageLobbyTools/Kit.luau:119:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:131:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:141:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:148:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:154:52: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:158:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:159:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:15:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:171:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:176:76: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:180:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:21:16: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:23:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:25:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:26:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:27:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:43:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:53:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:54:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:55:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:59:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:60:30: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:61:19: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:65:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:66:19: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:75:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:76:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:78:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:80:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:82:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:84:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:86:26: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:87:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:89:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:91:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:92:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit.luau:98:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:100:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:115:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:127:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:139:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:146:48: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:151:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:152:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:156:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:36:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:41:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:50:24: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit2.luau:51:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:106:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:126:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:127:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:131:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:135:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:139:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:142:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:143:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:144:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:147:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:148:54: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:153:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:154:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:155:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:156:16: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:157:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:161:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:175:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:176:49: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:177:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:181:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:22:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:23:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:30:16: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:32:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:34:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:36:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:78:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:85:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:86:24: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:87:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:89:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:92:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:95:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageLobbyTools/Kit3.luau:99:47: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools/VantageMap.luau:110:19: TypeError: Other overloads are also not viable: (Color3) -> BrickColor; and ("Alder" | "Artichoke" | "Baby blue" | "Beige" | "Black" | "Black metallic" | "Br. reddish orange" | "Br. yellowish green" | "Br. yellowish orange" | "Brick yellow" | "Bright blue" | "Bright bluish green" | "Bright bluish violet" | "Bright green" | "Bright orange" | "Bright purple" | "Bright red" | "Bright reddish lilac" | "Bright reddish violet" | "Bright violet" | "Bright yellow" | "Bronze" | "Brown" | "Burgundy" | "Burlap" | "Burnt Sienna" | "Buttermilk" | "CGA brown" | "Cadet blue" | "Camo" | ... *TRUNCATED*
+ServerStorage/VantageMapTools/VantageMap.luau:110:34: TypeError: Expected this to be 'number', but got '"Really red" | string'
+ServerStorage/VantageMapTools/VantageMap.luau:263:8: LocalUnused: Variable 'list' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools/VantageMap.luau:341:17: FunctionUnused: Function 'on' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools2/AAudit.luau:10:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:14:61: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:30:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:35:3: ImplicitReturn: Function 'grapple' can implicitly return no values even though there's an explicit return at line 32; add explicit return to silence
+ServerStorage/VantageMapTools2/AAudit.luau:44:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:45:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:54:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:56:77: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:61:6: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:63:206: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:65:68: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:72:16: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:72:87: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit.luau:8:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:103:81: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:119:54: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:16:72: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:23:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:30:50: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:31:6: ImplicitReturn: Function 'gap' can implicitly return no values even though there's an explicit return at line 31; add explicit return to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:37:17: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:45:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:49:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:54:3: ImplicitReturn: Function 'grapple' can implicitly return no values even though there's an explicit return at line 51; add explicit return to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:63:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:64:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:85:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:87:77: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:92:6: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:94:109: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:96:68: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AAudit2.luau:9:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:114:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:117:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:11:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:125:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:12:46: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:15:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:20:6: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:22:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:53:6: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:64:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:7:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:80:69: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADensify.luau:86:11: LocalUnused: Variable 'i' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools2/ADist.luau:10:28: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADist.luau:18:15: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADist.luau:21:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADist.luau:22:6: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADist.luau:25:25: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADist.luau:25:78: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADist.luau:8:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ADist.luau:9:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:10:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:116:18: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:118:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:119:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:132:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:140:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:141:146: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:142:120: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:146:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:147:61: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:156:20: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:18:16: FunctionUnused: Function 'twinPos' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools2/AElev.luau:18:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:26:19: LocalUnused: Variable 'sizeAxisL' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools2/AElev.luau:26:8: LocalUnused: Variable 'sizeAxisT' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools2/AElev.luau:44:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:59:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:77:8: LocalUnused: Variable 'w' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools2/AElev.luau:81:65: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:8:16: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:94:25: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:97:22: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AElev.luau:9:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AGameplay.luau:10:24: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AGameplay.luau:11:77: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AGameplay.luau:18:18: TypeError: Other overloads are also not viable: (Color3) -> BrickColor; and ("Alder" | "Artichoke" | "Baby blue" | "Beige" | "Black" | "Black metallic" | "Br. reddish orange" | "Br. yellowish green" | "Br. yellowish orange" | "Brick yellow" | "Bright blue" | "Bright bluish green" | "Bright bluish violet" | "Bright green" | "Bright orange" | "Bright purple" | "Bright red" | "Bright reddish lilac" | "Bright reddish violet" | "Bright violet" | "Bright yellow" | "Bronze" | "Brown" | "Burgundy" | "Burlap" | "Burnt Sienna" | "Buttermilk" | "CGA brown" | "Cadet blue" | "Camo" | ... *TRUNCATED*
+ServerStorage/VantageMapTools2/AGameplay.luau:18:33: TypeError: Expected this to be 'number', but got '"Really red" | string'
+ServerStorage/VantageMapTools2/AGameplay.luau:19:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AGameplay.luau:23:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AGameplay.luau:24:30: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AGameplay.luau:25:62: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AGameplay.luau:36:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AGameplay.luau:37:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AGameplay.luau:7:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AGameplay.luau:8:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AKit.luau:106:17: TypeError: Key 'wall' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:106:27: TypeError: Key 'body' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:106:35: TypeError: Key 'trim' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:106:45: TypeError: Key 'cap' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:123:101: TypeError: Key 'body' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:126:101: TypeError: Key 'body' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:134:8: LocalUnused: Variable 'S' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools2/AKit.luau:139:59: TypeError: Key 'body' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:14:70: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AKit.luau:150:102: TypeError: Key 'body' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:160:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AKit.luau:161:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AKit.luau:21:64: TypeError: Key 'body' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:23:80: TypeError: Key 'cap' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:24:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AKit.luau:27:113: TypeError: Key 'floor' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:28:112: TypeError: Key 'cap' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:29:101: TypeError: Key 'cap' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:33:17: TypeError: Key 'cap' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:36:50: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AKit.luau:38:50: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AKit.luau:46:58: TypeError: Key 'body' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:47:83: TypeError: Key 'cap' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:48:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AKit.luau:64:8: LocalUnused: Variable 'cuts' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools2/AKit.luau:8:25: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AKit.luau:95:87: TypeError: Key 'body' not found in table 'P'
+ServerStorage/VantageMapTools2/AKit.luau:99:53: TypeError: Key 'floor' not found in table 'P'
+ServerStorage/VantageMapTools2/APad.luau:10:20: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:14:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:18:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:19:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:22:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:23:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:24:25: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:25:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:26:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:31:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:39:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:41:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:43:65: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:44:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:45:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:51:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:52:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:53:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:68:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:6:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:76:147: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:7:16: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:8:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/APad.luau:9:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ARamp.luau:27:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ARamp.luau:31:12: LocalUnused: Variable 'sz' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools2/ARamp.luau:35:141: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ARamp.luau:37:30: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ARamp.luau:9:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AReach.luau:16:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AReach.luau:17:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AReach.luau:18:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AReach.luau:58:68: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AReach.luau:59:55: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AReach.luau:70:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AReach.luau:80:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AReach.luau:89:11: LocalUnused: Variable 'before' is never used; prefix with '_' to silence
+ServerStorage/VantageMapTools2/AReach.luau:89:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AScale.luau:12:28: ImplicitReturn: Function 'skipped' can implicitly return no values even though there's an explicit return at line 12; add explicit return to silence
+ServerStorage/VantageMapTools2/AScale.luau:16:89: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AScale.luau:37:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AScale.luau:39:33: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/AScale.luau:46:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ASlit.luau:20:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ASlit.luau:22:74: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ASlit.luau:29:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ASlit.luau:38:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ASlit.luau:53:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ASlit.luau:54:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ASlit.luau:55:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ASlit.luau:56:50: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ASlit.luau:57:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/ASlit.luau:58:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:12:2: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:60:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:61:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:62:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:64:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:66:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:67:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:68:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:70:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:72:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:73:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/LightingPresets.luau:75:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/MKit.luau:33:78: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageMapTools2/NKit.luau:36:78: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageWeaponTools/ForgeArsenal/Common.luau:102:16: TypeError: Value of type 'BasePart?' could be nil
+ServerStorage/VantageWeaponTools/ForgeArsenal/Common.luau:102:16: TypeError: Value of type 'Model?' could be nil
+ServerStorage/VantageWeaponTools/ForgeArsenal/Common.luau:137:67: TypeError: Expected this to be
+ServerStorage/VantageWeaponTools/ForgeArsenal/Common.luau:138:66: TypeError: Expected this to be
+ServerStorage/VantageWeaponTools/ForgeArsenal/Common.luau:139:66: TypeError: Expected this to be
+ServerStorage/VantageWeaponTools/ForgeArsenal/Common.luau:140:62: TypeError: Expected this to be
+ServerStorage/VantageWeaponTools/ForgeArsenal/Common.luau:148:61: TypeError: Expected this to be 'number', but got 'number?'
+ServerStorage/VantageWeaponTools/ForgeArsenal/Common.luau:149:56: TypeError: Expected this to be 'number', but got 'number?'
+ServerStorage/VantageWeaponTools/SkinConcepts.luau:101:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageWeaponTools/SkinConcepts.luau:183:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageWeaponTools/SkinConcepts.luau:226:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageWeaponTools/SkinConcepts.luau:245:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageWeaponTools/SkinConcepts.luau:253:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VantageWeaponTools/SkinForge.luau:118:8: LocalUnused: Variable 'ok' is never used; prefix with '_' to silence
+ServerStorage/VantageWeaponTools/SkinForge.luau:33:8: LocalUnused: Variable 'back' is never used; prefix with '_' to silence
+ServerStorage/VisScan.luau:10:13: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VisScan.luau:10:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VisScan.luau:12:54: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VisScan.luau:13:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VisScan.luau:14:8: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VisScan.luau:15:15: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/VisScan.luau:16:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+ServerStorage/WeaponAssetKit/Build.luau:26:27: TypeError: Value of type 'Vector3?' could be nil
+ServerStorage/WeaponAssetKit/Build.luau:26:37: TypeError: Value of type 'Vector3?' could be nil
+ServerStorage/WeaponAssetKit/Build.luau:26:47: TypeError: Value of type 'Vector3?' could be nil
+ServerStorage/WeaponAssetKit/Specs.luau:12:7: LocalUnused: Variable 'HANDLE_ROT' is never used; prefix with '_' to silence
+ServerStorage/WeaponAssetKit/Specs.luau:13:7: LocalUnused: Variable 'SUPPORT_ROT' is never used; prefix with '_' to silence
+src/client/LobbyLighting.client.luau:12:73: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyLighting.client.luau:42:60: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyLighting.client.luau:69:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyPresence.client.luau:123:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyPresence.client.luau:151:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyPresence.client.luau:153:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyPresence.client.luau:154:52: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyPresence.client.luau:157:48: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyPresence.client.luau:192:22: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyPresence.client.luau:193:67: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyPresence.client.luau:262:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyPresence.client.luau:267:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/LobbyPresence.client.luau:298:29: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageAbilityClient/init.client.luau:686:16: TypeError: Key 'Tune' not found in table '{ BiteAt: any, EndAt: any, FiredAt: any, HoldAt: any, Target: any, Track: any }'
+src/client/VantageAbilityClient/init.client.luau:686:4: TypeError: Cannot add property 'Tune' to table '{ BiteAt: any, EndAt: any, FiredAt: any, HoldAt: any, Target: any, Track: any }'
+src/client/VantageAbilityClient/init.client.luau:687:4: TypeError: Key 'Tune' not found in table '{ BiteAt: any, EndAt: any, FiredAt: any, HoldAt: any, Target: any, Track: any }'
+src/client/VantageAbilityClient/init.client.luau:696:3: TypeError: Cannot add property 'ReadyAt' to table '{ BiteAt: any, EndAt: any, FiredAt: any, HoldAt: any, Target: any, Track: any }'
+src/client/VantageAbilityClient/init.client.luau:698:3: TypeError: Cannot add property 'ReadyAt' to table '{ BiteAt: any, EndAt: any, FiredAt: any, HoldAt: any, Target: any, Track: any }'
+src/client/VantageAbilityClient/init.client.luau:703:3: TypeError: Cannot add property 'ReadyAt' to table '{ BiteAt: any, EndAt: any, FiredAt: any, HoldAt: any, Target: any, Track: any }'
+src/client/VantageAbilityClient/init.client.luau:705:2: TypeError: Cannot add property 'ChargeTimes' to table '{ BiteAt: any, EndAt: any, FiredAt: any, HoldAt: any, Target: any, Track: any }'
+src/client/VantageAdminPanelClient.client.luau:172:62: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageAdminPanelClient.client.luau:318:8: LocalUnused: Variable 'sendB' is never used; prefix with '_' to silence
+src/client/VantageAircraftClient/AircraftRuntime.luau:243:3: TypeError: Value of type 'Folder?' could be nil
+src/client/VantageAircraftClient/AircraftRuntime.luau:244:3: TypeError: Value of type 'Folder?' could be nil
+src/client/VantageBattleMusic.client.luau:35:2: TypeError: Value of type 'Tween?' could be nil
+src/client/VantageFootsteps.client.luau:164:19: TypeError: Key 'StepCount' not found in table '{  }'
+src/client/VantageFootsteps.client.luau:178:17: TypeError: Key 'At' not found in table '{  }'
+src/client/VantageFootsteps.client.luau:178:53: TypeError: Key 'At' not found in table '{  }'
+src/client/VantageFootsteps.client.luau:181:14: TypeError: Key 'StepCount' not found in table '{  }'
+src/client/VantageFootsteps.client.luau:184:10: TypeError: Key 'StepSpeed' not found in table '{  }'
+src/client/VantageFootsteps.client.luau:186:12: TypeError: Key 'Phase' not found in table '{  }'
+src/client/VantageFootsteps.client.luau:19:7: LocalUnused: Variable 'Debris' is never used; prefix with '_' to silence
+src/client/VantageKillFeed.client.luau:184:38: TypeError: Expected this to be 'number | string', but got 'string?'
+src/client/VantageKillFeed.client.luau:189:34: TypeError: Expected this to be 'number | string', but got 'string?'
+src/client/VantageKillFeed.client.luau:215:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageKillFeed.client.luau:228:30: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageKillFeed.client.luau:232:30: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageKillFeed.client.luau:233:23: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageMatchResults.client.luau:1126:16: FunctionUnused: Function 'artCard' is never used; prefix with '_' to silence
+src/client/VantageMatchResults.client.luau:1519:16: FunctionUnused: Function 'rewardCardOld' is never used; prefix with '_' to silence
+src/client/VantageMatchResults.client.luau:1849:47: TypeError: Key 'OnEnter' not found in table '{| Board: any, CamType: any, Conns: {any}, Disabled: {any}, Effects: {any}, FOV: any, Gui: any, Preview: any |}'
+src/client/VantageMatchResults.client.luau:1850:4: TypeError: Key 'OnEnter' not found in table '{| Board: any, CamType: any, Conns: {any}, Disabled: {any}, Effects: {any}, FOV: any, Gui: any, Preview: any |}'
+src/client/VantageMatchResults.client.luau:1853:10: TypeError: Key 'Board' not found in table '{| Board: any, CamType: any, Conns: {any}, Disabled: {any}, Effects: {any}, FOV: any, Gui: any, Preview: any |}'
+src/client/VantageMatchResults.client.luau:1890:9: LocalUnused: Variable 'bannerKey' is never used; prefix with '_' to silence
+src/client/VantageMenuMusic.client.luau:32:2: TypeError: Value of type 'Tween?' could be nil
+src/client/VantageMovementClient/CameraEffects.luau:132:9: LocalShadow: Variable 'w' shadows previous declaration at line 119
+src/client/VantagePerkClient.client.luau:302:15: TypeError: Cannot call a value of type {BasePart} in union:
+src/client/VantageReqFeed.client.luau:33:7: LocalUnused: Variable 'WHOOSH_ID' is never used; prefix with '_' to silence
+src/client/VantageReqFeed.client.luau:34:7: LocalUnused: Variable 'RATCHET_ID' is never used; prefix with '_' to silence
+src/client/VantageSignatureLab.client.luau:194:14: LocalUnused: Variable 'fwd' is never used; prefix with '_' to silence
+src/client/VantageSkinRange.client.luau:107:13: TypeError: Key 'Guns' not found in external type 'Folder'
+src/client/VantageSupplySurge.client.luau:283:10: LocalUnused: Variable 'tx' is never used; prefix with '_' to silence
+src/client/VantageTutorial.client.luau:1238:128: TypeError: Expected this to be 'boolean', but got 'boolean | string'
+src/client/VantageTutorial.client.luau:285:7: LocalUnused: Variable 'accent' is never used; prefix with '_' to silence
+src/client/VantageTutorial.client.luau:488:17: TypeError: Type boolean cannot be compared with "gold"
+src/client/VantageTutorial.client.luau:521:16: FunctionUnused: Function 'pageHeader' is never used; prefix with '_' to silence
+src/client/VantageTutorial.client.luau:549:16: FunctionUnused: Function 'minPrice' is never used; prefix with '_' to silence
+src/client/VantageTutorial.client.luau:627:90: TypeError: Expected this to be 'boolean', but got 'string'
+src/client/VantageTutorial.client.luau:64:22: LocalUnused: Variable 'BLUE_DK' is never used; prefix with '_' to silence
+src/client/VantageTutorial.client.luau:73:7: LocalUnused: Variable 'BUILDER' is never used; prefix with '_' to silence
+src/client/VantageVehicleClient/VehicleFX.luau:30:3: TypeError: Value of type 'Folder?' could be nil
+src/client/VantageVehicleClient/VehicleFX.luau:31:3: TypeError: Value of type 'Folder?' could be nil
+src/client/VantageVehicleClient/VehicleFX.luau:55:14: TypeError: Cannot call a value of type { [string]: any } in union:
+src/client/VantageVehicleClient/VehicleVisuals.luau:107:15: TypeError: Cannot cast 'Instance' into 'BasePart?' because the types are unrelated
+src/client/VantageVehicleClient/VehicleVisuals.luau:35:3: TypeError: Value of type 'Folder?' could be nil
+src/client/VantageVehicleClient/VehicleVisuals.luau:36:3: TypeError: Value of type 'Folder?' could be nil
+src/client/VantageVehicleClient/init.client.luau:103:14: TypeError: Key 'Seats' not found in external type 'Model'
+src/client/VantageVehicleClient/init.client.luau:36:7: LocalUnused: Variable 'gameSettings' is never used; prefix with '_' to silence
+src/client/VantageVehicleClient/init.client.luau:544:84: TypeError: Value of type 'Model?' could be nil
+src/client/VantageVisorClient.client.luau:1155:5: TypeError: Key 'TipY' not found in table '{ Hands: { H: any, W: any }, Heat: any, Locked: any, Mag: any, Reload: any, Reserve: any, Size: any, Timer: any, Weapon: any }'
+src/client/VantageVisorClient.client.luau:1156:10: TypeError: Key 'TipY' not found in table '{ Hands: { H: any, W: any }, Heat: any, Locked: any, Mag: any, Reload: any, Reserve: any, Size: any, Timer: any, Weapon: any }'
+src/client/VantageVisorClient.client.luau:1168:3: TypeError: Cannot add property 'Tune' to table '{ Hands: { H: any, W: any }, Heat: any, Locked: any, Mag: any, Reload: any, Reserve: any, Size: any, Timer: any, Weapon: any }'
+src/client/VantageVisorClient.client.luau:1170:3: TypeError: Cannot add property 'Tune' to table '{ Hands: { H: any, W: any }, Heat: any, Locked: any, Mag: any, Reload: any, Reserve: any, Size: any, Timer: any, Weapon: any }'
+src/client/VantageVisorClient.client.luau:1276:16: FunctionUnused: Function 'runScan' is never used; prefix with '_' to silence
+src/client/VantageVisorClient.client.luau:1755:24: TypeError: Type "Activating" cannot be compared with "Cooldown"
+src/client/VantageVisorClient.client.luau:207:26: TypeError: Key 'Booting' not found in table 'hc'
+src/client/VantageVisorClient.client.luau:207:5: TypeError: Key 'Booting' not found in table 'hc'
+src/client/VantageVisorClient.client.luau:209:9: TypeError: Key 'Shutting' not found in table 'hc'
+src/client/VantageVisorClient.client.luau:210:36: TypeError: Key 'Shutting' not found in table 'hc'
+src/client/VantageVisorClient.client.luau:2188:17: TypeError: Key 'ADS' not found in table '{ Hands: { H: any, W: any }, Heat: any, Locked: any, Mag: any, Reload: any, Reserve: any, Size: any, Timer: any, Weapon: any }'
+src/client/VantageVisorClient.client.luau:257:7: LocalUnused: Variable 'chevrons' is never used; prefix with '_' to silence
+src/client/VantageVisorClient.client.luau:40:7: ImportUnused: Import 'Honeycomb' is never used; prefix with '_' to silence
+src/client/VantageVisorClient.client.luau:41:7: ImportUnused: Import 'HexGrid' is never used; prefix with '_' to silence
+src/client/VantageVisorClient.client.luau:469:7: LocalUnused: Variable 'hdgBox' is never used; prefix with '_' to silence
+src/client/VantageVisorClient.client.luau:544:7: LocalUnused: Variable 'blueTab' is never used; prefix with '_' to silence
+src/client/VantageVisorClient.client.luau:545:7: LocalUnused: Variable 'redTab' is never used; prefix with '_' to silence
+src/client/VantageVisorClient.client.luau:56:7: LocalUnused: Variable 'MUTED' is never used; prefix with '_' to silence
+src/client/VantageVisorClient.client.luau:620:7: LocalUnused: Variable 'radarDisc' is never used; prefix with '_' to silence
+src/client/VantageVisorClient.client.luau:770:2: TypeError: This function does not take self. Did you mean to use a dot instead of a colon?
+src/client/VantageVisorClient.client.luau:992:3: TypeError: Value of type 'Sound?' could be nil
+src/client/VantageVisorClient.client.luau:993:9: TypeError: Expected this to be 'Instance', but got 'Sound?'
+src/client/VantageWeaponClient/AimAssist.luau:172:10: LocalUnused: Variable 'to' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Armory/init.luau:165:27: TypeError: Argument count mismatch. Function 'ArmourBay.new' expects 0 arguments, but 3 are specified
+src/client/VantageWeaponClient/Armory/init.luau:231:17: TypeError: Type "Weapons" cannot be compared with "Armour"
+src/client/VantageWeaponClient/CoreOverloadFX.luau:78:16: TypeError: Cannot cast 'Instance' into 'BasePart?' because the types are unrelated
+src/client/VantageWeaponClient/ElimFX/Effects.luau:10:16: TypeError: Cyclic dependencies are only supported if all modules in the cycle use 'export' syntax. The following modules do not use 'export': /Users/wangkundi/VantageShot/src/client/VantageWeaponClient/ElimFX/init.luau [game/StarterPlayer/StarterPlayerScripts/VantageWeaponClient/ElimFX], /Users/wangkundi/VantageShot/src/client/VantageWeaponClient/ElimFX/Effects.luau [game/StarterPlayer/StarterPlayerScripts/VantageWeaponClient/ElimFX/Effects]
+src/client/VantageWeaponClient/ElimFX/init.luau:1014:23: TypeError: Cyclic dependencies are only supported if all modules in the cycle use 'export' syntax. The following modules do not use 'export': /Users/wangkundi/VantageShot/src/client/VantageWeaponClient/ElimFX/Effects.luau [game/StarterPlayer/StarterPlayerScripts/VantageWeaponClient/ElimFX/Effects], /Users/wangkundi/VantageShot/src/client/VantageWeaponClient/ElimFX/init.luau [game/StarterPlayer/StarterPlayerScripts/VantageWeaponClient/ElimFX]
+src/client/VantageWeaponClient/ElimFX/init.luau:207:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/ElimFX/init.luau:406:63: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/ElimFX/init.luau:421:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/ElimFX/init.luau:469:2: TypeError: Expected this to be
+src/client/VantageWeaponClient/ElimFX/init.luau:470:61: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/ElimFX/init.luau:641:63: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/ElimFX/init.luau:87:3: TypeError: Value of type 'ColorCorrectionEffect?' could be nil
+src/client/VantageWeaponClient/ElimFX/init.luau:88:3: TypeError: Value of type 'ColorCorrectionEffect?' could be nil
+src/client/VantageWeaponClient/EliminationFX/init.luau:122:16: FunctionUnused: Function 'playSound' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/EliminationFX/init.luau:144:5: TypeError: Key 'CentreConfirm' not found in table '{ Announcer: { Cooldown: any, Enabled: any, Lines: { Dominating: { Glow: any, Icon: any, Id: any, Priority: any, Text: any, Tier: any }, DoubleKill: { Glow: any, Icon: any, Id: any, Priority: any, Text: any, Tier: any }, Eliminated: { Glow: any, Icon: any, Id: any, Priority: any, Text: any, Tier: any }, Fatality: { Glow: any, Icon: any, Id: any, Priority: any, Text: any, Tier: any }, Headshot: { Glow: any, Icon: any, Id: any, Priority: any, Text: any, Tier: any }, MultiKill: { Glow: any, Icon: any... *TRUNCATED*'
+src/client/VantageWeaponClient/EliminationFX/init.luau:149:3: ImplicitReturn: Function 'showConfirm' can implicitly return no values even though there's an explicit return at line 145; add explicit return to silence
+src/client/VantageWeaponClient/EliminationFX/init.luau:289:16: TypeError: Cannot call a value of type { Clean: any, Double: any, HeadKill: any, Kill: any, Legendary: any, Mythic: any, Premium: any, Stylized: any, Triple: any } in union:
+src/client/VantageWeaponClient/GrenadeClient.luau:244:4: TypeError: Cannot add property 'Tune' to table '{ HoldAt: any, Length: any, Release: any, Start: any }'
+src/client/VantageWeaponClient/GrenadeClient.luau:33:2: TypeError: Cannot add property 'ReadyAt' to table '{ HoldAt: any, Length: any, Release: any, Start: any }'
+src/client/VantageWeaponClient/HitFeedback.luau:19:7: LocalUnused: Variable 'Debris' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/HitFeedback.luau:37:7: LocalUnused: Variable 'SPARK_ID' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Hud.luau:35:77: LocalUnused: Variable 'KillFeedRemote' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Hud.luau:662:9: LocalShadow: Variable 'cap' shadows previous declaration at line 569
+src/client/VantageWeaponClient/Hud.luau:697:9: LocalShadow: Variable 'btn' shadows previous declaration at line 562
+src/client/VantageWeaponClient/Hud.luau:77:7: LocalUnused: Variable 'TILE_IMG' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/HudOptics.luau:204:9: LocalUnused: Variable 'cross' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/KnifeViewmodel.luau:76:15: TypeError: Value of type 'Instance?' could be nil
+src/client/VantageWeaponClient/Lobby/CasesHS.luau:60:7: ImportUnused: Import 'OrdCfg' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/CrateUX.luau:215:5: TypeError: Key 'Shake' not found in table '{| Apply: (any, any) -> (...any), Button: any, Disabled: any, Pulse: (any) -> (...any), Quiet: any, Selected: any, SetDisabled: (any, any, any) -> (...any), SetHome: (any, any) -> (...any), SetSelected: (any, any) -> (...any), Shake: (any) -> (...any) |}'
+src/client/VantageWeaponClient/Lobby/FarmHS.luau:392:116: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmHS.luau:435:36: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmHS.luau:436:125: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmHS.luau:537:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1025:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1092:53: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1128:69: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1130:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1140:8: LocalUnused: Variable 'hipH' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1146:23: LocalUnused: Variable 'right' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1237:20: LocalShadow: Variable 'right' shadows previous declaration at line 1224
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1373:86: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1453:56: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1617:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1634:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1635:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:1636:35: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:371:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:51:39: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:52:41: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:53:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:586:79: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/FarmStage.luau:607:126: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/HS.luau:185:27: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/HS.luau:193:20: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/LoadoutHS.luau:156:40: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/LoadoutHS.luau:174:16: FunctionUnused: Function 'sigSpin' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/LoadoutHS.luau:432:57: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/LoadoutHS.luau:435:72: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/LoadoutHS.luau:768:10: LocalUnused: Variable 'band' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/LoadoutHS.luau:972:8: LocalUnused: Variable 'cur' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/LoadoutScreen.luau:410:69: TypeError: Key 'Selected' not found in table '{| Art: any, Btn: any, Chroma: any, Embers: {| [any]: any |}, Glow: any, Godly: any, Neon: any, Owned: any, Ring: any, RingGrad: any, Sheen: any, Skin: any, Stars: {| [any]: any |}, Tick: any, View: any |}'
+src/client/VantageWeaponClient/Lobby/LobbyKit.luau:164:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/LobbyKit.luau:165:34: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/LobbyKit.luau:168:8: LocalUnused: Variable 'shell' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/LobbySkin.luau:48:3: TypeError: Expected type table, got 'TextBox | TextButton | TextLabel' instead
+src/client/VantageWeaponClient/Lobby/LobbySkin.luau:52:3: TypeError: Expected type table, got 'TextBox | TextButton | TextLabel' instead
+src/client/VantageWeaponClient/Lobby/LobbySkin.luau:59:5: TypeError: Expected type table, got 'TextBox | TextButton | TextLabel' instead
+src/client/VantageWeaponClient/Lobby/MasteryHS.luau:704:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/ModesHS.luau:597:12: LocalShadow: Variable 'ox' shadows previous declaration at line 523
+src/client/VantageWeaponClient/Lobby/Pages.luau:16:7: ImportUnused: Import 'Assets' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/Pages.luau:251:10: LocalUnused: Variable 'cell' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/PrestigeFX.luau:148:54: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/PrestigeFX.luau:65:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/ProfileHS.luau:49:7: LocalUnused: Variable 'REQ_ICON' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/ProfileHS.luau:83:16: FunctionUnused: Function 'spaced' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/ScreenKit.luau:16:7: LocalUnused: Variable 'TweenService' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/SeasonPassHS.luau:205:16: FunctionUnused: Function 'bar' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/SeasonPassHS.luau:283:2: ImplicitReturn: Function '_icon' can implicitly return no values even though there's an explicit return at line 268; add explicit return to silence
+src/client/VantageWeaponClient/Lobby/SeasonPassHS2.luau:358:43: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/SeasonPassHS2.luau:546:8: LocalUnused: Variable 'title' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/SeasonPassHS2.luau:968:9: LocalShadow: Variable 'a' shadows previous declaration at line 912
+src/client/VantageWeaponClient/Lobby/ShopHS.luau:418:9: LocalUnused: Variable 'spots' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/ShopHS.luau:615:37: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/ShopHS.luau:641:61: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/ShopHS.luau:776:9: LocalShadow: Variable 'glow' shadows previous declaration at line 714
+src/client/VantageWeaponClient/Lobby/ShopHS.luau:942:69: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/ShopHS.luau:961:92: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/Showcase.luau:362:8: LocalShadow: Variable 'tint' shadows previous declaration at line 357
+src/client/VantageWeaponClient/Lobby/SignatureReveal.luau:219:48: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/UnboxHS.luau:1013:54: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/UnboxHS.luau:1201:52: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/UnboxHS.luau:617:52: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/UnboxHS.luau:729:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/UnboxHS.luau:87:8: LocalUnused: Variable 'slot' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/UnboxHS.luau:92:16: FunctionUnused: Function 'chroma' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/UnboxHS.luau:93:16: FunctionUnused: Function 'hex' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Lobby/UnboxHS.luau:981:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/UnboxHS.luau:988:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/Lobby/init.luau:1284:9: LocalShadow: Variable 'okS' shadows previous declaration at line 1204
+src/client/VantageWeaponClient/Lobby/init.luau:44:7: ImportUnused: Import 'Assets' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/MatchHud.luau:105:8: LocalUnused: Variable 'track' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/OperativeIntro.luau:1037:3: TypeError: Cannot add property 'Suspended' to table 'ThirdPersonRig'
+src/client/VantageWeaponClient/OperativeIntro.luau:1129:3: TypeError: Cannot add property 'Suspended' to table 'ThirdPersonRig'
+src/client/VantageWeaponClient/OperativeIntro.luau:622:2: TypeError: Cannot add property 'Suspended' to table 'ThirdPersonRig'
+src/client/VantageWeaponClient/OperativeIntro.luau:78:16: FunctionUnused: Function 'bump' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/OperativeIntro.luau:848:9: LocalUnused: Variable 'u' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/OperativeIntro.luau:927:18: TypeError: Key 'Thrust' not found in table '{|  |}'
+src/client/VantageWeaponClient/OperativeIntro.luau:939:17: TypeError: Key 'Wrist' not found in table '{|  |}'
+src/client/VantageWeaponClient/ShieldFX.luau:92:9: TypeError: Cannot cast 'Instance' into 'BasePart?' because the types are unrelated
+src/client/VantageWeaponClient/SignatureClient.luau:42:7: LocalUnused: Variable 'DEV_ORDER' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/SignatureClient.luau:461:76: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/SignatureClient.luau:672:32: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/SignatureClient.luau:684:44: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/client/VantageWeaponClient/TeamOutlines.luau:235:3: TypeError: Expected this to be 'string?', but got 'unknown?'
+src/client/VantageWeaponClient/ThirdPersonRig.luau:258:5: TypeError: Key 'Suspended' not found in table 'ThirdPersonRig'
+src/client/VantageWeaponClient/Viewmodel.luau:108:16: FunctionUnused: Function 'reachableShoulder' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Viewmodel.luau:172:12: TypeError: Key 'Tune' not found in table '{ BiteAt: any, EndAt: any, FiredAt: any, HoldAt: any, Target: any, Track: any }'
+src/client/VantageWeaponClient/Viewmodel.luau:569:25: TypeError: Key 'StepCount' not found in table '{  }'
+src/client/VantageWeaponClient/Viewmodel.luau:569:3: TypeError: Cannot add property 'StepCount' to table '{  }'
+src/client/VantageWeaponClient/Viewmodel.luau:570:3: TypeError: Cannot add property 'StepAt' to table '{  }'
+src/client/VantageWeaponClient/Viewmodel.luau:571:3: TypeError: Cannot add property 'StepSpeed' to table '{  }'
+src/client/VantageWeaponClient/Viewmodel.luau:572:3: TypeError: Cannot add property 'StepFoot' to table '{  }'
+src/client/VantageWeaponClient/Viewmodel.luau:575:18: TypeError: Cannot add property 'Weight' to table '{  }'
+src/client/VantageWeaponClient/Viewmodel.luau:575:2: TypeError: Cannot add property 'Phase' to table '{  }'
+src/client/VantageWeaponClient/Viewmodel.luau:575:35: TypeError: Cannot add property 'Sprint' to table '{  }'
+src/client/VantageWeaponClient/Viewmodel.luau:575:52: TypeError: Cannot add property 'At' to table '{  }'
+src/client/VantageWeaponClient/Viewmodel.luau:689:8: LocalShadow: Variable 'se' shadows previous declaration at line 657
+src/client/VantageWeaponClient/Viewmodel.luau:830:14: TypeError: Key 'Tune' not found in table '{ Hands: { H: any, W: any }, Heat: any, Locked: any, Mag: any, Reload: any, Reserve: any, Size: any, Timer: any, Weapon: any }'
+src/client/VantageWeaponClient/Viewmodel.luau:831:19: LocalShadow: Variable 'target' shadows previous declaration at line 519
+src/client/VantageWeaponClient/Viewmodel.luau:845:18: TypeError: Key 'Tune' not found in table '{ HoldAt: any, Length: any, Release: any, Start: any }'
+src/client/VantageWeaponClient/Viewmodel.luau:850:10: LocalShadow: Variable 'target' shadows previous declaration at line 519
+src/client/VantageWeaponClient/Viewmodel.luau:85:7: LocalUnused: Variable 'POLE' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/Viewmodel.luau:864:10: LocalShadow: Variable 'A' shadows previous declaration at line 511
+src/client/VantageWeaponClient/Viewmodel.luau:907:10: LocalShadow: Variable 'target' shadows previous declaration at line 519
+src/client/VantageWeaponClient/Viewmodel.luau:927:10: LocalShadow: Variable 'A' shadows previous declaration at line 511
+src/client/VantageWeaponClient/Viewmodel.luau:937:10: LocalShadow: Variable 'sp' shadows previous declaration at line 658
+src/client/VantageWeaponClient/Viewmodel.luau:938:4: TypeError: Cannot add property 'TipY' to table '{ Hands: { H: any, W: any }, Heat: any, Locked: any, Mag: any, Reload: any, Reserve: any, Size: any, Timer: any, Weapon: any }'
+src/client/VantageWeaponClient/Viewmodel.luau:940:4: TypeError: Cannot add property 'TipY' to table '{ Hands: { H: any, W: any }, Heat: any, Locked: any, Mag: any, Reload: any, Reserve: any, Size: any, Timer: any, Weapon: any }'
+src/client/VantageWeaponClient/Viewmodel.luau:946:23: TypeError: Key 'Tune' not found in table '{ HoldAt: any, Length: any, Release: any, Start: any }'
+src/client/VantageWeaponClient/Viewmodel.luau:946:44: TypeError: Key 'Tune' not found in table '{ HoldAt: any, Length: any, Release: any, Start: any }'
+src/client/VantageWeaponClient/Viewmodel.luau:963:8: LocalShadow: Variable 'la' shadows previous declaration at line 538
+src/client/VantageWeaponClient/ViewmodelArms.luau:13:7: LocalUnused: Variable 'Workspace' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/WeaponController.luau:319:7: TypeError: Type "Ready" cannot be compared with "Reloading"
+src/client/VantageWeaponClient/WeaponController.luau:794:8: LocalUnused: Variable 'R' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/WeaponController.luau:820:2: TypeError: Cannot add property 'ADS' to table '{ Hands: { H: any, W: any }, Heat: any, Locked: any, Mag: any, Reload: any, Reserve: any, Size: any, Timer: any, Weapon: any }'
+src/client/VantageWeaponClient/WeaponController.luau:870:35: TypeError: Type "ReloadDenied" cannot be compared with "Reloaded"
+src/client/VantageWeaponClient/WeaponController.luau:873:5: TypeError: Type "ReloadDenied" | never cannot be compared with "Reloaded"
+src/client/VantageWeaponClient/init.client.luau:257:27: TypeError: Expected this to be 'Model', but got 'Model?'
+src/server/DevChatCommands.server.luau:85:59: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageAdminSkins.server.luau:34:25: DeprecatedApi: Member 'GetRankInGroup' is deprecated, use 'Player:GetRankInGroupAsync' instead
+src/server/VantageControl/VantageControlClient.client.luau:29:13: TypeError: Unknown require: game/ReplicatedStorage/Vantage/VantageControlConfig
+src/server/VantageControl/VantageControlClient.client.luau:476:3: ImplicitReturn: Function 'request' can implicitly return no values even though there's an explicit return at line 460; add explicit return to silence
+src/server/VantageControl/init.server.luau:49:13: TypeError: Unknown require: game/ReplicatedStorage/Vantage/VantageControlConfig
+src/server/VantageServer/AircraftService.luau:72:17: TypeError: Expected this to be 'Player', but got 'Player?'
+src/server/VantageServer/CombatBot.server.luau:82:15: TypeError: Key 'Head' not found in external type 'Model'
+src/server/VantageServer/CombatBot.server.luau:83:13: TypeError: Key 'Head' not found in external type 'Model'
+src/server/VantageServer/CombatBot.server.luau:83:13: TypeError: Value of type 'Model?' could be nil
+src/server/VantageServer/CrateService.server.luau:261:34: TypeError: Expected this to be 'number?', but got 'unknown?'
+src/server/VantageServer/EquipmentPerkServer.server.luau:143:5: TypeError: Value of type 'Vector3?' could be nil
+src/server/VantageServer/EquipmentPerkServer.server.luau:146:8: TypeError: Value of type 'Vector3?' could be nil
+src/server/VantageServer/LobbyBoards.server.luau:286:9: LocalUnused: Variable 'look' is never used; prefix with '_' to silence
+src/server/VantageServer/LobbyBoards.server.luau:298:46: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageServer/LobbyService.server.luau:78:3: DeprecatedApi: Member 'LoadCharacter' is deprecated, use 'Player:LoadCharacterAsync' instead
+src/server/VantageServer/LobbyStats.server.luau:108:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageServer/MatchService.server.luau:434:3: DeprecatedApi: Member 'LoadCharacter' is deprecated, use 'Player:LoadCharacterAsync' instead
+src/server/VantageServer/MatchService.server.luau:44:7: ImportUnused: Import 'Ledger' is never used; prefix with '_' to silence
+src/server/VantageServer/MatchService.server.luau:619:57: TypeError: Key 'Overtime' not found in table '{| Departed: {|  |}, Id: any, LiveOn: any, Mode: any, Overtime: any, Pending: {|  |}, Players: {| [any]: any |}, Ready: {|  |}, Started: {| Blue: any, Red: any |}, Zones: {|  |} |}'
+src/server/VantageServer/MatchService.server.luau:640:6: TypeError: Key 'Overtime' not found in table '{| Departed: {|  |}, Id: any, LiveOn: any, Mode: any, Overtime: any, Pending: {|  |}, Players: {| [any]: any |}, Ready: {|  |}, Started: {| Blue: any, Red: any |}, Zones: {|  |} |}'
+src/server/VantageServer/MatchService.server.luau:646:68: TypeError: Key 'Overtime' not found in table '{| Departed: {|  |}, Id: any, LiveOn: any, Mode: any, Overtime: any, Pending: {|  |}, Players: {| [any]: any |}, Ready: {|  |}, Started: {| Blue: any, Red: any |}, Zones: {|  |} |}'
+src/server/VantageServer/ProfileService.server.luau:176:9: LocalShadow: Variable 'level' shadows previous declaration at line 172
+src/server/VantageServer/Progression.luau:358:26: TypeError: Expected this to be 'number', but got 'number?'
+src/server/VantageServer/Progression_2.luau:358:26: TypeError: Expected this to be 'number', but got 'number?'
+src/server/VantageServer/SignatureServer.server.luau:125:16: FunctionUnused: Function 'groundPath' is never used; prefix with '_' to silence
+src/server/VantageServer/SignatureServer.server.luau:198:16: FunctionUnused: Function 'aimGround' is never used; prefix with '_' to silence
+src/server/VantageServer/SignatureServer.server.luau:340:2: ImplicitReturn: Function can implicitly return no values even though there's an explicit return at line 300; add explicit return to silence
+src/server/VantageServer/SignatureServer.server.luau:371:2: ImplicitReturn: Function can implicitly return no values even though there's an explicit return at line 348; add explicit return to silence
+src/server/VantageServer/SignatureServer.server.luau:376:8: LocalUnused: Variable 'char' is never used; prefix with '_' to silence
+src/server/VantageServer/SignatureServer.server.luau:402:2: ImplicitReturn: Function can implicitly return no values even though there's an explicit return at line 379; add explicit return to silence
+src/server/VantageServer/SignatureServer.server.luau:428:2: ImplicitReturn: Function can implicitly return no values even though there's an explicit return at line 410; add explicit return to silence
+src/server/VantageServer/SignatureServer.server.luau:463:2: ImplicitReturn: Function can implicitly return no values even though there's an explicit return at line 436; add explicit return to silence
+src/server/VantageServer/SignatureServer.server.luau:514:2: ImplicitReturn: Function can implicitly return no values even though there's an explicit return at line 471; add explicit return to silence
+src/server/VantageServer/SignatureServer.server.luau:53:9: TypeError: Cannot cast 'Instance' into 'BasePart?' because the types are unrelated
+src/server/VantageServer/SignatureServer.server.luau:551:2: ImplicitReturn: Function can implicitly return no values even though there's an explicit return at line 522; add explicit return to silence
+src/server/VantageServer/SignatureServer.server.luau:582:2: ImplicitReturn: Function can implicitly return no values even though there's an explicit return at line 559; add explicit return to silence
+src/server/VantageServer/SignatureServer.server.luau:609:2: ImplicitReturn: Function can implicitly return no values even though there's an explicit return at line 589; add explicit return to silence
+src/server/VantageServer/SignatureServer.server.luau:694:2: ImplicitReturn: Function 'cast' can implicitly return no values even though there's an explicit return at line 678; add explicit return to silence
+src/server/VantageServer/SignatureService.server.luau:120:68: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageServer/SignatureService.server.luau:121:80: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageServer/SignatureService.server.luau:134:66: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageServer/SignatureService.server.luau:135:78: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageServer/SignatureService.server.luau:136:130: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageServer/SignatureService.server.luau:139:81: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageServer/SignatureService.server.luau:171:30: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageServer/SpawnShieldServer.server.luau:11:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/server/VantageServer/SquadBots.server.luau:357:8: LocalUnused: Variable 'id' is never used; prefix with '_' to silence
+src/server/VantageServer/TeamSpawnServer.server.luau:34:3: DeprecatedApi: Member 'LoadCharacter' is deprecated, use 'Player:LoadCharacterAsync' instead
+src/server/VantageServer/TutorialService.server.luau:278:3: DeprecatedApi: Member 'LoadCharacter' is deprecated, use 'Player:LoadCharacterAsync' instead
+src/server/VantageServer/TutorialService.server.luau:322:17: TypeError: Cannot cast 'Instance' into 'BasePart?' because the types are unrelated
+src/server/VantageServer/TutorialService.server.luau:426:4: DeprecatedApi: Member 'LoadCharacter' is deprecated, use 'Player:LoadCharacterAsync' instead
+src/server/VantageServer/VehicleService.luau:428:17: TypeError: Key 'Seats' not found in external type 'Model'
+src/server/VantageServer/VehicleService.luau:756:12: LocalUnused: Variable 'result' is never used; prefix with '_' to silence
+src/server/VantageServer/VehicleService.luau:775:3: TypeError: Key 'BotRelease' not found in table 'Service'
+src/server/VantageServer/WeaponServer/DamageService.luau:154:15: TypeError: Cannot cast 'Instance' into 'BasePart?' because the types are unrelated
+src/server/VantageServer/WeaponServer/DamageService.luau:53:16: TypeError: Cannot call a value of type {{ Damage: number, Last: number }} in union:
+src/server/VantageServer/WeaponServer/DamageService.luau:88:2: TypeError: Expected this to be 'string?', but got 'unknown?'
+src/server/VantageServer/WeaponServer/EliminationService.luau:124:22: TypeError: Expected this to be 'number', but got 'number | unknown'
+src/server/VantageServer/WeaponServer/EliminationService.luau:131:2: TypeError: Expected this to be 'string?', but got 'unknown'
+src/server/VantageServer/WeaponServer/ShieldService.luau:121:2: TypeError: Expected this to be 'number', but got 'number | unknown'
+src/server/VantageServer/WeaponServer/ShieldService.luau:35:7: LocalUnused: Variable 'Players' is never used; prefix with '_' to silence
+src/server/VantageServer/WeaponServer/WeaponService.luau:1050:3: ImplicitReturn: Function 'onAction' can implicitly return no values even though there's an explicit return at line 1040; add explicit return to silence
+src/shared/Vantage/Abilities/AbilityConfig.luau:87:3: TypeError: Table type '{| Id: string, Speed: number, StartAt: number, Volume: number |}' not compatible with type '{| Id: string, PitchRise: {number}, Speed: number, StartAt: number, Volume: number |}' because the former is missing field 'PitchRise'
+src/shared/Vantage/Abilities/AbilityFX.luau:25:3: TypeError: Value of type 'Folder?' could be nil
+src/shared/Vantage/Abilities/AbilityFX.luau:268:12: TypeError: Key 'PhaseDash' not found in table '{ Grapple: { ActiveTime: number, ArriveDistance: number, ArriveHop: number, ArriveKeep: number, BrakeBase: number, BrakePerStud: number, Cooldown: number, ExemptTail: number, FloatLift: number, FloatTime: number, Icon: string, KeyLabel: string, Keys: {Enum.KeyCode}, LeashSlack: number, MaxSpeed: number, MaxTime: number, MinRange: number, MissCooldown: number, MomentumTime: number, Name: string, ProjectileSpeed: number, PullAccel: number, Range: number, ReleaseBoost: number, ReleaseMaxSpeed: number... *TRUNCATED*'
+src/shared/Vantage/Abilities/AbilityFX.luau:26:3: TypeError: Value of type 'Folder?' could be nil
+src/shared/Vantage/Abilities/AbilityFX.luau:428:12: TypeError: Key 'PulseScan' not found in table '{ Grapple: { ActiveTime: number, ArriveDistance: number, ArriveHop: number, ArriveKeep: number, BrakeBase: number, BrakePerStud: number, Cooldown: number, ExemptTail: number, FloatLift: number, FloatTime: number, Icon: string, KeyLabel: string, Keys: {Enum.KeyCode}, LeashSlack: number, MaxSpeed: number, MaxTime: number, MinRange: number, MissCooldown: number, MomentumTime: number, Name: string, ProjectileSpeed: number, PullAccel: number, Range: number, ReleaseBoost: number, ReleaseMaxSpeed: number... *TRUNCATED*'
+src/shared/Vantage/Abilities/AbilityFX.luau:469:12: TypeError: Key 'PulseScan' not found in table '{ Grapple: { ActiveTime: number, ArriveDistance: number, ArriveHop: number, ArriveKeep: number, BrakeBase: number, BrakePerStud: number, Cooldown: number, ExemptTail: number, FloatLift: number, FloatTime: number, Icon: string, KeyLabel: string, Keys: {Enum.KeyCode}, LeashSlack: number, MaxSpeed: number, MaxTime: number, MinRange: number, MissCooldown: number, MomentumTime: number, Name: string, ProjectileSpeed: number, PullAccel: number, Range: number, ReleaseBoost: number, ReleaseMaxSpeed: number... *TRUNCATED*'
+src/shared/Vantage/Abilities/AbilityFX.luau:9:7: LocalUnused: Variable 'Players' is never used; prefix with '_' to silence
+src/shared/Vantage/Crates/CrateConfig.luau:178:5: LocalShadow: Variable 'id' shadows previous declaration at line 12
+src/shared/Vantage/Crates/CrateConfig.luau:201:10: DuplicateFunction: Duplicate function definition: 'C.Pool' also defined on line 126
+src/shared/Vantage/Crates/CrateConfig.luau:207:10: DuplicateFunction: Duplicate function definition: 'C.Count' also defined on line 141
+src/shared/Vantage/Crates/CrateConfig.luau:267:10: DuplicateFunction: Duplicate function definition: 'C.Pool' also defined on line 126
+src/shared/Vantage/Equipment/EquipmentBuild.luau:176:21: TypeError: Cannot call a value of the union type:
+src/shared/Vantage/Equipment/EquipmentBuild.luau:182:45: TypeError: Value of type 'Folder?' could be nil
+src/shared/Vantage/Equipment/EquipmentBuild.luau:257:48: TypeError: Value of type 'Folder?' could be nil
+src/shared/Vantage/Equipment/EquipmentStatsUI.luau:138:26: TypeError: Expected this to be 'string', but got 'string?'
+src/shared/Vantage/MapLighting.luau:66:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/MapLighting.luau:67:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/MapLighting.luau:68:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/MapLighting.luau:70:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/MapLighting.luau:72:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/MapLighting.luau:73:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/MapLighting.luau:74:38: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/MapLighting.luau:76:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/MapLighting.luau:78:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/MapLighting.luau:79:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/MapLighting.luau:81:42: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/Signatures/BifrostMap.luau:197:19: LocalUnused: Variable 'lastValid' is never used; prefix with '_' to silence
+src/shared/Vantage/Signatures/BifrostMap.luau:197:30: LocalUnused: Variable 'lastPos' is never used; prefix with '_' to silence
+src/shared/Vantage/Signatures/CreatureGait.luau:80:54: TypeError: Expected this to be 'number', but got 'number?'
+src/shared/Vantage/Signatures/CreatureGait.luau:81:38: TypeError: Expected this to be 'number', but got 'number?'
+src/shared/Vantage/Signatures/FX/Bifrost.luau:49:22: LocalUnused: Variable 't0' is never used; prefix with '_' to silence
+src/shared/Vantage/Signatures/FX/Fenrir.luau:106:26: TypeError: Unknown global 'holder'; consider assigning to it first
+src/shared/Vantage/Signatures/FX/Fenrir.luau:112:8: LocalShadow: Variable 'holder' shadows a global variable used at line 106
+src/shared/Vantage/Signatures/FX/Gungnir.luau:245:8: LocalUnused: Variable 'hum' is never used; prefix with '_' to silence
+src/shared/Vantage/Signatures/FX/Mjolnir.luau:63:69: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/Signatures/FX/Ragnarok.luau:69:99: TypeError: Key 'PrimaryPart' not found in external type 'Instance'
+src/shared/Vantage/Signatures/FX/Yggdrasil.luau:26:29: TypeError: Expected this to be 'Vector3', but got 'Vector3?'
+src/shared/Vantage/Signatures/SignatureLock.luau:73:11: TypeError: Expected this to be
+src/shared/Vantage/Signatures/SignatureVFX.luau:292:94: TypeError: Expected this to be 'number', but got 'number?'
+src/shared/Vantage/Signatures/SignatureVFX.luau:599:58: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/UI/MenuBackdrop.luau:425:51: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/UI/MenuBackdrop.luau:447:31: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/UI/MenuBackdrop.luau:449:21: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/Vehicles/VehicleConfig.luau:81:3: TypeError: Table type '{| Id: string, StartAt: number, Volume: number |}' not compatible with type '{| Id: string, Speed: number, StartAt: number?, Volume: number |}' because the former is missing field 'Speed'
+src/shared/Vantage/Vehicles/VehicleConfig.luau:86:3: TypeError: Table type '{| Id: string, StartAt: number, Volume: number |}' not compatible with type '{| Id: string, Speed: number, Volume: number |}' because the former is missing field 'Speed'
+src/shared/Vantage/Vehicles/VehicleSim.luau:297:2: ImplicitReturn: Function 'Step' can implicitly return no values even though there's an explicit return at line 116; add explicit return to silence
+src/shared/Vantage/Weapons/Configs/Vanguard.luau:126:3: TableLiteral: Table field 'MagOut' is a duplicate; previously defined at line 110
+src/shared/Vantage/Weapons/Configs/Vanguard.luau:127:3: TableLiteral: Table field 'MagIn' is a duplicate; previously defined at line 110
+src/shared/Vantage/Weapons/Configs/Vanguard.luau:130:3: TableLiteral: Table field 'Equip' is a duplicate; previously defined at line 110
+src/shared/Vantage/Weapons/ReloadChoreo/init.luau:252:16: FunctionUnused: Function 'k' is never used; prefix with '_' to silence
+src/shared/Vantage/Weapons/ReloadChoreo/init.luau:255:16: FunctionUnused: Function 'pv' is never used; prefix with '_' to silence
+src/shared/Vantage/Weapons/ReloadChoreo/init.luau:29:45: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/Weapons/SkinFX.luau:1006:13: TypeError: Cannot cast 'nil' into 'BasePart' because the types are unrelated
+src/shared/Vantage/Weapons/SkinFX.luau:1021:25: TypeError: Expected this to be 'string', but got 'string | unknown'
+src/shared/Vantage/Weapons/SkinFX.luau:1037:5: TypeError: Cannot cast 'nil' into 'PointLight' because the types are unrelated
+src/shared/Vantage/Weapons/SkinFX.luau:1038:5: TypeError: Cannot cast 'nil' into 'PointLight' because the types are unrelated
+src/shared/Vantage/Weapons/SkinFX.luau:1160:6: TypeError: Key 'EmitMark' not found in table 'SkinFX'
+src/shared/Vantage/Weapons/SkinFX.luau:1322:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:1323:15: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:1323:29: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:1323:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:1323:41: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:1323:53: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:1324:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:1325:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:1326:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:1327:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:1600:24: TypeError: Expected this to be 'string', but got 'unknown?'
+src/shared/Vantage/Weapons/SkinFX.luau:1717:7: LocalUnused: Variable 'Skins' is never used; prefix with '_' to silence
+src/shared/Vantage/Weapons/SkinFX.luau:1742:48: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
+src/shared/Vantage/Weapons/SkinFX.luau:1932:7: LocalUnused: Variable 'TweenService' is never used; prefix with '_' to silence
+src/shared/Vantage/Weapons/SkinFX.luau:2272:10: DuplicateFunction: Duplicate function definition: 'SkinFX.AttachIdle' also defined on line 2243
+src/shared/Vantage/Weapons/SkinFX.luau:2377:13: LocalShadow: Variable 'E' shadows previous declaration at line 34
+src/shared/Vantage/Weapons/SkinFX.luau:972:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:973:15: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:973:29: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:973:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:973:41: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:973:53: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:974:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:975:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinFX.luau:976:3: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/SkinInspects.luau:1427:7: LocalShadow: Variable 'PINK' shadows previous declaration at line 1019
+src/shared/Vantage/Weapons/SkinInspects.luau:1900:7: LocalShadow: Variable 'ICE' shadows previous declaration at line 954
+src/shared/Vantage/Weapons/SkinInspects.luau:1976:7: LocalShadow: Variable 'GOLD' shadows previous declaration at line 976
+src/shared/Vantage/Weapons/SkinInspects.luau:30:16: FunctionUnused: Function 'w' is never used; prefix with '_' to silence
+src/shared/Vantage/Weapons/Skins.luau:101:3: TypeError: Expected this to be exactly
+src/shared/Vantage/Weapons/Skins.luau:106:3: TypeError: Expected this to be exactly
+src/shared/Vantage/Weapons/Skins.luau:111:3: TypeError: Expected this to be exactly
+src/shared/Vantage/Weapons/Skins.luau:542:5: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/Skins.luau:543:5: TypeError: Expected type table, got 'nil' instead
+src/shared/Vantage/Weapons/Skins.luau:96:3: TypeError: Expected this to be exactly
+src/shared/Vantage/Weapons/VFXKit.luau:186:42: TypeError: Expected this to be 'number | string', but got 'string?'
+src/shared/Vantage/Weapons/WeaponUnlocks.luau:72:20: TypeError: Expected this to be 'number?', but got 'unknown?'

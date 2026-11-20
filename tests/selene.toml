@@ -1,0 +1,3 @@
+# Tests run under Lune (test files themselves are Lune scripts requiring
+# src/shared modules; the modules are still analyzed with the root roblox std).
+std = "lune"
