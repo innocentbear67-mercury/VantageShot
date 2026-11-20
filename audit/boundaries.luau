@@ -16,12 +16,48 @@
 -- Regenerate the current list:  lune run audit/boundaries.luau --dump
 local fs = require("@lune/fs")
 local process = require("@lune/process")
+local serde = require("@lune/serde")
 
 local DUMP = process.args[1] == "--dump"
 
 local CLIENT_ROOTS: { string } = { "src/client", "ReplicatedFirst", "StarterPlayer" }
 local SERVER_ROOTS: { string } = { "src/server", "ServerStorage", "Workspace" }
 local RUNTIME_SERVER_ROOTS: { string } = { "src/server", "Workspace" }
+
+-- Client-context scripts: files whose default.project.json node sets RunContext=Client.
+-- They may legally use LocalPlayer / RenderStepped even outside src/client.
+local clientContext: { [string]: boolean } = {}
+do
+	local okRaw, raw = pcall(fs.readFile, "default.project.json")
+	if okRaw then
+		local okParse, tree = pcall(serde.decode, "json", raw)
+		if okParse and type(tree) == "table" then
+			local function walkTree(node: any)
+				if type(node) ~= "table" then
+					return
+				end
+				local props = node["$properties"]
+				local isClient = type(props) == "table" and props["RunContext"] == "Client"
+				local p = node["$path"]
+				if isClient then
+					if type(p) == "string" then
+						clientContext[p] = true
+					elseif type(p) == "table" then
+						for _, pp in p do
+							clientContext[pp] = true
+						end
+					end
+				end
+				for _, v in node do
+					if type(v) == "table" then
+						walkTree(v)
+					end
+				end
+			end
+			walkTree(tree)
+		end
+	end
+end
 
 local function startsWith(s: string, prefix: string): boolean
 	return string.sub(s, 1, #prefix) == prefix
@@ -91,7 +127,7 @@ end
 for _, path in all do
 	if under(path, CLIENT_ROOTS) then
 		scanContent(path, { "ServerScriptService", "ServerStorage" }, "client-reaches-into-server")
-	elseif under(path, RUNTIME_SERVER_ROOTS) then
+	elseif under(path, RUNTIME_SERVER_ROOTS) and not clientContext[path] then
 		scanContent(path, { "StarterPlayerScripts", ".LocalPlayer" }, "server-uses-client-state")
 	end
 end

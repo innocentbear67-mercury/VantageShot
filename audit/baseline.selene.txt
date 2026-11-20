@@ -3270,6 +3270,7 @@ src/client/VantageAircraftClient/AircraftRuntime.luau:1024:8: warning[shadowing]
 src/client/VantageAircraftClient/AircraftRuntime.luau:729:8: warning[shadowing]: shadowing variable `marker`
 src/client/VantageAircraftClient/AircraftRuntime.luau:993:28: warning[multiple_statements]: only one statement per line is allowed
 src/client/VantageAircraftClient/AircraftRuntime.luau:995:41: warning[multiple_statements]: only one statement per line is allowed
+src/client/VantageControlClient.client.luau:478:3: error[if_same_then_else]: this has the same block as a previous if
 src/client/VantageFootsteps.client.luau:19:7: warning[unused_variable]: Debris is assigned a value, but never used
 src/client/VantageKillFeed.client.luau:215:23: warning[multiple_statements]: only one statement per line is allowed
 src/client/VantageKillFeed.client.luau:215:45: warning[multiple_statements]: only one statement per line is allowed
@@ -5001,7 +5002,6 @@ src/server/VantageAdminPanel.server.luau:75:45: warning[multiple_statements]: on
 src/server/VantageAdminPanel.server.luau:77:36: warning[multiple_statements]: only one statement per line is allowed
 src/server/VantageAdminPanel.server.luau:82:24: warning[unused_variable]: caller is defined, but never used
 src/server/VantageAdminPanel.server.luau:95:13: warning[multiple_statements]: only one statement per line is allowed
-src/server/VantageControl/VantageControlClient.client.luau:478:3: error[if_same_then_else]: this has the same block as a previous if
 src/server/VantageControl/init.server.luau:34:2: error[incorrect_standard_library_use]: standard library global `script.Parent` is not writable
 src/server/VantageServer/CrateService.server.luau:358:32: warning[multiple_statements]: only one statement per line is allowed
 src/server/VantageServer/CrateService.server.luau:398:23: warning[multiple_statements]: only one statement per line is allowed

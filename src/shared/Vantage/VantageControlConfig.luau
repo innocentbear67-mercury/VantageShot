@@ -128,6 +128,9 @@ Config.LosingMargin = 3 -- #9 enemy leads by at least this many points
 Config.LosingRearmAt = 1 -- re-arms when the gap is back to this or less
 Config.LosingEscalate = 5 -- already behind: call again if the gap grows by this much more (after Cooldown)
 
+-- VEYRA stays silent during matches unless this is true (the client's match-comms gate reads it)
+Config.MatchComms = false
+
 -- ─── radio sound (client) ────────────────────────────────────────────────────
 Config.Radio = {
 	Volume = 1.4, -- per line, inside the VantageControl SoundGroup

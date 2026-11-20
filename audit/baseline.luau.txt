@@ -855,6 +855,8 @@ src/client/VantageAdminPanelClient.client.luau:318:8: LocalUnused: Variable 'sen
 src/client/VantageAircraftClient/AircraftRuntime.luau:243:3: TypeError: Value of type 'Folder?' could be nil
 src/client/VantageAircraftClient/AircraftRuntime.luau:244:3: TypeError: Value of type 'Folder?' could be nil
 src/client/VantageBattleMusic.client.luau:35:2: TypeError: Value of type 'Tween?' could be nil
+src/client/VantageControlClient.client.luau:29:13: TypeError: Unknown require: game/ReplicatedStorage/Vantage/VantageControlConfig
+src/client/VantageControlClient.client.luau:476:3: ImplicitReturn: Function 'request' can implicitly return no values even though there's an explicit return at line 460; add explicit return to silence
 src/client/VantageFootsteps.client.luau:164:19: TypeError: Key 'StepCount' not found in table '{  }'
 src/client/VantageFootsteps.client.luau:178:17: TypeError: Key 'At' not found in table '{  }'
 src/client/VantageFootsteps.client.luau:178:53: TypeError: Key 'At' not found in table '{  }'
@@ -1072,8 +1074,6 @@ src/client/VantageWeaponClient/WeaponController.luau:873:5: TypeError: Type "Rel
 src/client/VantageWeaponClient/init.client.luau:257:27: TypeError: Expected this to be 'Model', but got 'Model?'
 src/server/DevChatCommands.server.luau:85:59: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
 src/server/VantageAdminSkins.server.luau:34:25: DeprecatedApi: Member 'GetRankInGroup' is deprecated, use 'Player:GetRankInGroupAsync' instead
-src/server/VantageControl/VantageControlClient.client.luau:29:13: TypeError: Unknown require: game/ReplicatedStorage/Vantage/VantageControlConfig
-src/server/VantageControl/VantageControlClient.client.luau:476:3: ImplicitReturn: Function 'request' can implicitly return no values even though there's an explicit return at line 460; add explicit return to silence
 src/server/VantageControl/init.server.luau:49:13: TypeError: Unknown require: game/ReplicatedStorage/Vantage/VantageControlConfig
 src/server/VantageServer/AircraftService.luau:72:17: TypeError: Expected this to be 'Player', but got 'Player?'
 src/server/VantageServer/CombatBot.server.luau:82:15: TypeError: Key 'Head' not found in external type 'Model'

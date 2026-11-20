@@ -1081,8 +1081,8 @@ src/client/VantageWeaponClient/WeaponController.luau:873:5: TypeError: Type "Rel
 src/client/VantageWeaponClient/init.client.luau:257:27: TypeError: Expected this to be 'Model', but got 'Model?'
 src/server/DevChatCommands.server.luau:85:59: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
 src/server/VantageAdminSkins.server.luau:34:25: DeprecatedApi: Member 'GetRankInGroup' is deprecated, use 'Player:GetRankInGroupAsync' instead
-src/server/VantageControl/VantageControlClient.client.luau:29:13: TypeError: Unknown require: game/ReplicatedStorage/Vantage/VantageControlConfig
-src/server/VantageControl/VantageControlClient.client.luau:476:3: ImplicitReturn: Function 'request' can implicitly return no values even though there's an explicit return at line 460; add explicit return to silence
+src/client/VantageControlClient.client.luau:29:13: TypeError: Unknown require: game/ReplicatedStorage/Vantage/VantageControlConfig
+src/client/VantageControlClient.client.luau:476:3: ImplicitReturn: Function 'request' can implicitly return no values even though there's an explicit return at line 460; add explicit return to silence
 src/server/VantageControl/init.server.luau:49:13: TypeError: Unknown require: game/ReplicatedStorage/Vantage/VantageControlConfig
 src/server/VantageServer/AircraftService.luau:72:17: TypeError: Expected this to be 'Player', but got 'Player?'
 src/server/VantageServer/CombatBot.server.luau:82:15: TypeError: Key 'Head' not found in external type 'Model'
@@ -6240,7 +6240,7 @@ src/server/VantageAdminPanel.server.luau:75:45: warning[multiple_statements]: on
 src/server/VantageAdminPanel.server.luau:77:36: warning[multiple_statements]: only one statement per line is allowed
 src/server/VantageAdminPanel.server.luau:82:24: warning[unused_variable]: caller is defined, but never used
 src/server/VantageAdminPanel.server.luau:95:13: warning[multiple_statements]: only one statement per line is allowed
-src/server/VantageControl/VantageControlClient.client.luau:478:3: error[if_same_then_else]: this has the same block as a previous if
+src/client/VantageControlClient.client.luau:478:3: error[if_same_then_else]: this has the same block as a previous if
 src/server/VantageControl/init.server.luau:34:2: error[incorrect_standard_library_use]: standard library global `script.Parent` is not writable
 src/server/VantageServer/CrateService.server.luau:358:32: warning[multiple_statements]: only one statement per line is allowed
 src/server/VantageServer/CrateService.server.luau:398:23: warning[multiple_statements]: only one statement per line is allowed
@@ -7596,4 +7596,4 @@ src/shared/Vantage/Weapons/WeaponUnlocks.luau:55:20: warning[multiple_statements
 src/shared/Vantage/Weapons/WeaponUnlocks.luau:87:52: warning[multiple_statements]: only one statement per line is allowed
 src/shared/Vantage/Weapons/WeaponUnlocks.luau:96:31: warning[multiple_statements]: only one statement per line is allowed
 
-## [boundary] 19 grandfathered violations — see audit/boundary_violations.txt
+## [boundary] 14 grandfathered violations — see audit/boundary_violations.txt

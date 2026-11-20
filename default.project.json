@@ -26,7 +26,21 @@
     "Workspace": {
       "$className": "Workspace",
       "Map_LiveFire": {
-        "$path": "Workspace/Map_LiveFire"
+        "$className": "Folder",
+        "Systems": {
+          "$className": "Folder",
+          "MapServer": {
+            "$path": "Workspace/Map_LiveFire/Systems/MapServer.server.luau"
+          },
+          "MapClient": {
+            "$properties": { "RunContext": "Client" },
+            "$path": "Workspace/Map_LiveFire/Systems/MapClient.server.luau"
+          },
+          "AmbientClient": {
+            "$properties": { "RunContext": "Client" },
+            "$path": "Workspace/Map_LiveFire/Systems/AmbientClient.server.luau"
+          }
+        }
       }
     }
   }

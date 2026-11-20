@@ -45,8 +45,13 @@ else
 fi
 
 echo "== [6/6] ratchet vs baseline =="
-comm -13 audit/baseline.luau.txt /tmp/vs_luau_now.txt > /tmp/new_luau.txt || true
-comm -13 audit/baseline.selene.txt /tmp/vs_selene_now.txt > /tmp/new_selene.txt || true
+# Ratchet on (path: code: message) keys — line shifts from edits are not "new".
+sed -E -e 's/:[0-9]+:[0-9]+:/:/' -e 's/at line [0-9]+/at line N/' audit/baseline.luau.txt | sort -u > /tmp/base_luau_keys.txt
+sed -E -e 's/:[0-9]+:[0-9]+:/:/' -e 's/at line [0-9]+/at line N/' /tmp/vs_luau_now.txt | sort -u > /tmp/now_luau_keys.txt
+comm -13 /tmp/base_luau_keys.txt /tmp/now_luau_keys.txt > /tmp/new_luau.txt || true
+sed -E 's/:[0-9]+:[0-9]+:/:/' audit/baseline.selene.txt | sort -u > /tmp/base_selene_keys.txt
+sed -E 's/:[0-9]+:[0-9]+:/:/' /tmp/vs_selene_now.txt | sort -u > /tmp/now_selene_keys.txt
+comm -13 /tmp/base_selene_keys.txt /tmp/now_selene_keys.txt > /tmp/new_selene.txt || true
 if [ -s /tmp/new_luau.txt ]; then
   echo "NEW luau diagnostics: $(wc -l < /tmp/new_luau.txt | tr -d ' ')"; head -10 /tmp/new_luau.txt; fail=1
 fi

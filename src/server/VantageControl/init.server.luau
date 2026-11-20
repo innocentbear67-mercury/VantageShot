@@ -15,8 +15,8 @@
 	  #10 Victory       Match.Phase -> "Ended" with Winner == the player's team (never on "Draw")
 	  #11 AircraftInbound  a dropship flyby is published (Vantage.Aircraft FlightId), every match player
 
-	Install: this one script carries its config and client player as children and puts them in place
-	at server start (config -> ReplicatedStorage.Vantage, client -> StarterPlayerScripts).
+	Install: static Rojo layout — the config ships in ReplicatedStorage.Vantage and the client
+	in StarterPlayerScripts; this script only wires the remote and decides when lines play.
 
 	Studio tests (Studio only): type "/vc 1" … "/vc 10", "/vc burst" or "/vc seq" in chat, or from the
 	command bar while playing:  game.ServerScriptService.VantageControl.Test:Fire(player, "ShieldFail")
@@ -26,26 +26,11 @@ local CollectionService = game:GetService("CollectionService")
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
-local ServerScriptService = game:GetService("ServerScriptService")
-local StarterPlayer = game:GetService("StarterPlayer")
 local Workspace = game:GetService("Workspace")
-
-if script.Parent ~= ServerScriptService then
-	script.Parent = ServerScriptService -- dropped somewhere else (e.g. Workspace on import)
-end
 
 -- ─── install ─────────────────────────────────────────────────────────────────
 local Vantage = ReplicatedStorage:WaitForChild("Vantage")
 local Remotes = Vantage:WaitForChild("Remotes")
-
-local cfgModule = script:FindFirstChild("VantageControlConfig")
-if cfgModule then
-	local old = Vantage:FindFirstChild("VantageControlConfig")
-	if old and old ~= cfgModule then
-		old:Destroy()
-	end
-	cfgModule.Parent = Vantage
-end
 local Cfg = require(Vantage:WaitForChild("VantageControlConfig"))
 local LINES = Cfg.Lines
 
@@ -55,27 +40,6 @@ if not remote then
 	r.Name = "VantageControl"
 	r.Parent = Remotes
 	remote = r
-end
-
-local client = script:FindFirstChild("VantageControlClient")
-if client then
-	local sps = StarterPlayer:WaitForChild("StarterPlayerScripts")
-	local old = sps:FindFirstChild("VantageControlClient")
-	if old and old ~= client then
-		old:Destroy()
-	end
-	client.Parent = sps
-	-- anyone who joined before this ran (rare) gets a copy that survives respawns
-	for _, p in Players:GetPlayers() do
-		local pg = p:FindFirstChildOfClass("PlayerGui")
-		if pg and not pg:FindFirstChild("VantageControlHost") then
-			local host = Instance.new("ScreenGui")
-			host.Name = "VantageControlHost"
-			host.ResetOnSpawn = false
-			client:Clone().Parent = host
-			host.Parent = pg
-		end
-	end
 end
 
 local M = Vantage:WaitForChild("Match") -- created by DamageService / MatchService

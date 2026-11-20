@@ -18,13 +18,6 @@ local Workspace = game:GetService("Workspace")
 
 local player = Players.LocalPlayer
 
-if script.Parent and script.Parent.Name == "VantageControlHost" then
-	local ps = player:FindFirstChildOfClass("PlayerScripts")
-	if ps and ps:FindFirstChild("VantageControlClient") then
-		return
-	end
-end
-
 local Vantage = ReplicatedStorage:WaitForChild("Vantage")
 local Cfg = require(Vantage:WaitForChild("VantageControlConfig"))
 local LINES = Cfg.Lines
