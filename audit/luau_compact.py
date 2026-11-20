@@ -27,7 +27,11 @@ def main(raw, dst, repo_root):
     n = 0
     skipped = 0
     out_lines = []
-    prefixes = [p.rstrip("/") + "/" for p in {repo_root, os.path.realpath(repo_root)}]
+    prefixes = sorted(
+        [p.rstrip("/") + "/" for p in {repo_root, os.path.realpath(repo_root)}],
+        key=len,
+        reverse=True,
+    )
 
     def strip(line):
         for p in prefixes:
