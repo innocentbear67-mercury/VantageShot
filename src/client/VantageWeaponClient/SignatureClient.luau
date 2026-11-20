@@ -250,12 +250,30 @@ function SignatureClient.Start(ctx)
 		end
 		return nil
 	end
+	-- B3: both render steps re-find the same character parts; cache them per character and
+	-- re-find only when a cached ref goes stale (re-parented or the character changed)
+	local cRoot, cHum, cHead
+	local function charRefs()
+		local ch = player.Character
+		if ch then
+			if not (cRoot and cRoot.Parent == ch) then
+				cRoot = ch:FindFirstChild("HumanoidRootPart")
+			end
+			if not (cHum and cHum.Parent == ch) then
+				cHum = ch:FindFirstChildOfClass("Humanoid")
+			end
+			if not (cHead and cHead.Parent == ch) then
+				cHead = ch:FindFirstChild("Head")
+			end
+		else
+			cRoot, cHum, cHead = nil, nil, nil
+		end
+		return ch, cRoot, cHum, cHead
+	end
 	RunService.RenderStepped:Connect(function()
 		local t = os.clock()
 		local nowT = Workspace:GetServerTimeNow()
-		local ch = player.Character
-		local root = ch and ch:FindFirstChild("HumanoidRootPart")
-		local hum = ch and ch:FindFirstChildOfClass("Humanoid")
+		local _, root, hum = charRefs()
 		local best, bestEta
 		for i = #threats, 1, -1 do
 			local th = threats[i]
@@ -382,9 +400,7 @@ function SignatureClient.Start(ctx)
 			nextScan = t + 1 / 10 -- 2026-11-20 perf: 10 Hz
 			local target
 			local ls = Lock.Settings[Feed.Id]
-			local ch = player.Character
-			local head = ch and ch:FindFirstChild("Head")
-			local hum = ch and ch:FindFirstChildOfClass("Humanoid")
+			local _, _, hum, head = charRefs()
 			if ls and head and hum and hum.Health > 0 and not Feed.Active and Feed.ReadyAt <= t and not bif.Open and hud and hud.Gui and hud.Gui.Enabled then
 				local e = Lock.Pick(head.Position, Workspace.CurrentCamera.CFrame.LookVector, enemyCands(), ls)
 				target = e and e.Model

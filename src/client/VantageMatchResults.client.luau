@@ -1711,13 +1711,22 @@ local function buildBoard(layer, res, st, outcome: string, accent: Color3, myRow
 	st.OnEnter = function()
 		leave(true)
 	end
+	local lastBackSec: number? = nil
 	table.insert(st.Conns, RunService.Heartbeat:Connect(function()
 		local ends = tonumber(Match:GetAttribute("PhaseEnds")) or 0
 		if st.Preview or Match:GetAttribute("Phase") ~= "Ended" or ends <= 0 then
-			back.Text = ""
+			lastBackSec = nil
+			if back.Text ~= "" then
+				back.Text = ""
+			end
 			return
 		end
-		back.Text = "RETURNING TO LOBBY IN " .. math.max(0, math.ceil(ends - Workspace:GetServerTimeNow()))
+		-- B3: the countdown ticks once a second; write the label only when the second changed
+		local sec = math.max(0, math.ceil(ends - Workspace:GetServerTimeNow()))
+		if sec ~= lastBackSec then
+			lastBackSec = sec
+			back.Text = "RETURNING TO LOBBY IN " .. sec
+		end
 	end))
 	return grp
 end

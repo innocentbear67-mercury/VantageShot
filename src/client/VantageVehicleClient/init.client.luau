@@ -162,23 +162,50 @@ local function bindInput()
 end
 
 -- ─── camera ──────────────────────────────────────────────────────────────
-local function cameraExclude(model: Model): { Instance }
-	local t = { model }
-	for _, p in Players:GetPlayers() do
-		if p.Character then
-			table.insert(t, p.Character)
-		end
-	end
-	local fx = Workspace:FindFirstChild("VehicleFX")
-	if fx then
-		table.insert(t, fx)
-	end
-	return t
-end
-
 local rayParams = RaycastParams.new()
 rayParams.FilterType = Enum.RaycastFilterType.Exclude
 rayParams.IgnoreWater = true
+
+-- B3: the camera + aim rays call this every frame; refresh the shared rayParams filter only when
+-- the vehicle or any player's Character actually changed (a count-only check would go stale on
+-- mid-session respawns, which swap characters without changing the player count)
+local excludeList: { Instance } = {}
+local excludeChars: { Model? } = {}
+local excludeModel: Model? = nil
+
+local function refreshCameraExclude(model: Model)
+	local pls = Players:GetPlayers()
+	local dirty = excludeModel ~= model
+	for i, p in pls do
+		if excludeChars[i] ~= p.Character then
+			dirty = true
+			break
+		end
+	end
+	if excludeChars[#pls + 1] ~= nil then
+		dirty = true
+	end
+	local fx = Workspace:FindFirstChild("VehicleFX")
+	if not dirty and fx ~= nil and table.find(excludeList, fx) == nil then
+		dirty = true
+	end
+	if dirty then
+		excludeModel = model
+		table.clear(excludeChars)
+		table.clear(excludeList)
+		excludeList[1] = model
+		for i, p in pls do
+			excludeChars[i] = p.Character
+			if p.Character then
+				excludeList[#excludeList + 1] = p.Character
+			end
+		end
+		if fx then
+			excludeList[#excludeList + 1] = fx
+		end
+		rayParams.FilterDescendantsInstances = excludeList
+	end
+end
 
 local function ease(t: number): number
 	return 1 - (1 - t) ^ 3
@@ -242,7 +269,7 @@ local function stepCamera(dt: number)
 	local focus = root.Position + Vector3.new(0, C.PivotY, 0)
 	local dist = C.Distance * (if s.Zoom then 0.55 else 1)
 	local want = focus - rot.LookVector * dist + Vector3.new(0, C.Height * 0.35, 0)
-	rayParams.FilterDescendantsInstances = cameraExclude(s.Model)
+	refreshCameraExclude(s.Model)
 	local block = Workspace:Raycast(focus, want - focus, rayParams)
 	if block then
 		want = block.Position + (focus - want).Unit * 1.2
@@ -359,6 +386,41 @@ if player.Character then
 end
 
 -- ─── per frame ───────────────────────────────────────────────────────────
+-- B3: cached seat list per Seats container; ChildAdded/ChildRemoved invalidate it instead of a
+-- GetChildren array every frame
+local seatSeats: Instance? = nil
+local seatList: { Instance } = {}
+local seatDirty = true
+local seatConns: { RBXScriptConnection } = {}
+
+local function seatsOf(container: Instance): { Instance }
+	if seatSeats ~= container then
+		for _, c in seatConns do
+			c:Disconnect()
+		end
+		table.clear(seatConns)
+		seatSeats = container
+		seatDirty = true
+		table.insert(seatConns, container.ChildAdded:Connect(function()
+			seatDirty = true
+		end))
+		table.insert(seatConns, container.ChildRemoved:Connect(function()
+			seatDirty = true
+		end))
+	end
+	if seatDirty then
+		seatDirty = false
+		table.clear(seatList)
+		for _, s in container:GetChildren() do
+			seatList[#seatList + 1] = s
+		end
+	end
+	return seatList
+end
+
+-- B3: one reused HUD info table (Hud:Update consumes it synchronously), cleared + refilled per frame
+local hudInfo = {}
+
 local function stepSession(dt: number)
 	local s = session
 	local model, root = s.Model, s.Root
@@ -384,7 +446,7 @@ local function stepSession(dt: number)
 
 	-- aim point: what the centre of the screen looks at
 	local camCF = camera.CFrame
-	rayParams.FilterDescendantsInstances = cameraExclude(model)
+	refreshCameraExclude(model)
 	local hit = Workspace:Raycast(camCF.Position, camCF.LookVector * 1500, rayParams)
 	s.AimPoint = if hit then hit.Position else camCF.Position + camCF.LookVector * 1500
 
@@ -448,11 +510,14 @@ local function stepSession(dt: number)
 	end
 
 	-- HUD
-	local info = {
-		Model = model, Speed = root.AssemblyLinearVelocity:Dot(root.CFrame.LookVector),
-		SeatName = s.Seat:GetAttribute("SeatName"), Controls = controls, Driver = s.Driver,
-		SeatList = model.Seats:GetChildren(),
-	}
+	local info = hudInfo -- B3: reused table, not a fresh one every frame
+	table.clear(info)
+	info.Model = model
+	info.Speed = root.AssemblyLinearVelocity:Dot(root.CFrame.LookVector)
+	info.SeatName = s.Seat:GetAttribute("SeatName")
+	info.Controls = controls
+	info.Driver = s.Driver
+	info.SeatList = seatsOf(model.Seats)
 	if controls then
 		local m = VMath.Muzzle(root.CFrame, model, s.Yaw, s.Pitch)
 		local bhit = Workspace:Raycast(m.Position, m.LookVector * 1500, rayParams)

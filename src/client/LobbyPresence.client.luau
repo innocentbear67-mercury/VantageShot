@@ -158,14 +158,16 @@ local pad = Instance.new("UIPadding", tipText) pad.PaddingTop = UDim.new(0, 4) p
 tipText.Parent = tip
 tip.Parent = player:WaitForChild("PlayerGui")
 
+-- B6: one reusable hover-ray filter, refilled per 10 Hz sample (was a fresh RaycastParams every sample)
+local playerRayParams = RaycastParams.new()
+playerRayParams.FilterType = Enum.RaycastFilterType.Exclude
+
 local function playerAt(screenPos: Vector2)
 	local cam = workspace.CurrentCamera
 	if not cam then return nil end
 	local ray = cam:ViewportPointToRay(screenPos.X, screenPos.Y)
-	local params = RaycastParams.new()
-	params.FilterType = Enum.RaycastFilterType.Exclude
-	params.FilterDescendantsInstances = { player.Character }
-	local hit = workspace:Raycast(ray.Origin, ray.Direction * 160, params)
+	playerRayParams.FilterDescendantsInstances = { player.Character }
+	local hit = workspace:Raycast(ray.Origin, ray.Direction * 160, playerRayParams)
 	if not hit then return nil end
 	local model = hit.Instance:FindFirstAncestorOfClass("Model")
 	while model and not model:FindFirstChildOfClass("Humanoid") do

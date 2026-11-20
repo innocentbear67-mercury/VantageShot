@@ -941,6 +941,7 @@ UserInputService.WindowFocusReleased:Connect(function()
 end)
 
 local nextRefresh = 0
+local toggleVisible = false -- B3: skip unchanged Visible writes in the Heartbeat below
 RunService.Heartbeat:Connect(function()
 	local allowed = boardAllowed()
 	if not allowed then
@@ -950,7 +951,11 @@ RunService.Heartbeat:Connect(function()
 			toggle.TextColor3 = T.Text
 		end
 	end
-	toggle.Visible = allowed and UserInputService.TouchEnabled
+	local visible = allowed and UserInputService.TouchEnabled
+	if visible ~= toggleVisible then
+		toggleVisible = visible
+		toggle.Visible = visible
+	end
 	setShown(allowed and (keyHeld or touchOpen))
 	if shown then
 		local t = os.clock()

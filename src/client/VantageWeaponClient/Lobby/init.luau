@@ -992,6 +992,16 @@ function renderDeploy()
 	end
 end
 
+-- B3: renderStep runs every frame and mostly rewrites the same strings; write a label only when its text changed
+local lastLabel = {}
+local function setLabel(lbl, s)
+	if lastLabel[lbl] ~= s then
+		lastLabel[lbl] = s
+		lbl.Text = s
+	end
+end
+local queueAttr, queueAttrId -- "Queue_<id>" is rebuilt only when the active queue changes
+
 local function renderStep()
 	local t = os.clock()
 	local m = selectedMode()
@@ -999,24 +1009,28 @@ local function renderStep()
 		local mf = MF()
 		local qid = queueId(m)
 		local need = MatchConfig.Needed(qid)
-		local have = mf and mf:GetAttribute("Queue_" .. qid) or 0
+		if queueAttrId ~= qid then
+			queueAttrId = qid
+			queueAttr = "Queue_" .. qid
+		end
+		local have = mf and mf:GetAttribute(queueAttr) or 0
 		local el = math.floor(t - flow.QueueStart)
 		local running = phase() ~= "Idle"
-		ui.BubbleText.Text = if running then "Match in progress. You're next!" else ("Searching" .. string.rep(".", math.floor(t * 2.5) % 4))
-		ui.BubbleSub.Text = if flow.Note ~= "" then flow.Note else string.format("%s  •  %d/%d players  •  %d:%02d", modeLabel(m), have, need, el // 60, el % 60)
+		setLabel(ui.BubbleText, if running then "Match in progress. You're next!" else ("Searching" .. string.rep(".", math.floor(t * 2.5) % 4)))
+		setLabel(ui.BubbleSub, if flow.Note ~= "" then flow.Note else string.format("%s  •  %d/%d players  •  %d:%02d", modeLabel(m), have, need, el // 60, el % 60))
 		ui.BubbleText.Position = UDim2.fromOffset(0, -9)
-		ui.DeployBtn.Caption.Text = "Press F to cancel"
+		setLabel(ui.DeployBtn.Caption, "Press F to cancel")
 		ui.StartNow.Visible = MatchConfig.AllowSkip == true and not running and flow.Stage == "Queue"
 	elseif flow.Stage == "Error" then
-		ui.BubbleText.Text = "Queue unavailable"
-		ui.BubbleSub.Text = flow.Note
+		setLabel(ui.BubbleText, "Queue unavailable")
+		setLabel(ui.BubbleSub, flow.Note)
 		ui.BubbleText.Position = UDim2.fromOffset(0, -9)
 		ui.StartNow.Visible = false
 	else
-		ui.BubbleText.Text = "Deploy to start playing!"
-		ui.BubbleSub.Text = ""
+		setLabel(ui.BubbleText, "Deploy to start playing!")
+		setLabel(ui.BubbleSub, "")
 		ui.BubbleText.Position = UDim2.fromOffset(0, 0)
-		ui.DeployBtn.Caption.Text = "Press F"
+		setLabel(ui.DeployBtn.Caption, "Press F")
 		ui.StartNow.Visible = false
 	end
 	if ui.Found.Root.Visible and not renderVote(t) then
@@ -1127,7 +1141,8 @@ local function syncVisible()
 		if ctx.Hud and ctx.Hud.Gui and ctx.Hud.Gui.Enabled then
 			ctx.Hud.Gui.Enabled = false
 		end
-		if not state.Screen and not (ctx.Armory and ctx.Armory.Open) then
+		-- B3: read before writing; only re-assert the cursor when something turned it off
+		if not state.Screen and not (ctx.Armory and ctx.Armory.Open) and not UserInputService.MouseIconEnabled then
 			UserInputService.MouseIconEnabled = true
 		end
 	end

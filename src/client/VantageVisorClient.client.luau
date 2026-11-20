@@ -1219,15 +1219,23 @@ local function stepSequence()
 end
 
 -- ─── input ───────────────────────────────────────────────────────────────────────────
+-- B3: cache the two menu ScreenGui lookups (deployed runs every frame from the render step);
+-- reuse a cached ref while it is still parented to the PlayerGui, re-find only otherwise
+local tsGui: Instance? = nil
+local mmGui: Instance? = nil
 local function deployed(): boolean
 	local ch = player.Character
 	local h = ch and ch:FindFirstChildOfClass("Humanoid")
 	if not (hudGui.Enabled and h and h.Health > 0) then
 		return false
 	end
-	local ts = playerGui:FindFirstChild("TeamSelect")
-	local mm = playerGui:FindFirstChild("VantageMainMenu")
-	return not ((ts and ts:IsA("ScreenGui") and ts.Enabled) or (mm and mm:IsA("ScreenGui") and mm.Enabled))
+	if not (tsGui and tsGui.Parent == playerGui) then
+		tsGui = playerGui:FindFirstChild("TeamSelect")
+	end
+	if not (mmGui and mmGui.Parent == playerGui) then
+		mmGui = playerGui:FindFirstChild("VantageMainMenu")
+	end
+	return not ((tsGui and tsGui:IsA("ScreenGui") and tsGui.Enabled) or (mmGui and mmGui:IsA("ScreenGui") and mmGui.Enabled))
 end
 local function toggle()
 	if not deployed() then
