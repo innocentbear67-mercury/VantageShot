@@ -44,8 +44,11 @@ def main(raw, dst, repo_root):
                 n += 1
                 continue
             skipped += 1
+    # Strip the repo-root prefix ANYWHERE in the line (message text can embed
+    # absolute paths of other files) so ratchet keys are checkout-independent.
+    prefix = repo_root.rstrip("/") + "/"
     with open(dst, "w") as out:
-        for l in sorted(set(out_lines)):
+        for l in sorted(set(x.replace(prefix, "") for x in out_lines)):
             out.write(l + "\n")
     print(f"luau_compact: {n} diagnostics ({skipped} unclassified lines ignored) -> {dst}")
     return 0

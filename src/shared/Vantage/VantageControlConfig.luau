@@ -1,6 +1,7 @@
 --[[
 	VANTAGE CONTROL — config (shared)
-	Moved to ReplicatedStorage.Vantage.VantageControlConfig at server start by the VantageControl script.
+	Lives in ReplicatedStorage.Vantage (static Rojo sync from src/shared; the client and
+	the VantageControl server script both require it directly).
 
 	ASSET IDS: each line's voice recording ("rbxassetid://<number>"). A line with Id = "" still shows
 	its text in the VEYRA bar (timed from its length) — no placeholder sound is ever played.
