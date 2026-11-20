@@ -225,39 +225,46 @@ EventRemote.OnClientEvent:Connect(function(kind: string, a, b, c, d, e, f)
 			active.Loadout:OnConfirm(a)
 		end
 	elseif kind == "Shot" then
-		-- another player's shot: effects only. a = shooter character
+		-- another player's shot: effects only. a = shooter character; b = the batched
+		-- array of per-pellet ends (server sends one message per shot), or the legacy
+		-- flat endPos form (debug dummy hook)
 		local character: Model? = a
-		local endPos: Vector3 = b
-		DeathReplay.RecordShot(character, endPos, c, d, e)
 		local world = character and character:FindFirstChild("VantageWorldWeapon")
 		local muzzle = world and world.PrimaryPart and world.PrimaryPart:FindFirstChild("Muzzle")
 		local wid = world and world:GetAttribute("WeaponId")
-		-- f = extra: { Quiet = true } for the extra pellets of one shotgun blast,
-		-- { Projectile = speed } for energy bolts (impact plays on arrival)
-		local extra = if type(f) == "table" then f else {}
 		local wcfg = wid and WeaponConfig.Weapons[wid]
-		if muzzle then
-			if extra.Projectile and extra.Dir and wcfg and wcfg.Projectile then
-				-- arcing round (2026-11-18): simulate the same arc from this shooter's muzzle
-				local rp = RaycastParams.new()
-				rp.FilterType = Enum.RaycastFilterType.Exclude
-				rp.FilterDescendantsInstances = { character, workspace.CurrentCamera, workspace:FindFirstChild("VantageWeaponFX") }
-				effects:BoltArc(muzzle.WorldPosition, extra.Dir, wcfg.Projectile, rp, wid)
-			elseif extra.Projectile and wcfg and wcfg.Projectile then
-				effects:Bolt(muzzle.WorldPosition, endPos, wcfg.Projectile, if c and d == "World" then { c, e and Enum.Material[e], wid } else nil)
-			elseif wcfg and wcfg.Beam then
-				effects:BeamPulse(character, muzzle, endPos, wcfg.Beam)
-			else
-				effects:Tracer(muzzle.WorldPosition, endPos)
+		local ends = if typeof(b) == "table"
+			then b
+			else { { Position = b, Normal = c, Kind = d, Material = e, Extra = f } }
+		for _, pellet in ends do
+			local endPos: Vector3 = pellet.Position
+			DeathReplay.RecordShot(character, endPos, pellet.Normal, pellet.Kind, pellet.Material)
+			-- pellet.Extra: { Quiet = true } for the pellets after the first of one shotgun
+			-- blast, { Projectile = speed } for energy bolts (impact plays on arrival)
+			local extra = if type(pellet.Extra) == "table" then pellet.Extra else {}
+			if muzzle then
+				if extra.Projectile and extra.Dir and wcfg and wcfg.Projectile then
+					-- arcing round (2026-11-18): simulate the same arc from this shooter's muzzle
+					local rp = RaycastParams.new()
+					rp.FilterType = Enum.RaycastFilterType.Exclude
+					rp.FilterDescendantsInstances = { character, workspace.CurrentCamera, workspace:FindFirstChild("VantageWeaponFX") }
+					effects:BoltArc(muzzle.WorldPosition, extra.Dir, wcfg.Projectile, rp, wid)
+				elseif extra.Projectile and wcfg and wcfg.Projectile then
+					effects:Bolt(muzzle.WorldPosition, endPos, wcfg.Projectile, if pellet.Normal and pellet.Kind == "World" then { pellet.Normal, pellet.Material and Enum.Material[pellet.Material], wid } else nil)
+				elseif wcfg and wcfg.Beam then
+					effects:BeamPulse(character, muzzle, endPos, wcfg.Beam)
+				else
+					effects:Tracer(muzzle.WorldPosition, endPos)
+				end
+				if not extra.Quiet then
+					effects:MuzzleFlash(muzzle)
+					effects:PlayFire3D(wid, muzzle, character)
+					ThirdPersonRig.OnShot(character)
+				end
 			end
-			if not extra.Quiet then
-				effects:MuzzleFlash(muzzle)
-				effects:PlayFire3D(wid, muzzle, character)
-				ThirdPersonRig.OnShot(character)
+			if pellet.Normal and pellet.Kind and not extra.Projectile then
+				effects:Impact(endPos, pellet.Normal, pellet.Kind, pellet.Material, wid)
 			end
-		end
-		if c and d and not extra.Projectile then
-			effects:Impact(endPos, c, d, e, wid)
 		end
 	elseif kind == "Melee" then
 		-- another player's knife swing: a = attacker character, b = hit position?, c = hit body?

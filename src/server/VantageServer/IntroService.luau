@@ -151,7 +151,24 @@ function IntroService.Run(m, api): boolean
 		end
 		task.wait(0.1)
 	end
-	task.wait(0.35) -- weapons / attributes land just after the character
+	-- weapons land via WeaponService's onCharacter right after the character: wait for
+	-- that per-player signal (the line-up reads each character's VantageWeapon attribute)
+	-- instead of a flat sleep, with the same 0.35 s cap
+	local weaponsDeadline = os.clock() + 0.35
+	while os.clock() < weaponsDeadline do
+		local all = true
+		for p in m.Players do
+			local c = p.Parent and p.Character
+			if c and not c:GetAttribute("VantageWeapon") then
+				all = false
+				break
+			end
+		end
+		if all then
+			break
+		end
+		task.wait(0.05)
+	end
 
 	local held: { BasePart } = {}
 	local standIns: Folder? = nil

@@ -11,13 +11,13 @@
 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
-local CollectionService = game:GetService("CollectionService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
 
 local Weapons = ReplicatedStorage.Vantage.Weapons
 local Config = require(Weapons.WeaponConfig)
 local WeaponMath = require(Weapons.WeaponMath)
+local TagCache = require(ReplicatedStorage.Vantage.TagCache)
 local S = Config.Server
 
 local HISTORY_SECONDS = 1.0
@@ -26,34 +26,69 @@ local DUMMY_TAG = "VantageDummy" -- Studio-only training targets (see WeaponServ
 local HitValidation = {}
 local history: { [Model]: { { t: number, cf: CFrame } } } = {}
 
-local function targetCharacters(): { Model }
-	local list = {}
+-- C1: record() runs every Heartbeat, so the target list is refilled (never reallocated)
+-- from signal-maintained collections — a players array kept via PlayerAdded/Removing and
+-- the shared TagCache sets for the two tags.
+local playerList: { Player } = {}
+local targets: { Model } = {}
+local seen: { [Model]: boolean } = {}
+local playersSeeded = false
+
+local function ensurePlayers()
+	if playersSeeded then
+		return
+	end
+	playersSeeded = true
 	for _, p in Players:GetPlayers() do
+		playerList[#playerList + 1] = p
+	end
+	Players.PlayerAdded:Connect(function(p)
+		playerList[#playerList + 1] = p
+	end)
+	Players.PlayerRemoving:Connect(function(p)
+		local i = table.find(playerList, p)
+		if i then
+			playerList[i] = playerList[#playerList]
+			playerList[#playerList] = nil
+		end
+	end)
+end
+
+local function targetCharacters(): { Model }
+	ensurePlayers()
+	local n = 0
+	for _, p in playerList do
 		local c = p.Character
 		if c then
-			table.insert(list, c)
+			n += 1
+			targets[n] = c
 		end
 	end
 	if RunService:IsStudio() or workspace:GetAttribute("LiveBots") == true then -- live: dummies are squad bots
-		for _, d in CollectionService:GetTagged(DUMMY_TAG) do
+		for _, d in TagCache.get(DUMMY_TAG) do
 			if d:IsA("Model") then
-				table.insert(list, d)
+				n += 1
+				targets[n] = d
 			end
 		end
 	end
 	-- 2026-11-20 first-time training targets (TutorialService; only their trainee can damage them)
-	for _, d in CollectionService:GetTagged("VantageTutorialTarget") do
+	for _, d in TagCache.get("VantageTutorialTarget") do
 		if d:IsA("Model") then
-			table.insert(list, d)
+			n += 1
+			targets[n] = d
 		end
 	end
-	return list
+	for i = #targets, n + 1, -1 do
+		targets[i] = nil
+	end
+	return targets
 end
 HitValidation.TargetCharacters = targetCharacters
 
 local function record()
 	local now = Workspace:GetServerTimeNow()
-	local seen = {}
+	table.clear(seen)
 	for _, c in targetCharacters() do
 		local root = c:FindFirstChild("HumanoidRootPart") :: BasePart?
 		if root then

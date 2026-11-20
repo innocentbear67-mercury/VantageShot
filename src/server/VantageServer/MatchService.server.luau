@@ -626,9 +626,14 @@ local function runMatch(modeId: string, picked: { Player })
 		end
 	end
 	local nextFill = 0
+	local lastLeftSec: number? = nil
 	while match == m do
 		local left = math.max(0, liveEnds - now())
-		M:SetAttribute("TimeLeft", left)
+		-- C2: every TimeLeft consumer renders whole seconds; replicate only when the second flips
+		if math.floor(left) ~= lastLeftSec then
+			lastLeftSec = math.floor(left)
+			M:SetAttribute("TimeLeft", left)
+		end
 		local bs, rs = M:GetAttribute("BlueScore") or 0, M:GetAttribute("RedScore") or 0
 		local lead = if bs > rs then "Blue" elseif rs > bs then "Red" else "Draw"
 		if bs >= mode.ScoreLimit or rs >= mode.ScoreLimit then
@@ -650,6 +655,7 @@ local function runMatch(modeId: string, picked: { Player })
 				M:SetAttribute("TimeLeft", Config.Overtime.Length)
 				M:SetAttribute("Overtime", true)
 			else
+				M:SetAttribute("TimeLeft", left) -- final tick: leave the ended board's clock at 0:00
 				stopScore()
 				endMatch(m, lead, if m.Overtime then "OVERTIME" else "TIME")
 				return

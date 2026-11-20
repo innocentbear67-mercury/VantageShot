@@ -8,7 +8,10 @@
 		                   | ("Melee", "Primary"|"Secondary", clientServerTime, lookDir)
 		WeaponAim    C->S  unreliable (pitchDeg, ads)
 		WeaponEvent  S->C  ("Ammo", weaponId, mag, reserve, reason, reloading, lastSeq) | ("Confirm", info)
-		                   | ("Shot", shooterCharacter, endPos, normal, kind, materialName)
+		                   | ("Shot", shooterCharacter, pelletEnds[]) — one message per shot; each end
+	                   |   { Position, Normal, Kind, Material?, Extra? } (Extra = { Quiet = true }
+	                   |   for pellets after the first, { Projectile = speed } for energy bolts;
+	                   |   the debug dummy hook still sends the legacy flat endPos/normal/kind/material)
 		                   | ("Melee", attackerCharacter, hitPos?, hitBody?)
 		                   | ("Damaged", sourcePos, amount)
 		                   | ("Died", killer, killerPos, weapon, headshot, distance?, killerCharacter?)
@@ -804,14 +807,22 @@ local function onFire(player: Player, clientTime: any, origin: any, direction: a
 		table.insert(visuals, { hitscan(player, weapon, origin, direction, clientTime, seq), nil })
 	end
 
-	-- replicate the shot to everyone else (effects only)
-	for _, v in visuals do
+	-- replicate the shot to everyone else (effects only); C3: one FireClient per player per
+	-- shot, carrying each pellet's end in fire order (was one message per pellet per player)
+	local pelletEnds = table.create(#visuals)
+	for i, v in visuals do
 		local hit, extra = v[1], v[2]
-		local material = if hit.Material then hit.Material.Name else nil
-		for _, other in Players:GetPlayers() do
-			if other ~= player then
-				EventRemote:FireClient(other, "Shot", character, hit.Position, hit.Normal, hit.Kind, material, extra)
-			end
+		pelletEnds[i] = {
+			Position = hit.Position,
+			Normal = hit.Normal,
+			Kind = hit.Kind,
+			Material = if hit.Material then hit.Material.Name else nil,
+			Extra = extra,
+		}
+	end
+	for _, other in Players:GetPlayers() do
+		if other ~= player then
+			EventRemote:FireClient(other, "Shot", character, pelletEnds)
 		end
 	end
 	return true

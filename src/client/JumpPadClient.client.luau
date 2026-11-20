@@ -1,5 +1,5 @@
 -- lime jump pads: stand on one and get thrown in an arc onto its target (PadTarget attribute)
-local CS = game:GetService("CollectionService")
+local TagCache = require(game:GetService("ReplicatedStorage").Vantage.TagCache)
 local Players = game:GetService("Players")
 local RS = game:GetService("RunService")
 local player = Players.LocalPlayer
@@ -8,8 +8,11 @@ RS.Heartbeat:Connect(function()
 	local char = player.Character
 	local root = char and char:FindFirstChild("HumanoidRootPart")
 	if not root or os.clock() - last < 0.8 then return end
+	-- C4: TagCache hands out one live array (no per-frame GetTagged); skip while empty
+	local pads = TagCache.get("JumpPad")
+	if #pads == 0 then return end
 	local pos = root.Position
-	for _, pad in CS:GetTagged("JumpPad") do
+	for _, pad in pads do
 		local target = pad:GetAttribute("PadTarget")
 		if typeof(target) == "Vector3" then
 			local rel = pad.CFrame:PointToObjectSpace(pos)

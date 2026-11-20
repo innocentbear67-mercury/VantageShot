@@ -1,3 +1,1 @@
-src/client/JumpPadClient.client.luau:12: gettagged-in-frame-loop: for _, pad in CS:GetTagged("JumpPad") do
-src/client/RampChevronScroller.client.luau:8: gettagged-in-frame-loop: for _, t in CS:GetTagged("RampChevron") do
 src/client/VantageAbilityClient/GrappleFX.luau:587: gettagged-in-frame-loop: for _, m in CollectionService:GetTagged(tag) do
