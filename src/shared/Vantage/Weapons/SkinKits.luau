@@ -280,6 +280,7 @@ KITS.Glacier = {
 -- the magazine piece rides the Magazine model so reloads still move it.
 local CollectionService = game:GetService("CollectionService")
 local RunService = game:GetService("RunService")
+local TagCache = require(script.Parent.Parent:WaitForChild("TagCache"))
 local Meshes = script.Parent:FindFirstChild("SkinKitMeshes")
 
 local function hideBase(ctx)
@@ -387,7 +388,12 @@ if RunService:IsClient() and not _G.__VantageSkinAnimator then
 		local t = os.clock()
 		local cam = workspace.CurrentCamera
 		local cp = if cam then cam.CFrame.Position else Vector3.zero
-		for _, p in CollectionService:GetTagged("VantageSkinAnim") do
+		local set = TagCache.get("VantageSkinAnim")
+		local pulseSet = TagCache.get("VantageSkinPulse")
+		if #set == 0 and #pulseSet == 0 then
+			return
+		end
+		for _, p in set do
 			if p:IsA("BasePart") and not p.Anchored and (p.Position - cp).Magnitude < NEAR and p:IsDescendantOf(workspace) and not p:FindFirstAncestor("VantageViewmodel") then
 				local w = p:FindFirstChild("SkinAnimWeld") :: Weld?
 				if w then
@@ -405,7 +411,7 @@ if RunService:IsClient() and not _G.__VantageSkinAnimator then
 			end
 		end
 		-- pulsing glows (Highlight fill / light brightness), world and viewmodel alike
-		for _, o in CollectionService:GetTagged("VantageSkinPulse") do
+		for _, o in pulseSet do
 			if o.Parent then
 				local prop = o:GetAttribute("PulseProp")
 				local lo, hi, sp = o:GetAttribute("PulseMin"), o:GetAttribute("PulseMax"), o:GetAttribute("PulseSpeed")

@@ -5,13 +5,17 @@
 
 local WeaponMath = {}
 
+-- RayOBB runs per pellet on both client prediction and server validation; its axis list is a
+-- constant, so it lives at module scope instead of being rebuilt on every call.
+local AXES = { "X", "Y", "Z" }
+
 -- Ray vs oriented box (slab test). origin/dir world-space, dir need not be unit
 -- (t is returned in units of dir). Returns t of entry (>= 0) or nil.
 function WeaponMath.RayOBB(origin: Vector3, dir: Vector3, boxCF: CFrame, half: Vector3): number?
 	local o = boxCF:PointToObjectSpace(origin)
 	local d = boxCF:VectorToObjectSpace(dir)
 	local tmin, tmax = -math.huge, math.huge
-	for _, axis in ipairs({ "X", "Y", "Z" }) do
+	for _, axis in AXES do
 		local oa, da, h = o[axis], d[axis], half[axis]
 		if math.abs(da) < 1e-9 then
 			if oa < -h or oa > h then

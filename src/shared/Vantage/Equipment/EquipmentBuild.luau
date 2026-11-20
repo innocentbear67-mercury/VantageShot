@@ -22,6 +22,7 @@ local Equipment = ReplicatedStorage:WaitForChild("Vantage"):WaitForChild("Equipm
 local Models = Equipment:WaitForChild("Models")
 local Data = require(Equipment:WaitForChild("EquipmentModels"))
 local Catalog = require(Equipment:WaitForChild("EquipmentCatalog"))
+local TagCache = require(script.Parent.Parent:WaitForChild("TagCache"))
 
 local Build = {}
 
@@ -354,7 +355,11 @@ if RunService:IsClient() and not _G.__VantageEquipAnimator then
 		local t = os.clock()
 		local cam = workspace.CurrentCamera
 		local cp = if cam then cam.CFrame.Position else Vector3.zero
-		for _, p in CollectionService:GetTagged("VantageEquipAnim") do
+		local set = TagCache.get("VantageEquipAnim")
+		if #set == 0 then
+			return
+		end
+		for _, p in set do
 			if p:IsA("BasePart") and (p.Position - cp).Magnitude < NEAR and p:IsDescendantOf(workspace) then
 				local w = p:FindFirstChild("EquipAnimWeld") :: Weld?
 				if w then

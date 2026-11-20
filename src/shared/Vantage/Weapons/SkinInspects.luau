@@ -15,10 +15,10 @@
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
-local CollectionService = game:GetService("CollectionService")
 local TweenService = game:GetService("TweenService")
 local Debris = game:GetService("Debris")
 local WeaponClips = require(script.Parent.WeaponClips)
+local TagCache = require(script.Parent.Parent:WaitForChild("TagCache"))
 
 local V = Vector3.new
 local function rgb(r, g, b)
@@ -879,7 +879,7 @@ local function boost(vm, amt: number, dur: number)
 		end
 		v = math.min(v, 1.6)
 		local done = #vm._ib == 0
-		for _, o in CollectionService:GetTagged("VantageSkinPulse") do
+		for _, o in TagCache.get("VantageSkinPulse") do
 			if vm.Root and o:IsDescendantOf(vm.Root) then
 				o:SetAttribute("InspectBoost", if done or v < 0.002 then nil else v)
 			end

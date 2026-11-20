@@ -562,8 +562,8 @@ end
 -- ─── pattern skins ───
 -- Every pattern Texture is tagged. One client Heartbeat loop animates them and keeps each texture's
 -- visibility in step with its part (Roblox draws textures even on a Transparency = 1 part).
-local CollectionService = game:GetService("CollectionService")
 local RunService = game:GetService("RunService")
+local TagCache = require(script.Parent.Parent:WaitForChild("TagCache"))
 local PAT_TAG = "VantagePatternTex"
 local patCache = setmetatable({}, { __mode = "k" })
 local animOn = false
@@ -584,7 +584,11 @@ local function startPatternLoop()
 		end
 		local cam = workspace.CurrentCamera
 		local cp = if cam then cam.CFrame.Position else Vector3.zero
-		for _, t in CollectionService:GetTagged(PAT_TAG) do
+		local set = TagCache.get(PAT_TAG)
+		if #set == 0 then
+			return
+		end
+		for _, t in set do
 			local d = patCache[t]
 			if not d then
 				if not t:IsA("Texture") then
