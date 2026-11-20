@@ -8,8 +8,14 @@ luau-lsp emits two diagnostic formats:
      (lint diagnostics)
 
 Output: repo-relative-path:L:C: Code: message — sorted, deduped.
+
+Checkout-independent: every occurrence of the repo root (both as given and as
+its realpath, e.g. macOS /tmp -> /private/tmp) is stripped from the WHOLE line,
+including paths embedded in message text. Paths outside the repo are left
+verbatim — never mangled to basenames.
 Usage: luau_compact.py <raw-output> <out-file> <repo-root-abs-path>
 """
+import os
 import re
 import sys
 
@@ -21,7 +27,13 @@ def main(raw, dst, repo_root):
     n = 0
     skipped = 0
     out_lines = []
-    prefix = repo_root.rstrip("/") + "/"
+    prefixes = [p.rstrip("/") + "/" for p in {repo_root, os.path.realpath(repo_root)}]
+
+    def strip(line):
+        for p in prefixes:
+            line = line.replace(p, "")
+        return line
+
     with open(raw) as f:
         for line in f:
             s = line.rstrip("\n")
@@ -29,26 +41,17 @@ def main(raw, dst, repo_root):
                 continue
             m = PAT_A.match(s)
             if m:
-                path = m.group(1)
-                if path.startswith("/"):
-                    if path.startswith(prefix):
-                        path = path[len(prefix):]
-                    else:
-                        path = path[path.rfind("/") + 1:]
-                out_lines.append(f"{path}:{m.group(2)}:{m.group(3)}: {m.group(4)}")
+                out_lines.append(strip(f"{m.group(1)}:{m.group(2)}:{m.group(3)}: {m.group(4)}"))
                 n += 1
                 continue
             m = PAT_B.match(s)
             if m:
-                out_lines.append(f"{m.group(1)}:{m.group(2)}:{m.group(3)}: {m.group(4)}")
+                out_lines.append(strip(f"{m.group(1)}:{m.group(2)}:{m.group(3)}: {m.group(4)}"))
                 n += 1
                 continue
             skipped += 1
-    # Strip the repo-root prefix ANYWHERE in the line (message text can embed
-    # absolute paths of other files) so ratchet keys are checkout-independent.
-    prefix = repo_root.rstrip("/") + "/"
     with open(dst, "w") as out:
-        for l in sorted(set(x.replace(prefix, "") for x in out_lines)):
+        for l in sorted(set(out_lines)):
             out.write(l + "\n")
     print(f"luau_compact: {n} diagnostics ({skipped} unclassified lines ignored) -> {dst}")
     return 0
