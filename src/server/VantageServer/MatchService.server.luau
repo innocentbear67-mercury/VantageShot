@@ -23,7 +23,7 @@
 	    left and comes back gets their match stats back.
 	  * Results: Match.Results (JSON) is published just before Phase "Ended": final rows for every
 	    participant (also those who left), server-picked MVP (winning team) and top performer, match
-	    earnings (MatchLedger). Players are frozen during the results and can leave early with
+	    earnings. Players are frozen during the results and can leave early with
 	    MatchRequest("Leave").
 ]]
 
@@ -41,7 +41,6 @@ local DamageService = require(script.Parent:WaitForChild("WeaponServer"):WaitFor
 local exempt = script.Parent:WaitForChild("ExemptMovement", 10) :: BindableEvent?
 local IntroService = require(script.Parent:WaitForChild("IntroService")) -- operative introductions (phase "Intro")
 local Progression = require(script.Parent:WaitForChild("Progression")) -- XP / directives for match end
-local Ledger = require(script.Parent:WaitForChild("MatchLedger")) -- per-match REQ / ORD / XP earned
 local MapService = require(script.Parent:WaitForChild("MapService")) -- 2026-11-18: map vote + rotation loader
 
 local M = DamageService.MatchFolder()

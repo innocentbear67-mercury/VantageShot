@@ -1008,7 +1008,6 @@ local function startReload(player: Player, st, character: Model)
 					return
 				end
 				a.Mag += 1
-				-- infinite reserve (no ammo pickups yet): a.Reserve -= 1
 			end
 			if states[player] == st and st.ReloadToken == token and st.Reloading then
 				sendAmmo(player, st, "Reloaded", id)
@@ -1024,7 +1023,6 @@ local function startReload(player: Player, st, character: Model)
 		end
 		local take = math.min(weapon.MagazineSize - a.Mag, a.Reserve)
 		a.Mag += take
-		-- infinite reserve (no ammo pickups yet): a.Reserve -= take
 		sendAmmo(player, st, "Reloaded", id)
 		st.Reloading = false
 		st.ReloadingId = nil

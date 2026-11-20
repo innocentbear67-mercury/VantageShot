@@ -18,7 +18,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
 local Vantage = ReplicatedStorage:WaitForChild("Vantage")
-local Config = require(Vantage:WaitForChild("Progression"):WaitForChild("ProgressionConfig"))
+local Config = require(script.Parent:WaitForChild("ProgressionConfig"))
 local Requisition = require(script.Parent:WaitForChild("Requisition"))
 -- 2026-11-17: Ordnance (ORD, second currency for Arsenal Crates) is earned through these hooks too
 local OrdCfg = require(game:GetService("ReplicatedStorage").Vantage:WaitForChild("Ordnance"):WaitForChild("OrdnanceConfig"))

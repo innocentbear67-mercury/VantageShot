@@ -121,19 +121,6 @@ local function flatOf(v: Vector3, fallback: Vector3): Vector3
 	return if f.Magnitude > 1e-3 then f.Unit else fallback
 end
 
--- ground path in steps: climbs / drops up to 6 studs a step, stops at walls and ledges
-local function groundPath(origin: Vector3, dir: Vector3, maxLen: number, step: number, caster: Model?): { Vector3 }
-	local pts = { origin }
-	local pos = origin
-	for _ = 1, math.floor(maxLen / step) do
-		if worldRay(pos + UP * 2.5, dir * step, caster) then break end
-		local nxt = groundAt(pos + dir * step + UP * 5, caster, 16)
-		if not nxt or math.abs(nxt.Y - pos.Y) > 6 then break end
-		table.insert(pts, nxt)
-		pos = nxt
-	end
-	return pts
-end
 local function pathLen(pts: { Vector3 }): number
 	local L = 0
 	for i = 2, #pts do L += (pts[i] - pts[i - 1]).Magnitude end
@@ -193,12 +180,6 @@ local function segDist(a: Vector3, b: Vector3, pt: Vector3): number
 	local l2 = ab:Dot(ab)
 	local t = if l2 > 1e-6 then math.clamp((pt - a):Dot(ab) / l2, 0, 1) else 0
 	return (a + ab * t - pt).Magnitude
-end
--- the ground under the crosshair: the first solid surface within range (or the end of the ray), dropped down
-local function aimGround(head: BasePart, look: Vector3, range: number, char: Model?): Vector3?
-	local r = worldRay(head.Position, look * range, char)
-	local pt = if r then r.Position - look * 1.5 else head.Position + look * range
-	return groundAt(pt + UP * 2, char, 90)
 end
 local function dodged(e, tHit: number, caster: Player, id: string): boolean
 	local pl = Players:GetPlayerFromCharacter(e.Model)

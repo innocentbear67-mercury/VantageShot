@@ -11,4 +11,3 @@ src/client/VantageWeaponClient/ViewmodelArms.luau:4: client-reaches-into-server:
 src/server/VantageAdminPanel.server.luau:4: server-uses-client-state: Owner-only panel. Client: StarterPlayerScripts.VantageAdminPanelClient (F2 or the ADMIN bu
 src/server/VantageControl/init.server.luau:19: server-uses-client-state: in StarterPlayerScripts; this script only wires the remote and decides when lines play.
 src/server/VantageServer/MapService.luau:13: server-uses-client-state: leave the lobby, see StarterPlayerScripts.LobbyLighting).
-src/server/VantageServer/MapService_2.luau:13: server-uses-client-state: leave the lobby, see StarterPlayerScripts.LobbyLighting).
