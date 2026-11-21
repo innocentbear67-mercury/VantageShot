@@ -1,3 +1,3 @@
-# Tests run under Lune (test files themselves are Lune scripts requiring
-# src/shared modules; the modules are still analyzed with the root roblox std).
-std = "lune"
+# Test files run under Lune. selene 0.32 cannot resolve a "lune" std; Lune's
+# globals are exactly Luau's, so lint under the plain Luau standard library.
+std = "luau"
