@@ -7596,4 +7596,4 @@ src/shared/Vantage/Weapons/WeaponUnlocks.luau:55:20: warning[multiple_statements
 src/shared/Vantage/Weapons/WeaponUnlocks.luau:87:52: warning[multiple_statements]: only one statement per line is allowed
 src/shared/Vantage/Weapons/WeaponUnlocks.luau:96:31: warning[multiple_statements]: only one statement per line is allowed
 
-## [boundary] 14 grandfathered violations — see audit/boundary_violations.txt
+## [boundary] 13 grandfathered violations — see audit/boundary_violations.txt

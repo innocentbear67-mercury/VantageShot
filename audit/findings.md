@@ -46,6 +46,14 @@ scratch; baselines: audit/baseline.{luau,selene}.txt, audit/boundary_violations.
     default.project.json now sets $ignoreUnknownInstances on every node (63
     guards) so a live rojo sync cannot delete untracked place content.
 
+16. Integration patch adopted (owner + Claude Code, 2026-11-21): per-folder init.meta.json /
+    <name>.meta.json files give ignoreUnknownInstances to EVERY filesystem-synced instance
+    (complete coverage — supersedes the 12 project-node flags); the Workspace.Map_LiveFire
+    project node was REMOVED: the map folder is place-owned and an empty synced folder would
+    make MapService treat an unbuilt map as present — the three map system scripts remain in
+    the repo as reference copies, unmanaged by rojo; JumpPadServer and the admin roles read
+    adopted from the patch verbatim.
+
 ## Phase 2 — two-plane ranking
 
 ### Plane A — correctness (player-visible breakage)

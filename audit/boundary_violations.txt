@@ -1,4 +1,5 @@
 ReplicatedFirst/VantageLoader.client.luau:4: client-reaches-into-server: (backup: ServerStorage._LoaderBackup.VantageLoader_Cinematic). What remains is the loading
+Workspace/Map_LiveFire/Systems/MapClient.server.luau:3: server-uses-client-state: local player = Players.LocalPlayer
 src/client/VantageAdminPanelClient.client.luau:6: client-reaches-into-server: (ServerScriptService.VantageAdminPanel), so this UI grants nothing on its own.
 src/client/VantageAdminSkinsClient.client.luau:3: client-reaches-into-server: Hotkeys for the admin skin checker (server: ServerScriptService.VantageAdminSkins):
 src/client/VantageWeaponClient/Armory/ArmourBay.luau:1: client-reaches-into-server: -- armour customisation retired 2026-11-17 (real module: ServerStorage._ArmourArchive_2026

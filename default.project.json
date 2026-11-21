@@ -2,17 +2,13 @@
   "name": "VantageShot",
   "tree": {
     "$className": "DataModel",
-    "$ignoreUnknownInstances": true,
     "ReplicatedFirst": {
       "$path": "ReplicatedFirst",
       "$ignoreUnknownInstances": true
     },
     "ReplicatedStorage": {
-      "$ignoreUnknownInstances": true,
-      "Vantage": {
-        "$path": "src/shared/Vantage",
-        "$ignoreUnknownInstances": true
-      }
+      "$path": "src/shared",
+      "$ignoreUnknownInstances": true
     },
     "ServerScriptService": {
       "$path": "src/server",
@@ -24,7 +20,6 @@
     },
     "StarterPlayer": {
       "$className": "StarterPlayer",
-      "$ignoreUnknownInstances": true,
       "StarterCharacterScripts": {
         "$path": "StarterPlayer/StarterCharacterScripts",
         "$ignoreUnknownInstances": true
@@ -32,34 +27,8 @@
       "StarterPlayerScripts": {
         "$path": "src/client",
         "$ignoreUnknownInstances": true
-      }
-    },
-    "Workspace": {
-      "$className": "Workspace",
-      "$ignoreUnknownInstances": true,
-      "Map_LiveFire": {
-        "$className": "Folder",
-        "$ignoreUnknownInstances": true,
-        "Systems": {
-          "$className": "Folder",
-          "$ignoreUnknownInstances": true,
-          "MapServer": {
-            "$path": "Workspace/Map_LiveFire/Systems/MapServer.server.luau"
-          },
-          "MapClient": {
-            "$properties": {
-              "RunContext": "Client"
-            },
-            "$path": "Workspace/Map_LiveFire/Systems/MapClient.server.luau"
-          },
-          "AmbientClient": {
-            "$properties": {
-              "RunContext": "Client"
-            },
-            "$path": "Workspace/Map_LiveFire/Systems/AmbientClient.server.luau"
-          }
-        }
-      }
+      },
+      "$ignoreUnknownInstances": true
     }
   }
 }
