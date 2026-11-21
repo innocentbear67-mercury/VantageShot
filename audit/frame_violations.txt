@@ -1,0 +1,1 @@
+src/client/VantageAbilityClient/GrappleFX.luau:587: gettagged-in-frame-loop: for _, m in CollectionService:GetTagged(tag) do

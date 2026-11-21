@@ -1,8 +1,17 @@
 local G = {}
 local V = Vector3.new
 function G.build(map, O, g, sym, box, extra)
-	local BK = game.ServerStorage._ClutteredMaps_20261119
-	local stpl = BK.Map_PortoSole.Gameplay.Spawns:FindFirstChild("BlueSpawn")
+	local BK = game.ServerStorage:FindFirstChild("_ClutteredMaps_20261119")
+	local stpl
+	if BK then
+		local mp = BK:FindFirstChild("Map_PortoSole")
+		local gp = mp and mp:FindFirstChild("Gameplay")
+		local sp = gp and gp:FindFirstChild("Spawns")
+		stpl = sp and sp:FindFirstChild("BlueSpawn")
+	end
+	if not stpl then
+		error("AGameplay: spawn template archive game.ServerStorage._ClutteredMaps_20261119.Map_PortoSole.Gameplay.Spawns is missing — restore it or point BK at a new template before rebuilding")
+	end
 	local Gp = map:FindFirstChild("Gameplay") or Instance.new("Folder")
 	Gp.Name = "Gameplay" Gp:ClearAllChildren() Gp.Parent = map
 	local function fold(n) local f = Instance.new("Folder") f.Name = n f.Parent = Gp return f end

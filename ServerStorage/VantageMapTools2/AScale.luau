@@ -2,8 +2,44 @@
 local S = {}
 local V = Vector3.new
 local function axisFactor(dir, s) return V(dir.X * s, dir.Y, dir.Z * s).Magnitude end
-function S.scaleMap(root, O, s, skipNames)
+function S.scaleMap(root, O, s, skipNames, apply)
 	skipNames = skipNames or {}
+	if apply ~= true then
+		local skipRoots = {}
+		for _, d in ipairs(root:GetDescendants()) do
+			if skipNames[d.Name] and (d:IsA("Folder") or d:IsA("Model")) then
+				table.insert(skipRoots, d)
+			end
+		end
+		local function drySkipped(d)
+			for _, r in ipairs(skipRoots) do
+				if d:IsDescendantOf(r) then
+					return true
+				end
+			end
+			return false
+		end
+		local counts = {}
+		local total = 0
+		for _, d in ipairs(root:GetDescendants()) do
+			if d:IsA("BasePart") and not drySkipped(d) then
+				local cn = d.ClassName
+				counts[cn] = (counts[cn] or 0) + 1
+				total += 1
+			end
+		end
+		print(("AScale: dry run — %d parts in %s would be rescaled (x,z) by %s; skipped groups move rigidly"):format(total, root:GetFullName(), tostring(s)))
+		local classes = {}
+		for cls in pairs(counts) do
+			table.insert(classes, cls)
+		end
+		table.sort(classes)
+		for _, cls in ipairs(classes) do
+			print(("AScale:   %s x%d"):format(cls, counts[cls]))
+		end
+		print("AScale: re-run with Apply=true to rescale in place — no backup is made")
+		return
+	end
 	local n = 0
 	local skipRoots = {}
 	for _, d in ipairs(root:GetDescendants()) do

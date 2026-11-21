@@ -232,7 +232,7 @@ function B.stilt(par, name, x1, z1, x2, z2, doors, rampSide, o)
       if alongX then door(m, "x", c, fo, Y0, 6, 7.4, -out) else door(m, "z", fo, c, Y0, 6, 7.4, -out) end
     end
     if alongX then box(m, "Band", a - 0.3, 20, fo, b + 0.3, 21.2, fo + out * 0.35, "d") else box(m, "Band", fo, 20, a - 0.3, fo + out * 0.35, 21.2, b + 0.3, "d") end
-    B.face(m, alongX and "x" or "z", a, b, fo, out, Y0, 20, hasDoor[side] and nil or 15.5, 7.5)
+    B.face(m, alongX and "x" or "z", a, b, fo, out, Y0, 20, if hasDoor[side] then nil else 15.5, 7.5)
   end
   for _, sd in ipairs({"N", "S", "W", "E"}) do wall(sd) end
   -- roof with stair hole

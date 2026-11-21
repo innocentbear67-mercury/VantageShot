@@ -83,20 +83,6 @@ function M.joints(par,axis,a1,a2,f,n,y1,y2,step)
   if axis=="x" then M.box(par,"Joint",v-0.15,y1,f,v+0.15,y2,f+n*0.1,"d") else M.box(par,"Joint",f,y1,v-0.15,f+n*0.1,y2,v+0.15,"d") end
  end
 end
--- railing on straight axis-aligned line
-function M.rail(par,x1,z1,x2,z2,y)
- local L=math.max(math.abs(x2-x1),math.abs(z2-z1)) if L<1 then return end
- local alongX=math.abs(x2-x1)>=math.abs(z2-z1)
- local function bar(name,y1,y2,th,k)
-  if alongX then local p=M.box(par,name,math.min(x1,x2),y1,z1-th/2,math.max(x1,x2),y2,z1+th/2,k) return p
-  else local p=M.box(par,name,x1-th/2,y1,math.min(z1,z2),x1+th/2,y2,math.max(z1,z2),k) return p end
- end
- local top=bar("RailTop",y+3.1,y+3.45,0.35,"y")
- local mid=bar("RailMid",y+1.6,y+1.85,0.2,"m") if mid then mid.CastShadow=false end
- local n=math.max(1,math.floor(L/6))
- for i=0,n do local t=i/n local x=x1+(x2-x1)*t local z=z1+(z2-z1)*t
-  local p=M.box(par,"RailPost",x-0.14,y,z-0.14,x+0.14,y+3.1,z+0.14,"m") p.CastShadow=false end
-end
 -- rails round rect with gaps {{x,z},...}
 function M.rectRails(par,x1,z1,x2,z2,y,gaps,gw)
  gw=gw or 8 gaps=gaps or {}
@@ -187,7 +173,7 @@ function M.hvac(par,x,z,y)
  M.box(par,"HVAC",x-3,y,z-2.2,x+3,y+3,z+2.2,"m")
  M.box(par,"HVACFan",x-2.4,y+3,z-1.6,x-0.2,y+3.3,z+1.6,"d") M.box(par,"HVACFan",x+0.2,y+3,z-1.6,x+2.4,y+3.3,z+1.6,"d")
 end
--- BARRIER_OVERRIDE: rails are solid barrier panels with orange cap
+-- rails are solid barrier panels with orange cap
 function M.rail(par,x1,z1,x2,z2,y)
  local alongX=math.abs(x2-x1)>=math.abs(z2-z1)
  local L=alongX and math.abs(x2-x1) or math.abs(z2-z1) if L<0.8 then return end

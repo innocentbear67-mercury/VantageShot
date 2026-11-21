@@ -1,0 +1,3 @@
+# Test files run under Lune. selene 0.32 cannot resolve a "lune" std; Lune's
+# globals are exactly Luau's, so lint under the plain Luau standard library.
+std = "luau"

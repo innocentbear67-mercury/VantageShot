@@ -23,8 +23,7 @@ function C.rail(par, x1, z1, x2, z2, y)
   for i = 0, n do K.P(par, "RailPost", Vector3.new(0.25, 3.5, 0.25), cf * CFrame.new(0, 1.75, -L / 2 + L * i / n), C.STEEL, Enum.Material.Metal).CastShadow = false end
   local blk = K.P(par, "RailBlocker", Vector3.new(0.4, 3.5, L), cf * CFrame.new(0, 1.75, 0), C.STEEL, Enum.Material.Metal); blk.Transparency = 1; blk.CastShadow = false
 end
-function C.label() end
-function C._oldLabel(par, text, x, y, z, nx, nz, w)
+function C.label(par, text, x, y, z, nx, nz, w)
   local pos = Vector3.new(x, y, z + K.CZ)
   local plate = K.P(par, "Label", Vector3.new(w or (#text * 1.3 + 4), 3.6, 0.3), CFrame.lookAt(pos, pos + Vector3.new(nx, 0, nz)), Color3.fromRGB(34, 36, 40), Enum.Material.Metal)
   plate.CanCollide = false

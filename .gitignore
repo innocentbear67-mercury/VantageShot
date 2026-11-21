@@ -1,0 +1,5 @@
+/audit/defs/
+/sourcemap.json
+.DS_Store
+*.rbxl
+*.rbxlx

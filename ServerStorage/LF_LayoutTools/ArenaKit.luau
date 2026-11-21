@@ -58,9 +58,9 @@ function K.anchor(par,x,y,z) do return end
  local n=K.B(par,"AnchorNode",x-2,x+2,y-2,y+2,z-2,z+2,"white")
  local r=Instance.new("Part") r.Name="AnchorRing" r.Shape=Enum.PartType.Cylinder r.Anchored=true r.Material=Enum.Material.Neon r.Color=COL.blue r.CastShadow=false
  r.Size=Vector3.new(0.6,7,7) r.CFrame=CFrame.new(x,y,z)*CFrame.Angles(0,0,math.rad(90)) r.Parent=par
- local l=Instance.new("PointLight",r) l.Range=10 l.Brightness=1 l.Color=COL.blue
+ local l=Instance.new("PointLight") l.Range=10 l.Brightness=1 l.Color=COL.blue l.Parent=r
 end
 function K.light(par,x0,x1,y,z0,z1,face,range)
  local p=K.B(par,"LightStrip",x0,x1,y-0.25,y+0.25,z0,z1,"glow")
- local l=Instance.new("SurfaceLight",p) l.Face=face or Enum.NormalId.Bottom l.Range=range or 22 l.Brightness=1.6 l.Angle=120 l.Color=COL.glow return p end
+ local l=Instance.new("SurfaceLight") l.Face=face or Enum.NormalId.Bottom l.Range=range or 22 l.Brightness=1.6 l.Angle=120 l.Color=COL.glow l.Parent=p return p end
 return K

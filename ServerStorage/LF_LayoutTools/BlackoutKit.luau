@@ -45,7 +45,7 @@ function K.wedge(par,tx,tz,dir,run,rise,w,base,lime,boost)
 function K.pad(par,x,y,z,target)
  local p=K.box(par,"JumpPad",x-4,x+4,y,y+0.4,z-4,z+4,"lime") K.box(par,"JumpPadGlow",x-2.5,x+2.5,y+0.4,y+0.5,z-2.5,z+2.5,"limeN")
  p:SetAttribute("PadTarget",K.O():PointToWorldSpace(target)) CS:AddTag(p,"JumpPad")
- local l=Instance.new("PointLight",p) l.Color=K.LIME l.Range=14 l.Brightness=1.5 return p end
+ local l=Instance.new("PointLight") l.Color=K.LIME l.Range=14 l.Brightness=1.5 l.Parent=p return p end
 -- ===== shaped wall pieces (upright; built in a local frame: u = length axis, v = thickness) =====
 local function lbox(par,base,name,u0,u1,y0,y1,v0,v1,m)
  if u0>u1 then u0,u1=u1,u0 end if v0>v1 then v0,v1=v1,v0 end
@@ -96,5 +96,5 @@ function K.outline(par,axis,c,dir,u0,u1,y0,y1,w)
  bar(u0,u1,y0,y0+w) bar(u0,u1,y1-w,y1) bar(u0,u0+w,y0,y1) bar(u1-w,u1,y0,y1) end
 function K.sign(p,face,text,size)
  local g=Instance.new("SurfaceGui") g.Face=face g.SizingMode=Enum.SurfaceGuiSizingMode.PixelsPerStud g.PixelsPerStud=size or 12 g.LightInfluence=0.3 g.Parent=p
- local l=Instance.new("TextLabel",g) l.Size=UDim2.fromScale(1,1) l.BackgroundTransparency=1 l.Text=text l.TextScaled=true l.FontFace=Font.fromEnum(Enum.Font.GothamBlack) l.TextColor3=K.LIME l.TextStrokeTransparency=0.6 l.TextStrokeColor3=Color3.fromRGB(28,36,74) return g end
+ local l=Instance.new("TextLabel") l.Size=UDim2.fromScale(1,1) l.BackgroundTransparency=1 l.Text=text l.TextScaled=true l.FontFace=Font.fromEnum(Enum.Font.GothamBlack) l.TextColor3=K.LIME l.TextStrokeTransparency=0.6 l.TextStrokeColor3=Color3.fromRGB(28,36,74) l.Parent=g return g end
 return K
