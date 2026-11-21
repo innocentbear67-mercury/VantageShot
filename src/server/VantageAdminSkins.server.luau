@@ -31,8 +31,21 @@ local function isAdmin(p: Player): boolean
 	if game.CreatorType == Enum.CreatorType.User then
 		return p.UserId == game.CreatorId
 	end
-	local ok, roles = pcall(GroupService.GetRolesInGroupAsync, GroupService, p.UserId, game.CreatorId)
-	return ok and (roles and roles[1] and roles[1].rank or 0) >= 254
+	local ok, res = pcall(GroupService.GetRolesInGroupAsync, GroupService, p.UserId, game.CreatorId)
+	if not ok or type(res) ~= "table" then
+		return false
+	end
+	-- result shape: { IsMember: boolean, Roles: { { Name, Rank } } } (not a plain array)
+	local rank = 0
+	if res.IsMember and type(res.Roles) == "table" then
+		for _, r in res.Roles do
+			local v = if type(r) == "table" then (r.Rank or r.rank) else nil
+			if type(v) == "number" and v > rank then
+				rank = v
+			end
+		end
+	end
+	return rank >= 254
 end
 
 local function norm(s: string): string

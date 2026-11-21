@@ -2,42 +2,60 @@
   "name": "VantageShot",
   "tree": {
     "$className": "DataModel",
+    "$ignoreUnknownInstances": true,
     "ReplicatedFirst": {
-      "$path": "ReplicatedFirst"
+      "$path": "ReplicatedFirst",
+      "$ignoreUnknownInstances": true
     },
     "ReplicatedStorage": {
-      "$path": "src/shared"
+      "$ignoreUnknownInstances": true,
+      "Vantage": {
+        "$path": "src/shared/Vantage",
+        "$ignoreUnknownInstances": true
+      }
     },
     "ServerScriptService": {
-      "$path": "src/server"
+      "$path": "src/server",
+      "$ignoreUnknownInstances": true
     },
     "ServerStorage": {
-      "$path": "ServerStorage"
+      "$path": "ServerStorage",
+      "$ignoreUnknownInstances": true
     },
     "StarterPlayer": {
       "$className": "StarterPlayer",
+      "$ignoreUnknownInstances": true,
       "StarterCharacterScripts": {
-        "$path": "StarterPlayer/StarterCharacterScripts"
+        "$path": "StarterPlayer/StarterCharacterScripts",
+        "$ignoreUnknownInstances": true
       },
       "StarterPlayerScripts": {
-        "$path": "src/client"
+        "$path": "src/client",
+        "$ignoreUnknownInstances": true
       }
     },
     "Workspace": {
       "$className": "Workspace",
+      "$ignoreUnknownInstances": true,
       "Map_LiveFire": {
         "$className": "Folder",
+        "$ignoreUnknownInstances": true,
         "Systems": {
           "$className": "Folder",
+          "$ignoreUnknownInstances": true,
           "MapServer": {
             "$path": "Workspace/Map_LiveFire/Systems/MapServer.server.luau"
           },
           "MapClient": {
-            "$properties": { "RunContext": "Client" },
+            "$properties": {
+              "RunContext": "Client"
+            },
             "$path": "Workspace/Map_LiveFire/Systems/MapClient.server.luau"
           },
           "AmbientClient": {
-            "$properties": { "RunContext": "Client" },
+            "$properties": {
+              "RunContext": "Client"
+            },
             "$path": "Workspace/Map_LiveFire/Systems/AmbientClient.server.luau"
           }
         }

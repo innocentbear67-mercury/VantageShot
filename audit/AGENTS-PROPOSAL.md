@@ -90,6 +90,14 @@ Player-facing vocabulary: `FEATURES.md`. Audit findings and ranking:
   `EnsureCoreRemotes.server.luau` + `RemotesLib` make fresh builds
   self-sufficient. Never let a module occupy the folder's path.
 
+- **Rojo live-sync safety:** every project node carries
+  `$ignoreUnknownInstances` — a sync must never delete untracked place content
+  (models, saved folders, backups). Keep the guards when editing
+  `default.project.json`.
+- **Jump pads exempt via the proximity poll, never Touched** — most pads in the
+  place have `CanTouch` off (a property a code-only export cannot see), so touch
+  events never fire for them.
+
 ## The standing hunt (re-run on demand)
 
 New slop categories arrive with new code. Periodically (or after a batch of

@@ -4728,11 +4728,11 @@ src/client/VantageWeaponClient/Lobby/init.luau:838:41: warning[multiple_statemen
 src/client/VantageWeaponClient/Lobby/init.luau:839:39: warning[multiple_statements]: only one statement per line is allowed
 src/client/VantageWeaponClient/MatchHud.luau:105:8: warning[unused_variable]: track is assigned a value, but never used
 src/client/VantageWeaponClient/MatchHud.luau:128:64: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
-src/client/VantageWeaponClient/OperativeIntro.luau:537:60: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
-src/client/VantageWeaponClient/OperativeIntro.luau:538:127: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
-src/client/VantageWeaponClient/OperativeIntro.luau:707:9: warning[shadowing]: shadowing variable `total`
-src/client/VantageWeaponClient/OperativeIntro.luau:78:16: warning[unused_variable]: bump is defined, but never used
-src/client/VantageWeaponClient/OperativeIntro.luau:848:9: warning[unused_variable]: u is assigned a value, but never used
+src/client/VantageWeaponClient/OperativeIntro/init.luau:537:60: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
+src/client/VantageWeaponClient/OperativeIntro/init.luau:538:127: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
+src/client/VantageWeaponClient/OperativeIntro/init.luau:707:9: warning[shadowing]: shadowing variable `total`
+src/client/VantageWeaponClient/OperativeIntro/init.luau:78:16: warning[unused_variable]: bump is defined, but never used
+src/client/VantageWeaponClient/OperativeIntro/init.luau:848:9: warning[unused_variable]: u is assigned a value, but never used
 src/client/VantageWeaponClient/SettingsMenu.luau:420:61: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
 src/client/VantageWeaponClient/SettingsMenu.luau:426:66: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
 src/client/VantageWeaponClient/SettingsMenu.luau:427:99: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale

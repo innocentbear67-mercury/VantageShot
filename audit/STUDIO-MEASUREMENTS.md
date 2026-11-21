@@ -15,14 +15,14 @@ Every engine number below is Roblox's own output, not a claim from the audit.
 
 | Fix (commit) | Plane | Expected effect — verify, don't trust |
 |---|---|---|
-| A1 lifts/ambient RunContext (`96de740`) | features | gravity lifts launch you; ambient props animate |
+| A1 lifts/ambient RunContext (`96de740`) | export fidelity | no-op in your live place (its instances were already set correctly — the export had lost the setting); fresh rojo builds now match; confirm lifts/ambient unchanged after sync |
 | B1/B5 HUD chain + parked clusters (`0627ee4`) | client frame | smaller, steadier client frame during a match |
 | B2 TagCache loops + RayOBB hoist (`2ed2211`) | client+server | less GC churn; GC bars thinner in the timeline |
 | B3/B6 write-on-change (`0f32e03`) | client frame | fewer per-frame string/GUI writes in lobby |
 | C1 HitValidation (`8f4703a`) | server tick | shorter server frame with a full lobby |
 | C2 TimeLeft 1 Hz (`8f4703a`) | replication | ~19× fewer TimeLeft attribute updates |
 | C3 pellet batching (`8f4703a`) | replication | shotgun fights: 23 instead of 207 messages per blast |
-| C4 JumpPad events (`8f4703a`) | server tick | zero idle JumpPad wake-ups |
+| C4 JumpPad poll, cheaper (`8f4703a` + post-review revert) | server tick | same 10 Hz exemption timing as the original (Touched could not work: 70/88 pads have CanTouch off), minus the per-tick allocations |
 | D1 dead shared modules (`c073a69`) | join | ~60 KB less replicated Luau per join |
 
 ## 1. Client measurements (do these twice: A then B)
@@ -57,11 +57,14 @@ lobby (open the lobby screen and compare idle frame time).
    view, `Ctrl+F6`) during a live match with a full bot lobby
    (`/squad` in chat tops teams up). Compare the `RunService.PostSimulation`
    (Heartbeat) band between A and B — C1/C4 should shrink it.
-2. **JumpPad idle**: before syncing, a server running old code shows constant
-   wake-ups; after C4 there is nothing when nobody is on a pad (no measurement
-   needed — it is event-driven).
-3. **Feature checks (A1):** touch an ECLIPSE gravity lift → you launch; watch
-   a tagged ambient prop (EclipseAnim) → it moves (~30 Hz, culled by distance).
+2. **JumpPad**: the 10 Hz proximity poll is back (post-review revert — most pads
+   have CanTouch off, so Touched never fires for them); it now iterates the
+   signal-maintained TagCache set instead of allocating per tick. Exemption
+   timing is identical to the original.
+3. **Sanity checks (A1):** lifts already launch in your live place and ambient
+   props already animate — both were correct in Studio and only the exported
+   copy had lost the setting. After syncing, simply confirm both still work
+   (the repo fix is what makes fresh rojo builds behave the same).
 
 ## 3. Replication measurements (the network wins)
 
@@ -87,8 +90,8 @@ lobby (open the lobby screen and compare idle frame time).
 | Server Heartbeat band (full lobby) | | | server MicroProfiler |
 | TimeLeft updates / s on client | | | expect 20 → 1 |
 | "Shot" messages per blast per spectator | | | expect 9 → 1 |
-| Gravity lift launches you? | no | | A1 |
-| Ambient props animate? | no | | A1 |
+| Gravity lift launches you? | yes (already correct in place) | | confirm unchanged after sync |
+| Ambient props animate? | yes (already correct in place) | | confirm unchanged after sync |
 | Join time to playable (rough) | | | ~60 KB less replicated code |
 
 ## 5. Honest limits

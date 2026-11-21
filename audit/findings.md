@@ -35,6 +35,17 @@ scratch; baselines: audit/baseline.{luau,selene}.txt, audit/boundary_violations.
 13. Comment archive pointers (ServerStorage._*Backup*) reference Studio-place state
     not present in the repo — verifying them needs Studio, not source.
 
+15. Place-level corrections from the owner's review (2026-11-21, post-PR): (a) the
+    live place's MapClient/AmbientClient were ALREADY configured correctly — the
+    exported copy lost the setting, so A1 is export-fidelity/fresh-build
+    correctness, not a live-place fix; (b) 70 of 88 jump pads in the place have
+    CanTouch off (invisible to a code-only audit), so the C4 Touched rewrite was
+    REVERTED to the original 10 Hz proximity poll (TagCache swap only — same box
+    test and cadence); (c) GroupService:GetRolesInGroupAsync returns
+    { IsMember, Roles } — the admin gate read was fixed to that shape; (d)
+    default.project.json now sets $ignoreUnknownInstances on every node (63
+    guards) so a live rojo sync cannot delete untracked place content.
+
 ## Phase 2 — two-plane ranking
 
 ### Plane A — correctness (player-visible breakage)

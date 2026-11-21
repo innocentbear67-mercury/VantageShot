@@ -1032,13 +1032,13 @@ src/client/VantageWeaponClient/Lobby/UnboxHS.luau:988:44: SameLineStatement: A n
 src/client/VantageWeaponClient/Lobby/init.luau:1284:9: LocalShadow: Variable 'okS' shadows previous declaration at line 1204
 src/client/VantageWeaponClient/Lobby/init.luau:44:7: ImportUnused: Import 'Assets' is never used; prefix with '_' to silence
 src/client/VantageWeaponClient/MatchHud.luau:105:8: LocalUnused: Variable 'track' is never used; prefix with '_' to silence
-src/client/VantageWeaponClient/OperativeIntro.luau:1037:3: TypeError: Cannot add property 'Suspended' to table 'ThirdPersonRig'
-src/client/VantageWeaponClient/OperativeIntro.luau:1129:3: TypeError: Cannot add property 'Suspended' to table 'ThirdPersonRig'
-src/client/VantageWeaponClient/OperativeIntro.luau:622:2: TypeError: Cannot add property 'Suspended' to table 'ThirdPersonRig'
-src/client/VantageWeaponClient/OperativeIntro.luau:78:16: FunctionUnused: Function 'bump' is never used; prefix with '_' to silence
-src/client/VantageWeaponClient/OperativeIntro.luau:848:9: LocalUnused: Variable 'u' is never used; prefix with '_' to silence
-src/client/VantageWeaponClient/OperativeIntro.luau:927:18: TypeError: Key 'Thrust' not found in table '{|  |}'
-src/client/VantageWeaponClient/OperativeIntro.luau:939:17: TypeError: Key 'Wrist' not found in table '{|  |}'
+src/client/VantageWeaponClient/OperativeIntro/init.luau:1037:3: TypeError: Cannot add property 'Suspended' to table 'ThirdPersonRig'
+src/client/VantageWeaponClient/OperativeIntro/init.luau:1129:3: TypeError: Cannot add property 'Suspended' to table 'ThirdPersonRig'
+src/client/VantageWeaponClient/OperativeIntro/init.luau:622:2: TypeError: Cannot add property 'Suspended' to table 'ThirdPersonRig'
+src/client/VantageWeaponClient/OperativeIntro/init.luau:78:16: FunctionUnused: Function 'bump' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/OperativeIntro/init.luau:848:9: LocalUnused: Variable 'u' is never used; prefix with '_' to silence
+src/client/VantageWeaponClient/OperativeIntro/init.luau:927:18: TypeError: Key 'Thrust' not found in table '{|  |}'
+src/client/VantageWeaponClient/OperativeIntro/init.luau:939:17: TypeError: Key 'Wrist' not found in table '{|  |}'
 src/client/VantageWeaponClient/ShieldFX.luau:92:9: TypeError: Cannot cast 'Instance' into 'BasePart?' because the types are unrelated
 src/client/VantageWeaponClient/SignatureClient.luau:42:7: LocalUnused: Variable 'DEV_ORDER' is never used; prefix with '_' to silence
 src/client/VantageWeaponClient/SignatureClient.luau:461:76: SameLineStatement: A new statement is on the same line; add semi-colon on previous statement to silence
@@ -5966,11 +5966,11 @@ src/client/VantageWeaponClient/Lobby/init.luau:838:41: warning[multiple_statemen
 src/client/VantageWeaponClient/Lobby/init.luau:839:39: warning[multiple_statements]: only one statement per line is allowed
 src/client/VantageWeaponClient/MatchHud.luau:105:8: warning[unused_variable]: track is assigned a value, but never used
 src/client/VantageWeaponClient/MatchHud.luau:128:64: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
-src/client/VantageWeaponClient/OperativeIntro.luau:537:60: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
-src/client/VantageWeaponClient/OperativeIntro.luau:538:127: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
-src/client/VantageWeaponClient/OperativeIntro.luau:707:9: warning[shadowing]: shadowing variable `total`
-src/client/VantageWeaponClient/OperativeIntro.luau:78:16: warning[unused_variable]: bump is defined, but never used
-src/client/VantageWeaponClient/OperativeIntro.luau:848:9: warning[unused_variable]: u is assigned a value, but never used
+src/client/VantageWeaponClient/OperativeIntro/init.luau:537:60: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
+src/client/VantageWeaponClient/OperativeIntro/init.luau:538:127: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
+src/client/VantageWeaponClient/OperativeIntro/init.luau:707:9: warning[shadowing]: shadowing variable `total`
+src/client/VantageWeaponClient/OperativeIntro/init.luau:78:16: warning[unused_variable]: bump is defined, but never used
+src/client/VantageWeaponClient/OperativeIntro/init.luau:848:9: warning[unused_variable]: u is assigned a value, but never used
 src/client/VantageWeaponClient/SettingsMenu.luau:420:61: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
 src/client/VantageWeaponClient/SettingsMenu.luau:426:66: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
 src/client/VantageWeaponClient/SettingsMenu.luau:427:99: warning[roblox_manual_fromscale_or_fromoffset]: this UDim2.new call only sets scale, and can be simplified using UDim2.fromScale
