@@ -37,7 +37,6 @@ local KIT = require(Vantage:WaitForChild("UI"):WaitForChild("VisorKit"))
 local Feed = require(Vantage.UI:WaitForChild("VisorFeed"))
 local AbilityConfig = require(Vantage:WaitForChild("Abilities"):WaitForChild("AbilityConfig"))
 local Bus = require(Vantage.UI:WaitForChild("VisorBus"))
-local Honeycomb = require(Vantage.UI:WaitForChild("VisorHoneycomb"))
 local HexGrid = require(Vantage.UI:WaitForChild("VisorHexGrid"))
 
 local C = Color3.fromRGB
@@ -151,7 +150,6 @@ for _, q in rimQ do
 end
 local threatQ = quads("HoloVeins", 5, { ImageColor3 = RED, ImageTransparency = 1 }) -- hits light the veins red on that side
 
--- living honeycomb: every hex on the shell lit individually by one engine (VisorHoneycomb)
 -- v6: the honeycomb is retired; the frame's energy veins are the living layer. `hc` keeps the honeycomb's
 -- API so every bus reaction (boot, damage, scan, dash, jump, lock...) now drives the veins per quadrant.
 local PRI_V, HI_V = C(77, 205, 255), C(160, 255, 255)

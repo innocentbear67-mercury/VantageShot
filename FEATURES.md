@@ -78,7 +78,7 @@ when a feature's owner is uncertain it says `owns: X (verify)`.
 
 ## Lobby, matchmaking, match flow
 
-- **Walking lobby** — you spawn INTO the HyperLobby hall and walk to queue pads; no old-style main menu. `src/server/VantageServer/LobbyService.server.luau`, `src/client/VantageWeaponClient/Lobby/{init, LobbyKit, LobbySkin, Pages, Gloss, HS}.luau`, `src/client/{LobbyFX, LobbyLighting, LobbyPresence}.client.luau`.
+- **Walking lobby** — you spawn INTO the HyperLobby hall and walk to queue pads; no old-style main menu. `src/server/VantageServer/LobbyService.server.luau`, `src/client/VantageWeaponClient/Lobby/{init, LobbyKit, Pages, Gloss, HS}.luau`, `src/client/{LobbyFX, LobbyLighting, LobbyPresence}.client.luau`.
 - **Queue / DEPLOY pads + mode select** — step on a pad (or lobby HUD) to queue a mode. `LobbyPresence`, `src/client/VantageWeaponClient/Lobby/ModesHS.luau`, `src/server/VantageServer/MatchService.server.luau`.
 - **Matchmaking & teams** — queue fills a full lobby-sized match, teams assigned, characters spawn once. `MatchService`, `src/server/VantageServer/TeamSpawnServer.server.luau`, `src/shared/Vantage/MatchConfig.luau`.
 - **Match phases** — Deploy → Operative Intro → Prep → Countdown → Live → Results, with in-phase HUD countdowns. `MatchService`, `src/shared/Vantage/MatchConfig.luau`, `src/client/VantageWeaponClient/MatchHud.luau`.
@@ -115,7 +115,7 @@ when a feature's owner is uncertain it says `owns: X (verify)`.
 
 - **Minimal HUD policy** — crosshair + ammo + hit markers only by default (user decision 2026-11-14). `src/client/VantageMinimalHud.client.luau`, drawn by `src/client/VantageWeaponClient/Hud.luau`.
 - **Combat HUD (HS Match v5)** — health/shield, ammo, score box, timer, kill line, ult/ability tiles, heat/reload states. `Hud.luau`, `HudOptics.luau`, `MatchHud.luau`.
-- **Exosuit visor (H)** — helmet close/open, holographic panels, honeycomb, feed bus. `src/client/VantageVisorClient.client.luau`, `src/shared/Vantage/UI/{VisorKit, VisorHolo, VisorHoneycomb, VisorHexGrid, VisorBus, VisorFeed}.luau`. Radar cluster is parked and NOT updating (audit #12) — `owns: VisorClient (verify before reviving)`.
+- **Exosuit visor (H)** — helmet close/open, holographic panels, energy veins, feed bus. `src/client/VantageVisorClient.client.luau`, `src/shared/Vantage/UI/{VisorKit, VisorHolo, VisorHexGrid, VisorBus, VisorFeed}.luau`. Radar cluster is parked and NOT updating (audit #12) — `owns: VisorClient (verify before reviving)`.
 - **Scoreboard (hold Tab)** — match intelligence with per-match stats. `src/client/ScoreboardClient.client.luau`, `src/shared/Vantage/{ScoreboardConfig, ScoreboardTheme}.luau`, `MatchStatsServer`.
 - **Kill feed** — see Damage section (`VantageKillFeed`, `KillFeedConfig`).
 - **Match results** — see Match flow (`VantageMatchResults`, `MatchLedger`).
